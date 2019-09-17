@@ -293,7 +293,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -456,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.1k
+                    8.2k
                 </div>
                 
 
@@ -1017,6 +1017,9 @@ snow:
 <blockquote>
 <p>这个特效和动漫一样，有点花里胡哨，并且可能会造成卡顿，所以我并没有开启，还是给大家一个最干净的阅读体验吧。</p>
 </blockquote>
+<h2 id="动态标签栏"><a href="#动态标签栏" class="headerlink" title="动态标签栏"></a>动态标签栏</h2><p>在<code>theme/matery/layout/layout.ejs</code>下添加如下代码：</p>
+<pre class="line-numbers language-html"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"> <span class="token keyword">var</span> OriginTitile <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">,</span> st<span class="token punctuation">;</span> document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"visibilitychange"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> document<span class="token punctuation">.</span>hidden <span class="token operator">?</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"Σ(っ °Д °;)っ喔哟，崩溃啦！"</span><span class="token punctuation">,</span> <span class="token function">clearTimeout</span><span class="token punctuation">(</span>st<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"φ(゜▽゜*)♪咦，又好了！"</span><span class="token punctuation">,</span> st <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> document<span class="token punctuation">.</span>title <span class="token operator">=</span> OriginTitile <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3e3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h1 id="常见问题及解答（FAQ）"><a href="#常见问题及解答（FAQ）" class="headerlink" title="常见问题及解答（FAQ）"></a>常见问题及解答（FAQ）</h1><p>这个章节主要更新许多同学在搭建博客的过程中咨询我的一些问题。</p>
 <h2 id="为什么本地生成完ssh-key之后没有-ssh文件夹？"><a href="#为什么本地生成完ssh-key之后没有-ssh文件夹？" class="headerlink" title="为什么本地生成完ssh key之后没有.ssh文件夹？"></a>为什么本地生成完ssh key之后没有.ssh文件夹？</h2><p>这是我没有想到会遇到的问题，但是很多人还是遇到了，主要问题就是在输入完<code>ssh-keygen -t rsa -C &quot;792321264@qq.com&quot;</code>之后，很多同学没有按照提示继续输入，而是就这么结束了，然后报错了也没有发现。正确做法是按照提示，一路按回车就行了。</p>
 <h2 id="为什么代码块显示有问题？"><a href="#为什么代码块显示有问题？" class="headerlink" title="为什么代码块显示有问题？"></a>为什么代码块显示有问题？</h2><p>代码要显示正确，要注意以下几个点：</p>
@@ -1618,7 +1621,7 @@ categories<span class="token operator">:</span> 分类<span aria-hidden="true" c
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="具体数学-第8课（取整进阶）">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="具体数学-第8课（取整进阶）">
                         
                         <span class="card-title">具体数学-第8课（取整进阶）</span>
                     </div>
@@ -1671,7 +1674,7 @@ categories<span class="token operator">:</span> 分类<span aria-hidden="true" c
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="具体数学-第7课（取整基础）">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="具体数学-第7课（取整基础）">
                         
                         <span class="card-title">具体数学-第7课（取整基础）</span>
                     </div>
