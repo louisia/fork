@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/10/02/sublime/</loc>
+    <loc>https://godweiyang.com/2017/12/30/text-minning-ppt/</loc>
     
     <lastmod>2019-08-10T06:15:09.098Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/09/19/recommend/</loc>
+    <loc>https://godweiyang.com/2017/10/02/sublime/</loc>
     
     <lastmod>2019-08-10T06:15:09.098Z</lastmod>
     
@@ -86,14 +86,7 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/12/30/text-minning-ppt/</loc>
-    
-    <lastmod>2019-08-10T06:15:09.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/2018/03/09/nvidia-cuda-dynet/</loc>
+    <loc>https://godweiyang.com/2017/09/19/recommend/</loc>
     
     <lastmod>2019-08-10T06:15:09.098Z</lastmod>
     
@@ -107,9 +100,9 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/08/05/k-bandit/</loc>
+    <loc>https://godweiyang.com/2018/03/09/nvidia-cuda-dynet/</loc>
     
-    <lastmod>2019-08-10T06:15:09.083Z</lastmod>
+    <lastmod>2019-08-10T06:15:09.098Z</lastmod>
     
   </url>
   
@@ -121,14 +114,21 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/04/19/inside-outside/</loc>
+    <loc>https://godweiyang.com/2018/08/05/k-bandit/</loc>
+    
+    <lastmod>2019-08-10T06:15:09.083Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2019/03/31/iclr18-prpn/</loc>
     
     <lastmod>2019-08-10T06:15:09.067Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2019/03/31/iclr18-prpn/</loc>
+    <loc>https://godweiyang.com/2018/04/19/inside-outside/</loc>
     
     <lastmod>2019-08-10T06:15:09.067Z</lastmod>
     
@@ -170,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/09/20/dlhw1/</loc>
+    <loc>https://godweiyang.com/2017/09/20/dlhw2/</loc>
     
     <lastmod>2019-08-10T06:15:09.017Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/09/20/dlhw2/</loc>
+    <loc>https://godweiyang.com/2017/09/20/dlhw1/</loc>
     
     <lastmod>2019-08-10T06:15:09.017Z</lastmod>
     
@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/09/19/dl1/</loc>
+    <loc>https://godweiyang.com/2017/09/19/dl2/</loc>
     
     <lastmod>2019-08-10T06:15:09.001Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/09/19/dl2/</loc>
+    <loc>https://godweiyang.com/2017/09/19/dl1/</loc>
     
     <lastmod>2019-08-10T06:15:09.001Z</lastmod>
     
@@ -240,7 +240,21 @@
   </url>
   
   <url>
+    <loc>https://godweiyang.com/2018/04/23/concrete-math-9/</loc>
+    
+    <lastmod>2019-08-10T06:15:08.939Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godweiyang.com/2018/04/02/concrete-math-6/</loc>
+    
+    <lastmod>2019-08-10T06:15:08.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2018/03/05/concrete-math-hw1/</loc>
     
     <lastmod>2019-08-10T06:15:08.939Z</lastmod>
     
@@ -261,20 +275,6 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/03/05/concrete-math-hw1/</loc>
-    
-    <lastmod>2019-08-10T06:15:08.939Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/2018/04/23/concrete-math-9/</loc>
-    
-    <lastmod>2019-08-10T06:15:08.939Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://godweiyang.com/2018/05/28/concrete-math-14/</loc>
     
     <lastmod>2019-08-10T06:15:08.923Z</lastmod>
@@ -282,14 +282,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/03/26/concrete-math-5/</loc>
+    <loc>https://godweiyang.com/2018/03/19/concrete-math-4/</loc>
     
     <lastmod>2019-08-10T06:15:08.923Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/03/19/concrete-math-4/</loc>
+    <loc>https://godweiyang.com/2018/03/26/concrete-math-5/</loc>
     
     <lastmod>2019-08-10T06:15:08.923Z</lastmod>
     
@@ -352,13 +352,6 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/09/19/baoyan/</loc>
-    
-    <lastmod>2019-08-10T06:15:08.892Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://godweiyang.com/2018/11/06/arxiv-18-sr-cp-bottom-up/</loc>
     
     <lastmod>2019-08-10T06:15:08.892Z</lastmod>
@@ -367,6 +360,13 @@
   
   <url>
     <loc>https://godweiyang.com/2018/02/26/biyelunwen/</loc>
+    
+    <lastmod>2019-08-10T06:15:08.892Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2017/09/19/baoyan/</loc>
     
     <lastmod>2019-08-10T06:15:08.892Z</lastmod>
     
@@ -401,14 +401,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/01/13/paperdaily-3/</loc>
+    <loc>https://godweiyang.com/2018/01/15/paperdaily-4/</loc>
     
     <lastmod>2019-08-10T06:15:08.845Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/01/15/paperdaily-4/</loc>
+    <loc>https://godweiyang.com/2018/01/13/paperdaily-3/</loc>
     
     <lastmod>2019-08-10T06:15:08.845Z</lastmod>
     
@@ -429,7 +429,7 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2019/04/20/naacl19-urnng/</loc>
+    <loc>https://godweiyang.com/2019/03/11/naacl19-conparsing/</loc>
     
     <lastmod>2019-08-10T06:15:08.798Z</lastmod>
     
@@ -443,7 +443,7 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2019/03/11/naacl19-conparsing/</loc>
+    <loc>https://godweiyang.com/2019/04/20/naacl19-urnng/</loc>
     
     <lastmod>2019-08-10T06:15:08.798Z</lastmod>
     
@@ -527,7 +527,7 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2017/10/03/acl17-1161/</loc>
+    <loc>https://godweiyang.com/2018/06/28/acl17-conparsing/</loc>
     
     <lastmod>2019-08-10T06:15:08.673Z</lastmod>
     
@@ -541,7 +541,7 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2018/06/28/acl17-conparsing/</loc>
+    <loc>https://godweiyang.com/2017/10/03/acl17-1161/</loc>
     
     <lastmod>2019-08-10T06:15:08.673Z</lastmod>
     
