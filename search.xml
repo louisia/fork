@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>二零一九年终总结</title>
+      <link href="/2019/12/13/2019-conclusion/"/>
+      <url>/2019/12/13/2019-conclusion/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>2019年还有十几天就要过去了，今天又恰逢我的阳历生日，所以我就顺便总结一下这一整年的所见所得。</p></blockquote><h1 id="学术经历"><a href="#学术经历" class="headerlink" title="学术经历"></a>学术经历</h1><h2 id="论文投稿"><a href="#论文投稿" class="headerlink" title="论文投稿"></a>论文投稿</h2><p>都已经研二过去一半了，论文还是没发出来，还是在为毕业担忧。</p><p>研一一直搞得东西没啥新意，不大靠谱，自己都觉得很辣鸡。果不其然，ACL 2019和CoNLL 2019都被拒了。<br>事实证明了，有监督的成分句法分析没有什么空间给你搞了，还是无监督的香。</p><p>最近的话又投了一下ACL 2020，换了一个完全不同的方法。感觉上比上一篇靠谱很多，具体结果怎么样听天命吧。<br>顺便吐槽一下审稿的时间太长了吧，4月份才出结果。</p><p><img src="acl2020.png" alt="ACL 2020"></p><p>今年有幸和实验室大家一起去了杭州和香港参加了两次会议。</p><h2 id="AIS-2019"><a href="#AIS-2019" class="headerlink" title="AIS 2019"></a>AIS 2019</h2><p><img src="ais2019.jpg" alt="AIS 2019"><br>第一次是5月份去杭州参加的AIS 2019论文分享会。虽然自己论文没中，但是能见到这么多的大佬还是很开心的。</p><p><img src="ais2019-gnn.jpg" alt="师兄纪焘会上做报告"><br>上面这张是牌面带师兄焘博对他的ACL 2019论文做报告。</p><p><img src="hangzhou1.jpg" alt="西湖"><br><img src="hangzhou2.jpg" alt="西湖"><br>上面两张是第一天过去时去西湖游玩的时候拍的。</p><p><img src="hangzhou3.jpg" alt="音乐酒吧"><br>这是最后一天去酒吧喝酒玩剧本杀时候拍的，小哥唱歌不错。</p><h2 id="EMNLP-2019"><a href="#EMNLP-2019" class="headerlink" title="EMNLP 2019"></a>EMNLP 2019</h2><p>第二次是去香港参加的EMNLP 2019国际会议，主要是沾了ypdu论文的光。</p><p><img src="emnlp1.jpg" alt="Manning"><br>有幸见到了好几位大佬，比如manning、eisner等等。</p><p><img src="emnlp2.jpg" alt="太平山顶"><br>这是在太平山顶俯瞰香港市中心。</p><p><img src="ypdu.jpg" alt="ypdu"><br>怎么能少了主角呢？还是oral哦。</p><h2 id="IALP-2019"><a href="#IALP-2019" class="headerlink" title="IALP 2019"></a>IALP 2019</h2><p>我们学校今年还组织了一次学术会议，IALP 2019。我负责网站的维护，当然也去现场听了两天的报告。</p><p><img src="ialp.jpg" alt="IALP 2019"><br>虽然没学到啥东西，不过还是面基了一下之前认识的妹子哈哈哈。</p><h1 id="校园故事"><a href="#校园故事" class="headerlink" title="校园故事"></a>校园故事</h1><h2 id="勇哥毕业"><a href="#勇哥毕业" class="headerlink" title="勇哥毕业"></a>勇哥毕业</h2><p><img src="yongge.jpg" alt="晋西北铁三角？"></p><h2 id="带师兄毕业"><a href="#带师兄毕业" class="headerlink" title="带师兄毕业"></a>带师兄毕业</h2><p><img src="czsun.jpg" alt="czsun"></p><h2 id="兄弟团聚"><a href="#兄弟团聚" class="headerlink" title="兄弟团聚"></a>兄弟团聚</h2><p><img src="xiongdi.jpg" alt="撸串儿"></p><h2 id="14届入学5周年"><a href="#14届入学5周年" class="headerlink" title="14届入学5周年"></a>14届入学5周年</h2><p><img src="5years.jpg" alt="礼堂"><br><img src="5years-1.jpg" alt="聚餐"></p><h2 id="回闵行"><a href="#回闵行" class="headerlink" title="回闵行"></a>回闵行</h2><p><img src="minhang.jpg" alt="闵行图书馆"></p><h1 id="游戏人生"><a href="#游戏人生" class="headerlink" title="游戏人生"></a>游戏人生</h1><p><img src="lol.jpg" alt="亚索手办"><br><img src="zhanji.jpg" alt="艾欧尼亚战绩"></p><h1 id="情感八卦"><a href="#情感八卦" class="headerlink" title="情感八卦"></a>情感八卦</h1><p>今年，无心妹子，所以我的八卦无。</p><p>不过作为一个八卦收割机，我还是知道别人的很多八卦的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>成分句法分析综述（第二版）</title>
       <link href="/2019/08/15/con-parsing-summary-v2/"/>
       <url>/2019/08/15/con-parsing-summary-v2/</url>
@@ -859,9 +884,9 @@
       
         <tags>
             
-            <tag> EOJ </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> EOJ </tag>
             
         </tags>
       
@@ -886,9 +911,9 @@
       
         <tags>
             
-            <tag> EOJ </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> EOJ </tag>
             
         </tags>
       
@@ -2244,9 +2269,9 @@
       
         <tags>
             
-            <tag> EOJ </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> EOJ </tag>
             
         </tags>
       
