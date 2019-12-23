@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2019-12-14T13:37:46.159Z</updated>
+  <updated>2019-12-20T08:34:13.186Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Designing and Interpreting Probes with Control Tasks</title>
+    <link href="https://godweiyang.com/2019/12/19/emnlp19-probe/"/>
+    <id>https://godweiyang.com/2019/12/19/emnlp19-probe/</id>
+    <published>2019-12-19T12:45:08.000Z</published>
+    <updated>2019-12-20T08:34:13.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;论文地址：&lt;/strong&gt;&lt;a href=&quot;https://www.aclweb.org/anthology/D19-1275.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Designing and Interpreting
+        
+      
+    
+    </summary>
+    
+      <category term="可解释性" scheme="https://godweiyang.com/categories/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
+    
+    
+      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="EMNLP" scheme="https://godweiyang.com/tags/EMNLP/"/>
+    
+      <category term="可解释性" scheme="https://godweiyang.com/tags/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二零一九年终总结</title>
     <link href="https://godweiyang.com/2019/12/13/2019-conclusion/"/>
     <id>https://godweiyang.com/2019/12/13/2019-conclusion/</id>
     <published>2019-12-13T07:14:09.000Z</published>
-    <updated>2019-12-14T13:37:46.159Z</updated>
+    <updated>2019-12-16T07:51:18.799Z</updated>
     
     <summary type="html">
     
@@ -84,7 +118,7 @@
     <link href="https://godweiyang.com/2019/08/09/wechat-explore/"/>
     <id>https://godweiyang.com/2019/08/09/wechat-explore/</id>
     <published>2019-08-09T09:53:14.000Z</published>
-    <updated>2019-08-10T06:15:09.130Z</updated>
+    <updated>2019-12-17T05:44:56.844Z</updated>
     
     <summary type="html">
     
@@ -115,7 +149,7 @@
     <link href="https://godweiyang.com/2019/08/05/tacl18-williams/"/>
     <id>https://godweiyang.com/2019/08/05/tacl18-williams/</id>
     <published>2019-08-05T08:37:59.000Z</published>
-    <updated>2019-08-17T14:39:13.198Z</updated>
+    <updated>2019-12-17T05:51:19.968Z</updated>
     
     <summary type="html">
     
@@ -622,38 +656,6 @@
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="Python" scheme="https://godweiyang.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>成分句法分析综述</title>
-    <link href="https://godweiyang.com/2018/09/26/constituent-parsing-summary/"/>
-    <id>https://godweiyang.com/2018/09/26/constituent-parsing-summary/</id>
-    <published>2018-09-26T04:53:10.000Z</published>
-    <updated>2019-08-26T04:21:50.227Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="句法分析" scheme="https://godweiyang.com/categories/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
-    
-    
-      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="句法分析" scheme="https://godweiyang.com/tags/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
-    
-      <category term="NLP" scheme="https://godweiyang.com/tags/NLP/"/>
     
   </entry>
   
