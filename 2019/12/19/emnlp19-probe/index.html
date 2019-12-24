@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Designing and Interpreting Probes with Control Tasks, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
+    <meta name="keywords" content="论文赏析[EMNLP18]Designing and Interpreting Probes with Control Tasks, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="论文地址：Designing and Interpreting Probes with Control Tasks代码地址：github论文地址
-">
+    <meta name="description" content="论文地址：Designing and Interpreting Probes with Control Tasks
+介绍NLP任务都存在着一个常见的问题：我的神经网络有没有学到某个性质$Y$？所以我们需要构造出一种方法，来告诉我们模型是否真">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Designing and Interpreting Probes with Control Tasks | 韦阳的博客</title>
+    <title>论文赏析[EMNLP18]Designing and Interpreting Probes with Control Tasks | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -291,13 +291,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Designing and Interpreting Probes with Control Tasks
+                        论文赏析[EMNLP18]Designing and Interpreting Probes with Control Tasks
                     </div>
                 </div>
             </div>
@@ -462,14 +462,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    20
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
                 
@@ -485,7 +485,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>论文地址：</strong><a href="https://www.aclweb.org/anthology/D19-1275.pdf" target="_blank" rel="noopener">Designing and Interpreting Probes with Control Tasks</a><br><strong>代码地址：</strong><a href="https://github.com/dgaddy/parser-analysis" target="_blank" rel="noopener">github</a><br><a href="https://www.aclweb.org/anthology/D19-1275.pdf" target="_blank" rel="noopener">论文地址</a></p>
+                <p><strong>论文地址：</strong><a href="https://www.aclweb.org/anthology/D19-1275.pdf" target="_blank" rel="noopener">Designing and Interpreting Probes with Control Tasks</a></p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>NLP任务都存在着一个常见的问题：<strong>我的神经网络有没有学到某个性质$Y$？</strong><br>所以我们需要构造出一种方法，来告诉我们模型是否真的学到了某些性质。</p>
+<p>例如对于ELMo，我们想知道它是否学到了POS tag信息，所以我们需要设计一种探测任务（probe task）。</p>
+<p><img src="1.jpg" alt></p>
+<p>如上图所示，我们将句子输入到ELMo中，得到每个单词的上下文表示。<br>然后用probe函数（一般是MLP或者linear）进行分类，得到每个单词的POS tag。</p>
+<p>注意到这里的ELMo是不进行fine-tune的，也就是固定住不变的，模型参数只有probe参数。</p>
+<p>但是我们能否说，POS tag效果好，那么ELMo学的就好呢？<br>其实是不行的，因为有三点因素可能影响到最终的tag准确率：</p>
+<ul>
+<li>ELMo真的学到了POS tag信息。</li>
+<li>probe函数设计的比较复杂，可以很好的拟合出POS tag分布。</li>
+<li>POS tag任务的监督信息加的比较多。</li>
+</ul>
+<p>所以本文主要研究了如下三个问题：</p>
+<ul>
+<li>高的探测准确率是否意味着表示真的学到了某种性质？</li>
+<li>探测方法对结果有着什么样的影响？</li>
+<li>上面提到的三点影响因素对探测结论是否有影响？</li>
+</ul>
+<p>下面我们一一关注这三个问题。</p>
+<h1 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h1><p>首先答案是否定的，探测任务上准确率越高，并不能代表着表示学到了你想要的性质。</p>
+<p><img src="2.jpg" alt></p>
+<p>还是用ELMo和POS tag举例子，上面这个模型用1000隐层维度的MLP作为probe函数，最终取得了97.3的高准确率。<br>但是我们不能说EMLo能够很好的学到了POS tag信息，因为可能是MLP很好的拟合出了POS tag分布。</p>
+<p>所以我们提出了<strong>控制任务（control task）</strong>的概念，也就是用同样的模型去预测一个随机任务。<br>例如对于POS tag任务，PTB数据集里一共有45个tag，我们给每个单词重新随机分配一个tag，然后用探测模型预测句子的随机tag。<br>这样其实有个小问题，就是消除了单词的一词多义问题，一个单词在所有语境下tag都是一样的了。</p>
+<p><img src="3.jpg" alt></p>
+<p>测试下来结果如上图所示。<br>可以看到MLP和linear对POS tag结果基本没有影响，都非常的高。<br>但是对control任务也就是随机tag影响很大，MLP并没有降低很多（92.8），但是linear降低了很多（71.2）。<br>于是我们将这个差值叫做<strong>selectivity</strong>。如果selectivity越大，说明probe函数影响越小，可能不是probe函数拟合出来的结果。<br>如果selectivity越小，说明不管是gold的label还是随机的label，准确率都很高，这就可能是probe函数拟合出来的结果了，而不是表示学出来的。</p>
+<h1 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h1><p>显然linear的学习能力明显不如MLP，那么不同的参数设置对最终结果是否有影响呢？</p>
+<p><img src="4.jpg" alt></p>
+<p>上图举了两个例子，分别是dropout和隐层维度对结果的影响。<br>可以看出简单的正则化对selectivity影响不是很大，但是隐层维度影响特别大。</p>
+<p><img src="5.jpg" alt></p>
+<p>具体的参数影响如上图所示，最终选取了使得准确率比较高，selectivity相对大的参数配置。</p>
+<h1 id="问题3"><a href="#问题3" class="headerlink" title="问题3"></a>问题3</h1><p>答案也是肯定的。</p>
+<p><img src="6.jpg" alt></p>
+<p>比如上面这个例子，一般认为ELMo第1层POS tag效果是要好于第2层的，probe测试下来也是这样。<br>但是可以发现，第2层的selectivity更大，说明其实第2层才更好的学到了POS tag信息。<br>那为什么第1层效果更好呢？可能是因为它更靠近单词层，所以保留了更多单词的信息。<br>这也说明了selectivity方法可能也不是完美的，可能通过聚类预测POS tag，第2层效果会更好。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>具体的实验细节和分析就不说了，大体就是这么个思想。<br>这篇主要就是说明了，光靠准确率并不能说明一个encoder的表示学到了某种性质，而可能是模型拟合的结果。<br>所以他们提出了control task，同时预测一个随机输出，如果准确率差距较大，则验证了表示学到了性质。<br>当然这个方法还有一些问题，比如probe函数的挑选，还有文中依存句法分析的control task的设计是有瑕疵的。</p>
 
             </div>
             <hr />
@@ -644,7 +677,7 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Designing and Interpreting Probes with Control Tasks》
+                    《论文赏析[EMNLP18]Designing and Interpreting Probes with Control Tasks》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/19/emnlp19-probe/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -979,16 +1012,16 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Designing and Interpreting Probes with Control Tasks">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="论文赏析[EMNLP18]Designing and Interpreting Probes with Control Tasks">
                         
-                        <span class="card-title">Designing and Interpreting Probes with Control Tasks</span>
+                        <span class="card-title">论文赏析[EMNLP18]Designing and Interpreting Probes with Control Tasks</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            论文地址：Designing and Interpreting Probes with Control Tasks代码地址：github论文地址
-
+                            论文地址：Designing and Interpreting Probes with Control Tasks
+介绍NLP任务都存在着一个常见的问题：我的神经网络有没有学到某个性质$Y$？所以我们需要构造出一种方法，来告诉我们模型是否真
                         
                     </div>
                     <div class="publish-info">
@@ -1046,7 +1079,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="二零一九年终总结">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="二零一九年终总结">
                         
                         <span class="card-title">二零一九年终总结</span>
                     </div>
@@ -1246,7 +1279,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">134.3k</span>
+            <span class="white-color">135.5k</span>
             
 
             <br>
