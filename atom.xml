@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2019-12-24T16:28:36.424Z</updated>
+  <updated>2019-12-25T16:08:52.357Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文赏析[ACL18]一个句子向量表示究竟可以塞进多少语言性质？</title>
+    <link href="https://godweiyang.com/2019/12/25/acl18-probe/"/>
+    <id>https://godweiyang.com/2019/12/25/acl18-probe/</id>
+    <published>2019-12-25T08:32:31.000Z</published>
+    <updated>2019-12-25T16:08:52.357Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;论文地址：&lt;/strong&gt;&lt;a href=&quot;https://www.aclweb.org/anthology/P18-1198/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;What you can cram into a
+        
+      
+    
+    </summary>
+    
+      <category term="可解释性" scheme="https://godweiyang.com/categories/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
+    
+    
+      <category term="ACL" scheme="https://godweiyang.com/tags/ACL/"/>
+    
+      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="可解释性" scheme="https://godweiyang.com/tags/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>论文赏析[EMNLP19]Designing and Interpreting Probes with Control Tasks</title>
@@ -628,34 +662,6 @@
       <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="句法分析" scheme="https://godweiyang.com/tags/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给python新手的一些建议</title>
-    <link href="https://godweiyang.com/2018/10/11/python-advice/"/>
-    <id>https://godweiyang.com/2018/10/11/python-advice/</id>
-    <published>2018-10-11T12:53:18.000Z</published>
-    <updated>2019-08-10T06:15:09.098Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://godweiyang.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="Python" scheme="https://godweiyang.com/tags/Python/"/>
     
   </entry>
   
