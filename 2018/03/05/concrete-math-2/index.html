@@ -9,9 +9,8 @@
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-
 今天主要讲了关于递推式和求和的一些方法，主要是成套方法。
-约瑟夫环推广上一节课说到，约瑟夫环问题的解是\[f(n) = 2l + 1\]其中$n = {2^m} + l$将$n$写成二进制可以发现，$f(n)$就是$n$的二进制循环左移">
+约瑟夫环推广上一节课说到，约瑟夫环问题的解是\[f(n) = 2l + 1\]其中$n = {2^m} + l$将$n$写成二进制可以发现，$f(n)$就是$n$的二进制循环左移1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -293,7 +292,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -471,8 +470,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=316275&auto=1&height=66"></iframe></div>
-
+                <p><img src="https://pic1.zhimg.com/80/v2-0205cde00e314b1414a5e9d94106a431_r.jpg" alt></p>
 <p>今天主要讲了关于递推式和求和的一些方法，主要是成套方法。</p>
 <h1 id="约瑟夫环推广"><a href="#约瑟夫环推广" class="headerlink" title="约瑟夫环推广"></a>约瑟夫环推广</h1><p>上一节课说到，约瑟夫环问题的解是<br>\[f(n) = 2l + 1\]<br>其中$n = {2^m} + l$<br>将$n$写成二进制可以发现，$f(n)$就是$n$的二进制循环左移1位。<br>现在做一下推广，求解如下递推式：<br>\[\begin{array}{l}f(1) = \alpha \\f(2n) = 2f(n) + \beta \\f(2n + 1) = 2f(n) + \gamma \end{array}\]<br>可以设<br>\[f(n) = A(n)\alpha  + B(n)\beta  + C(n)\gamma \]<br>同样，令$n = {2^m} + l$<br>可以解出<br>\[\begin{array}{l}A(n) = {2^m}\\B(n) = {2^m} - 1 - l\\C(n) = l\end{array}\]<br>再从二进制角度理解一下，将递推式继续推广：<br>\[\begin{array}{l}f(j) = {\alpha _j},1 \le j &lt; d\\f(dn + j) = cf(n) + {\beta _j},0 \le j \le d,n \ge 1\end{array}\]<br>可以得到解为<br>\[f({({b_m}{b_{m - 1}} \ldots {b_1}{b_0})_d}) = {({\alpha _{ {b_m}}}{\beta _{ {b_{m - 1}}}}{\beta _{ {b_{m - 2}}}} \ldots {\beta _{ {b_1}}}{\beta _{ {b_0}}})_c}\]</p>
 <h1 id="递推式求和"><a href="#递推式求和" class="headerlink" title="递推式求和"></a>递推式求和</h1><p>求解如下递推式：<br>\[\begin{array}{l}{R_0} = \alpha \\{R_n} = {R_{n - 1}} + \beta n + \gamma \end{array}\]<br>用成套方法求解，设<br>\[{R_n} = A(n)\alpha  + B(n)\beta  + C(n)\gamma \]<br>首先令${R_n} = 1$，可以得到$\alpha  = 1,\beta  = 0,\gamma  = 0$，所以$A(n) = 1$。<br>再令${R_n} = n$，可以得到$\alpha  = 0,\beta  = 0,\gamma  = 1$，所以$C(n) = n$。<br>最后令${R_n} = {n^2}$，可以得到$\alpha  = 0,\beta  = 2,\gamma  =  - 1$，所以$2B(n) - C(n) = {n^2}$，所以$B(n) = ({n^2} + n)/2$</p>
@@ -969,7 +967,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="具体数学-第一章作业解答">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="具体数学-第一章作业解答">
                         
                         <span class="card-title">具体数学-第一章作业解答</span>
                     </div>
@@ -978,7 +976,6 @@
                     <div class="summary block-with-text">
                         
                             
-
 这是我的第一章作业答案，只有四题，标准答案太精简了。
 总体做下来，只有最后一题的第二小问一开始算错了，正如题目所说，的确有点难想。我看了标准答案的式子，想了一会儿才想出来的。。。
 
@@ -1023,7 +1020,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="具体数学-第1课（递归求解实际问题）">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="具体数学-第1课（递归求解实际问题）">
                         
                         <span class="card-title">具体数学-第1课（递归求解实际问题）</span>
                     </div>
@@ -1032,11 +1029,10 @@
                     <div class="summary block-with-text">
                         
                             
-
 这学期提前选修了研究生的课程：具体数学、人工智能前沿、NLP讨论班，就随便记记具体数学每一节课所学的东西吧。
 第一节课讲的都是一些很简单的东西，这里就一带而过了。
 汉诺塔问题
-这是个老生常谈的问题了，n个盘子，3个柱子的汉诺塔问题，最少
+这是个老生常谈的问题了，n个盘子，3个柱子的汉诺塔问题，最少移
                         
                     </div>
                     <div class="publish-info">
@@ -1221,7 +1217,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">137.9k</span>
+            <span class="white-color">137.8k</span>
             
 
             <br>
