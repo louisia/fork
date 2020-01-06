@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://godweiyang.com/2020/01/06/emnlp19-tree-transformer/</loc>
+    <lastmod>2020-01-06</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2020/01/05/tacl19-indigo/</loc>
     <lastmod>2020-01-05</lastmod>
   </url>  <url>
@@ -169,16 +172,16 @@
     <loc>https://godweiyang.com/2018/01/15/paperdaily-4/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/06/01/concrete-math-hw5/</loc>
+    <loc>https://godweiyang.com/2018/05/27/concrete-math-13/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2017/09/19/dl2/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2017/09/20/dlhw1/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2017/09/19/dl1/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2017/09/19/dl2/</loc>
+    <loc>https://godweiyang.com/2018/06/01/concrete-math-hw5/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2018/04/20/concrete-math-hw3/</loc>
@@ -187,61 +190,61 @@
     <loc>https://godweiyang.com/2018/03/05/concrete-math-hw1/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/05/27/concrete-math-13/</loc>
+    <loc>https://godweiyang.com/2018/03/19/concrete-math-hw2/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2017/09/19/dl1/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2017/09/20/dlhw2/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/03/19/concrete-math-hw2/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/05/14/concrete-math-12/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/04/02/concrete-math-6/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
     <loc>https://godweiyang.com/2018/05/28/concrete-math-14/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/03/05/concrete-math-2/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/03/12/concrete-math-3/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/03/26/concrete-math-5/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/05/07/concrete-math-11/</loc>
-    <lastmod>2020-01-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/04/09/concrete-math-7/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2018/04/16/concrete-math-8/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/04/23/concrete-math-9/</loc>
+    <loc>https://godweiyang.com/2018/04/02/concrete-math-6/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/04/28/concrete-math-10/</loc>
+    <loc>https://godweiyang.com/2018/04/09/concrete-math-7/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/03/26/concrete-math-5/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2018/03/19/concrete-math-4/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/01/22/2017-conclusion/</loc>
+    <loc>https://godweiyang.com/2018/03/12/concrete-math-3/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2018/12/31/2018-conclusion/</loc>
+    <loc>https://godweiyang.com/2018/03/05/concrete-math-2/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/05/14/concrete-math-12/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/04/28/concrete-math-10/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/05/07/concrete-math-11/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/04/23/concrete-math-9/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2019/12/13/2019-conclusion/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
+    <loc>https://godweiyang.com/2018/01/22/2017-conclusion/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2017/09/19/baoyan/</loc>
+    <lastmod>2020-01-01</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/12/31/2018-conclusion/</loc>
     <lastmod>2020-01-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2018/02/27/concrete-math-1/</loc>
