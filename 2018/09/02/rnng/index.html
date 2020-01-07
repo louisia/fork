@@ -486,7 +486,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://pic1.zhimg.com/80/v2-0205cde00e314b1414a5e9d94106a431_r.jpg" alt></p>
+                <p><img src="https://pic4.zhimg.com/80/v2-227982f30b083c40f3d37eddac82144d_r.jpg" alt></p>
 <p><strong>论文地址：</strong><a href="https://www.aclweb.org/anthology/N/N16/N16-1024.pdf" target="_blank" rel="noopener">Recurrent Neural Network Grammars</a><br><strong>代码地址：</strong><a href="https://github.com/clab/rnng" target="_blank" rel="noopener">github</a></p>
 <p>今天要介绍的这篇论文是来自NAACL16的Recurrent Neural Network Grammars，主要贡献点就是提出了一种新的文法RNNG，不同于传统的PCFG之类的文法，RNNG使用RNN来对句子和它的句法树的联合概率进行建模，因此它是一个生成模型。但是稍稍修改就可以改为判别模型，也就是大家熟悉的基于转移的成分句法分析系统，并且转移系统是采用top-down方法的，也就是利用了句法树的前序遍历。</p>
 <p>RNNG在语言模型任务上取得了当时的state-of-the-art结果，成分句法分析任务上，生成模型取得了媲美最好结果的F1值，而判别模型就差了点。本文最大的贡献点就是提出了生成式模型RNNG，说明了在数据量不是很大的时候，利用生成式模型可以提高成分句法分析的准确率。</p>

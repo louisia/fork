@@ -470,7 +470,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://pic1.zhimg.com/80/v2-0205cde00e314b1414a5e9d94106a431_r.jpg" alt></p>
+                <p><img src="https://pic4.zhimg.com/80/v2-227982f30b083c40f3d37eddac82144d_r.jpg" alt></p>
 <p>今天讲了一种将递归式转化为求和的方法。</p>
 <p>考虑如下递归式：<br>\[{a_n}{T_n} = {b_n}{T_{n - 1}} + {c_n}\]<br>两边同时乘以$s_n$得到：<br>\[{s_n}{a_n}{T_n} = {s_n}{b_n}{T_{n - 1}} + {s_n}{c_n}\]<br>要想转化成可以求和的递归式，那么必须有：<br>\[{s_n}{b_n} = {s_{n - 1}}{a_{n - 1}}\]<br>也就是：<br>\[{s_n} = \frac { { {a_{n - 1}}{a_{n - 2}} \cdots {a_1}}}{ { {b_n}{b_{n - 1}} \cdots {b_2}}}\]<br>这时令<br>\[{S_n} = {s_n}{a_n}{T_n}\]<br>得到：<br>\[{S_n} = {S_{n - 1}} + {s_n}{c_n}\]<br>这时就可以转化为求和了，解出：<br>\[{S_n} = {s_0}{a_0}{T_0} + \sum\limits_{k = 1}^n { {s_k}{c_k}} \]<br>所以<br>\[{T_n} = \frac{1}{ { {s_n}{a_n}}}({s_0}{a_0}{T_0} + \sum\limits_{k = 1}^n { {s_k}{c_k}} )\]</p>
 <h1 id="例题1"><a href="#例题1" class="headerlink" title="例题1"></a>例题1</h1><hr>

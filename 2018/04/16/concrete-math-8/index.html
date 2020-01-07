@@ -471,7 +471,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://pic1.zhimg.com/80/v2-0205cde00e314b1414a5e9d94106a431_r.jpg" alt></p>
+                <p><img src="https://pic4.zhimg.com/80/v2-227982f30b083c40f3d37eddac82144d_r.jpg" alt></p>
 <p>今天主要讲了取整与递归式的结合，还有取模的相关知识。</p>
 <h1 id="例题1"><a href="#例题1" class="headerlink" title="例题1"></a>例题1</h1><hr>
 <p>给出下列递归式：<br>\[\begin{array}{l}{K_0}{\rm{ = }}1\\{K_{n + 1}} = 1 + \min (2{K_{\left\lfloor {n/2} \right\rfloor }},3{K_{\left\lfloor {n/3} \right\rfloor }}),n \ge 0\end{array}\]<br>现在不要求你求解，要你证明：<br>\[{K_n} \ge n\]<br>首先想到的就是数学归纳法，假设对于任意$k \le n$，都有${K_k} \ge k$，那么：<br>\[\begin{array}{l}{K_{n + 1}} = 1 + \min (2{K_{\left\lfloor {n/2} \right\rfloor }},3{K_{\left\lfloor {n/3} \right\rfloor }})\\ \ge 1 + \min (2\left\lfloor {\frac{n}{2}} \right\rfloor ,3\left\lfloor {\frac{n}{3}} \right\rfloor )\end{array}\]<br>如果$n = 2k$，那么${K_{n + 1}} \ge 1 + n$。<br>如果$n = 2k + 1$，那么${K_{n + 1}} \ge n$，这时不成立。</p>

@@ -486,7 +486,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://pic1.zhimg.com/80/v2-0205cde00e314b1414a5e9d94106a431_r.jpg" alt></p>
+                <p><img src="https://pic4.zhimg.com/80/v2-227982f30b083c40f3d37eddac82144d_r.jpg" alt></p>
 <p><strong>论文地址：</strong><a href="https://www.aclweb.org/anthology/D19-1098.pdf" target="_blank" rel="noopener">Tree Transformer: Integrating Tree Structures into Self-Attention</a></p>
 <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>之前其实有很多工作将句法信息融入到了RNN中，例如ON-LSTM和PRPN，用来隐式建模句法结构信息，同时提升语言模型的准确率。本文尝试将句法信息融入到Transformer中，用来赋予attention更好的解释性。同时可以无监督的预测出句子的句法树，并且相比于一般的Transformer，语言模型的性能有所提高。</p>
 <h1 id="模型结构"><a href="#模型结构" class="headerlink" title="模型结构"></a>模型结构</h1><p><img src="1.jpg" alt><br>上面这张是模型结构，最主要的区别就是在multi-head attention操作基础上新增了一个成分的attention，用来表示一段span能否构成一个短语。<br>比如上图中，“cute dog”构成一个短语，所以第0层中这两个单词的attention较大。<br>而“the cute dog”构成了一个更大的短语，所以第1层中“the”和“dog”的attention较大。</p>
