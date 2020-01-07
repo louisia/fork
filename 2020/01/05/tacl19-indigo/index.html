@@ -486,7 +486,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://pic4.zhimg.com/80/v2-227982f30b083c40f3d37eddac82144d_r.jpg" alt></p>
+                <p><img src="/medias/contact.jpg" alt></p>
 <p><strong>论文地址：</strong><a href="https://arxiv.org/abs/1902.01370" target="_blank" rel="noopener">Insertion-based Decoding with automatically Inferred Generation Order</a></p>
 <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>大多数的生成模型（例如seq2seq模型），生成句子的顺序都是从左向右的，但是这不一定是最优的生成顺序。<br>可能有人要说，反正最终都是生成一个句子，跟生成顺序有啥关系？<br>但是大量实验确实表明了从左向右生成不一定是最好的，比如先生成句子中的核心词（出现词频最高的词，或者动词等）可能效果会更好。</p>
 <p>于是这篇论文就提出了自动推测最佳的生成顺序，考虑所有顺序的概率，优化概率之和。<br>但是对于任意一个生成顺序，如何还原原本的句子呢？<br>本文又提出了一个相对位置编码的方案，并且融合到了Transformer里。</p>
