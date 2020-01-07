@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-01-07T10:25:53.256Z</updated>
+  <updated>2020-01-07T15:48:01.248Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>分享一些自用软件，学妹们用了都说好用！</title>
+    <link href="https://godweiyang.com/2020/01/07/software-share/"/>
+    <id>https://godweiyang.com/2020/01/07/software-share/</id>
+    <published>2020-01-07T14:00:48.000Z</published>
+    <updated>2020-01-07T15:48:01.248Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天我给大家分享一些我平时自用的软件，有学习的、编程的、娱乐的、工具类的等等。&lt;/p&gt;
+&lt;p&gt;有些软件是破解版的，去除了广告，都很实用！&lt;/p&gt;
+&lt;h1 id=&quot;迅雷极速版&quot;&gt;&lt;a href=&quot;#迅雷极速版&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="计算机知识" scheme="https://godweiyang.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="软件" scheme="https://godweiyang.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>论文赏析[EMNLP19]如何在Transformer中融入句法树信息？这里给出了一种解决方案</title>
@@ -628,39 +656,6 @@
       <category term="句法分析" scheme="https://godweiyang.com/tags/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
     
       <category term="EMNLP" scheme="https://godweiyang.com/tags/EMNLP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Faster Shift-Reduce Constituent Parsing with a Non-Binary, Bottom-Up Strategy</title>
-    <link href="https://godweiyang.com/2018/11/06/arxiv-18-sr-cp-bottom-up/"/>
-    <id>https://godweiyang.com/2018/11/06/arxiv-18-sr-cp-bottom-up/</id>
-    <published>2018-11-06T07:16:44.000Z</published>
-    <updated>2020-01-07T10:28:28.999Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;论文地址：&lt;a href=&quot;http://arxiv.org/abs/1804.07961&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Faster
-        
-      
-    
-    </summary>
-    
-      <category term="深度学习" scheme="https://godweiyang.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
-      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="句法分析" scheme="https://godweiyang.com/tags/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
