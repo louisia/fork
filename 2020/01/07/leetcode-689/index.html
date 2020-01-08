@@ -440,7 +440,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-08
+                    2020-01-07
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -483,10 +483,10 @@
 </blockquote>
 <hr>
 <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定数组$nums$由正整数组成，找到三个互不重叠的子数组的最大和。<br>每个子数组的长度为$k$，我们要使这$3k$个项的和最大化。<br>返回每个区间起始索引的列表（索引从 0 开始）。如果有多个结果，返回字典序最小的一个。</p>
-<h1 id="示例输入"><a href="#示例输入" class="headerlink" title="示例输入"></a>示例输入</h1><p>[1,2,1,2,6,7,5,1], 2</p>
-<h1 id="示例输出"><a href="#示例输出" class="headerlink" title="示例输出"></a>示例输出</h1><p>[0, 3, 5]</p>
-<h1 id="示例解释"><a href="#示例解释" class="headerlink" title="示例解释"></a>示例解释</h1><p>子数组 [1, 2], [2, 6], [7, 5] 对应的起始索引为 [0, 3, 5]。<br>我们也可以取 [2, 1], 但是结果 [1, 3, 5] 在字典序上更大。</p>
-<h1 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h1><p>$nums.length$ 的范围在[1, 20000]之间。<br>$nums[i]$ 的范围在[1, 65535]之间。<br>$k$ 的范围在[1, $floor(nums.legth/3)$ ]之间。</p>
+<p><strong>示例输入</strong><br>[1,2,1,2,6,7,5,1], 2</p>
+<p><strong>示例输出</strong><br>[0, 3, 5]</p>
+<p><strong>示例解释</strong><br>子数组 [1, 2], [2, 6], [7, 5] 对应的起始索引为 [0, 3, 5]。<br>我们也可以取 [2, 1], 但是结果 [1, 3, 5] 在字典序上更大。</p>
+<p><strong>提示</strong><br>$nums.length$ 的范围在[1, 20000]之间。<br>$nums[i]$ 的范围在[1, 65535]之间。<br>$k$ 的范围在[1, $floor(nums.legth/3)$ ]之间。</p>
 <hr>
 <h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>首先看数据范围，这题不能使用暴力，暴力时间复杂度是$O(n^3)$，一定会超时，所以考虑使用动态规划求解。</p>
 <p>下面考虑一般情况，也就是求解划分成$N$个不重叠数组的最大和。</p>
@@ -706,7 +706,7 @@
                   property="dct:title" rel="dct:type">
                     《每日一题[LeetCode 689]三个无重叠子数组的最大和》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/08/leetcode-689/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/07/leetcode-689/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -747,7 +747,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2020/01/08/leetcode-689/',
+        id: '2020/01/07/leetcode-689/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1030,69 +1030,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2020/01/08/leetcode-689/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="每日一题[LeetCode 689]三个无重叠子数组的最大和">
-                        
-                        <span class="card-title">每日一题[LeetCode 689]三个无重叠子数组的最大和</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-
-闲来无事，为了保证日更，从今天开始每天更新一道LeetCode题解。做题顺序是这样的：随机选择一题“困难”类型的题目。因本人ACM退役颇久，代码多有疏漏，望多多见谅。
-
-
-题目描述给定数组$nums$由正整数组成，找到三个互不重叠的子数
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-08
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
-                                    编程技巧
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/算法/" target="_blank">
-                        <span class="chip bg-color">算法</span>
-                    </a>
-                    
-                    <a href="/tags/leetcode/" target="_blank">
-                        <span class="chip bg-color">leetcode</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2020/01/07/software-share/">
                     <div class="card-image">
@@ -1115,9 +1055,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1135,6 +1075,73 @@
                     
                     <a href="/tags/软件/" target="_blank">
                         <span class="chip bg-color">软件</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/01/06/emnlp19-tree-transformer/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="论文赏析[EMNLP19]如何在Transformer中融入句法树信息？这里给出了一种解决方案">
+                        
+                        <span class="card-title">论文赏析[EMNLP19]如何在Transformer中融入句法树信息？这里给出了一种解决方案</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+论文地址：Tree Transformer: Integrating Tree Structures into Self-Attention
+介绍之前其实有很多工作将句法信息融入到了RNN中，例如ON-LSTM和PRPN，用来隐式建模句法
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/深度学习/" class="post-category" target="_blank">
+                                    深度学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/自然语言处理/" target="_blank">
+                        <span class="chip bg-color">自然语言处理</span>
+                    </a>
+                    
+                    <a href="/tags/神经网络/" target="_blank">
+                        <span class="chip bg-color">神经网络</span>
+                    </a>
+                    
+                    <a href="/tags/深度学习/" target="_blank">
+                        <span class="chip bg-color">深度学习</span>
+                    </a>
+                    
+                    <a href="/tags/EMNLP/" target="_blank">
+                        <span class="chip bg-color">EMNLP</span>
+                    </a>
+                    
+                    <a href="/tags/生成模型/" target="_blank">
+                        <span class="chip bg-color">生成模型</span>
                     </a>
                     
                 </div>
@@ -1296,7 +1303,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">144.2k</span>
+            <span class="white-color">145.5k</span>
             
 
             <br>
