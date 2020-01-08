@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>每日一题[LeetCode 1004]最大连续1的个数 III</title>
+      <link href="/2020/01/09/leetcode-1004/"/>
+      <url>/2020/01/09/leetcode-1004/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/medias/contact.jpg" alt></p><hr><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个由若干0和1组成的数组A，我们最多可以将K个值从0变成1。<br>返回仅包含1的最长（连续）子数组的长度。</p><p><strong>示例输入1</strong><br>A = [1,1,1,0,0,0,1,1,1,1,0], K = 2</p><p><strong>示例输出1</strong><br>6</p><p><strong>示例解释1</strong><br>[1,1,1,0,0,1,1,1,1,1,1]<br>粗体数字从 0 翻转到 1，最长的子数组长度为 6。</p><p><strong>示例输入2</strong><br>A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3</p><p><strong>示例输出2</strong><br>10</p><p><strong>示例解释2</strong><br>[0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]<br>粗体数字从 0 翻转到 1，最长的子数组长度为 10。</p><p><strong>提示</strong><br>1 &lt;= A.length &lt;= 20000<br>0 &lt;= K &lt;= A.length<br>A[i] 为 0 或 1 </p><hr><h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>这题可以采用滑动窗口方法来求解。<br>也就是用头尾指针l和r，初始化都是l=r=0，然后向右移动指针r。<br>用变量cnt0记录[l, r]区间内有几个0，用res保存答案。</p><p>如果A[r]=0，那就0的数量cnt0加1。<br>并且0的数量和K判断，如果cnt0 &lt;= K，那就说明[l, r]中间的0不多，可以用至多K次机会填充，那就继续向右移动r。<br>但是如果cnt0 &gt; K，那就说明0的数量太多了，得删掉点0了，这时候就得向右移动l.<br>这时候看情况，如果A[l]=0，就要减小cnt0，直到cnt0 &lt;= K为止，不再移动l。<br>然后继续移动r，重复上面过程即可。过程中时刻更新最长的距离res。</p><p>因为l和r分别最多移动n次，所以最终的时间复杂度是$O(n)$的。</p><p>那么为什么这样是正确的呢？不会漏掉正确答案所在的区间吗？<br>我们看看漏掉的是哪些区间。<br>对于一个固定的r，移动l直到0的数量小于等于K（记为l’）的过程中，漏掉的是[&lt;l, r]和[&gt;l’, r]这些区间。<br>前者0数量太多，不符合题意；后者长度更小，显然不是答案。<br>然后继续右移r，直到第一个0数量大于K的位置，漏掉了[&lt;l, &gt;r]和[&gt;l, &gt;r]区间。<br>前者0的数量一定大于K，为什么呢？因为右端点在r的时候，l已经是最靠左使得0数量小于等于K的位置了，而现在r向右移动了，l更不可能左移了；后者长度更小，不予考虑。<br>综上考虑，最优的区间一定被考虑充分了。</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">int</span> <span class="token function">longestOnes</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">,</span> <span class="token keyword">int</span> K<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> cnt0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">while</span> <span class="token punctuation">(</span>r <span class="token operator">&lt;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>A<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                cnt0<span class="token operator">++</span><span class="token punctuation">;</span>                <span class="token keyword">while</span> <span class="token punctuation">(</span>cnt0 <span class="token operator">></span> K <span class="token operator">&amp;&amp;</span> l <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>A<span class="token punctuation">[</span>l<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">)</span> cnt0<span class="token operator">--</span><span class="token punctuation">;</span>                <span class="token punctuation">}</span>            <span class="token punctuation">}</span>            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> r <span class="token operator">-</span> l <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            r<span class="token operator">++</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> res<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>每日一题[LeetCode 315]计算右侧小于当前元素的个数</title>
       <link href="/2020/01/08/leetcode-315/"/>
       <url>/2020/01/08/leetcode-315/</url>
