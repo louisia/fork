@@ -4,16 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日一题[LeetCode 1004]最大连续1的个数 III, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
+    <meta name="keywords" content="每日算法系列【LeetCode 1004】最大连续1的个数 III, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-
-题目描述给定一个由若干0和1组成的数组A，我们最多可以将K个值从0变成1。返回仅包含1的最长（连续）子数组的长度。
-示例输入1A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
-示例输出16
-示例解释1[1,1,1,0">
+题目描述给定一个由若干 0 和 1 组成的数组 A ，我们最多可以将 K 个值从 0 变成 1 。
+返回仅包含 1 的最长（连续）子数组的长度。
+示例输入1
+A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
+示例输出1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日一题[LeetCode 1004]最大连续1的个数 III | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 1004】最大连续1的个数 III | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -301,7 +301,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日一题[LeetCode 1004]最大连续1的个数 III
+                        每日算法系列【LeetCode 1004】最大连续1的个数 III
                     </div>
                 </div>
             </div>
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    719
+                    745
                 </div>
                 
 
@@ -477,21 +477,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="/medias/contact.jpg" alt></p>
-<hr>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个由若干0和1组成的数组A，我们最多可以将K个值从0变成1。<br>返回仅包含1的最长（连续）子数组的长度。</p>
-<p><strong>示例输入1</strong><br>A = [1,1,1,0,0,0,1,1,1,1,0], K = 2</p>
-<p><strong>示例输出1</strong><br>6</p>
-<p><strong>示例解释1</strong><br>[1,1,1,0,0,1,1,1,1,1,1]<br>粗体数字从 0 翻转到 1，最长的子数组长度为 6。</p>
-<p><strong>示例输入2</strong><br>A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3</p>
-<p><strong>示例输出2</strong><br>10</p>
-<p><strong>示例解释2</strong><br>[0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]<br>粗体数字从 0 翻转到 1，最长的子数组长度为 10。</p>
-<p><strong>提示</strong><br>1 &lt;= A.length &lt;= 20000<br>0 &lt;= K &lt;= A.length<br>A[i] 为 0 或 1 </p>
-<hr>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>这题可以采用滑动窗口方法来求解。<br>也就是用头尾指针l和r，初始化都是l=r=0，然后向右移动指针r。<br>用变量cnt0记录[l, r]区间内有几个0，用res保存答案。</p>
-<p>如果A[r]=0，那就0的数量cnt0加1。<br>并且0的数量和K判断，如果cnt0 &lt;= K，那就说明[l, r]中间的0不多，可以用至多K次机会填充，那就继续向右移动r。<br>但是如果cnt0 &gt; K，那就说明0的数量太多了，得删掉点0了，这时候就得向右移动l.<br>这时候看情况，如果A[l]=0，就要减小cnt0，直到cnt0 &lt;= K为止，不再移动l。<br>然后继续移动r，重复上面过程即可。过程中时刻更新最长的距离res。</p>
-<p>因为l和r分别最多移动n次，所以最终的时间复杂度是$O(n)$的。</p>
-<p>那么为什么这样是正确的呢？不会漏掉正确答案所在的区间吗？<br>我们看看漏掉的是哪些区间。<br>对于一个固定的r，移动l直到0的数量小于等于K（记为l’）的过程中，漏掉的是[&lt;l, r]和[&gt;l’, r]这些区间。<br>前者0数量太多，不符合题意；后者长度更小，显然不是答案。<br>然后继续右移r，直到第一个0数量大于K的位置，漏掉了[&lt;l, &gt;r]和[&gt;l, &gt;r]区间。<br>前者0的数量一定大于K，为什么呢？因为右端点在r的时候，l已经是最靠左使得0数量小于等于K的位置了，而现在r向右移动了，l更不可能左移了；后者长度更小，不予考虑。<br>综上考虑，最优的区间一定被考虑充分了。</p>
+                <p><img src="https://godweiyang.com/medias/contact.jpg" alt></p>
+<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个由若干 0 和 1 组成的数组 A ，我们最多可以将 K 个值从 0 变成 1 。</p>
+<p>返回仅包含 1 的最长（连续）子数组的长度。</p>
+<p><strong>示例输入1</strong></p>
+<p><code>A = [1,1,1,0,0,0,1,1,1,1,0], K = 2</code></p>
+<p><strong>示例输出1</strong></p>
+<p><code>6</code></p>
+<p><strong>示例解释1</strong></p>
+<p><code>[1,1,1,0,0,1,1,1,1,1,1]</code></p>
+<p>A[5] 和 A[10] 从 0 翻转到 1，最长的子数组长度为 6。</p>
+<p><strong>示例输入2</strong></p>
+<p><code>A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3</code></p>
+<p><strong>示例输出2</strong></p>
+<p><code>10</code></p>
+<p><strong>示例解释2</strong></p>
+<p><code>[0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]</code></p>
+<p>A[4] 、A[5] 和 A[9] 从 0 翻转到 1，最长的子数组长度为 10。</p>
+<p><strong>提示</strong></p>
+<ul>
+<li>1 &lt;= A.length &lt;= 20000</li>
+<li>0 &lt;= K &lt;= A.length</li>
+<li>A[i] 为 0 或 1 </li>
+</ul>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>这题可以采用滑动窗口方法来求解。<br>也就是用头尾指针 l 和 r ，初始化都是 l = r = 0 ，然后向右移动指针 r 。<br>用变量 cnt0 记录 [l, r] 区间内有几个 0 ，用 res 保存答案。</p>
+<p>如果 A[r] = 0 ，那就 0 的数量 cnt0 加 1 。<br>并且 0 的数量和 K 判断，如果 cnt0 &lt;= K ，那就说明 [l, r] 中间的 0 不多，可以用至多 K 次机会填充，那就继续向右移动 r 。<br>但是如果 cnt0 &gt; K ，那就说明 0 的数量太多了，得删掉点 0 了，这时候就得向右移动 l 。<br>这时候看情况，如果 A[l] = 0 ，就要减小 cnt0 ，直到 cnt0 &lt;= K 为止，不再移动 l 。<br>然后继续移动 r ，重复上面过程即可。过程中时刻更新最长的距离 res 。</p>
+<p>因为 l 和 r 分别最多移动 n 次，所以最终的时间复杂度是 $O(n)$ 的。</p>
+<p>那么为什么这样是正确的呢？不会漏掉正确答案所在的区间吗？<br>我们看看漏掉的是哪些区间。<br>对于一个固定的 r ，移动 l 直到 0 的数量小于等于 K （记为 l’ ）的过程中，漏掉的是 [&lt;l, r] 和 [&gt;l’, r] 这些区间。<br>前者 0 数量太多，不符合题意；后者长度更小，显然不是答案。<br>然后继续右移 r ，直到第一个 0 数量大于 K 的位置，漏掉了 [&lt;l, &gt;r] 和 [&gt;l, &gt;r] 区间。<br>前者 0 的数量一定大于 K ，为什么呢？因为右端点在 r 的时候， l 已经是最靠左使得 0 数量小于等于 K 的位置了，而现在 r 向右移动了， l 更不可能左移了；后者长度更小，不予考虑。<br>综上考虑，最优的区间一定被考虑充分了。</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">longestOnes</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">,</span> <span class="token keyword">int</span> K<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -668,7 +680,7 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日一题[LeetCode 1004]最大连续1的个数 III》
+                    《每日算法系列【LeetCode 1004】最大连续1的个数 III》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/09/leetcode-1004/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -1003,20 +1015,20 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="每日一题[LeetCode 1004]最大连续1的个数 III">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1004】最大连续1的个数 III">
                         
-                        <span class="card-title">每日一题[LeetCode 1004]最大连续1的个数 III</span>
+                        <span class="card-title">每日算法系列【LeetCode 1004】最大连续1的个数 III</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-
-题目描述给定一个由若干0和1组成的数组A，我们最多可以将K个值从0变成1。返回仅包含1的最长（连续）子数组的长度。
-示例输入1A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
-示例输出16
-示例解释1[1,1,1,0
+题目描述给定一个由若干 0 和 1 组成的数组 A ，我们最多可以将 K 个值从 0 变成 1 。
+返回仅包含 1 的最长（连续）子数组的长度。
+示例输入1
+A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
+示例输出1
                         
                     </div>
                     <div class="publish-info">
@@ -1062,9 +1074,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="每日一题[LeetCode 315]计算右侧小于当前元素的个数">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="每日算法系列【LeetCode 315】计算右侧小于当前元素的个数">
                         
-                        <span class="card-title">每日一题[LeetCode 315]计算右侧小于当前元素的个数</span>
+                        <span class="card-title">每日算法系列【LeetCode 315】计算右侧小于当前元素的个数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1264,7 +1276,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">146.2k</span>
+            <span class="white-color">146.3k</span>
             
 
             <br>
