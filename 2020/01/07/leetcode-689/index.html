@@ -9,11 +9,8 @@
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-
-闲来无事，为了保证日更，从今天开始每天更新一道LeetCode题解。做题顺序是这样的：随机选择一题“困难”类型的题目。因本人ACM退役颇久，代码多有疏漏，望多多见谅。
-
-
-题目描述给定数组$nums$由正整数组成，找到三个互不重叠的子数">
+题目描述给定数组 $nums$ 由正整数组成，找到三个互不重叠的子数组的最大和。每个子数组的长度为 $k$ ，我们要使这 $3k$ 个项的和最大化。返回每个区间起始索引的列表（索引从 0 开始）。如果有多个结果，返回字典序最小的一个。
+示">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -295,7 +292,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,7 +451,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    993
                 </div>
                 
 
@@ -478,31 +475,36 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="/medias/contact.jpg" alt></p>
-<blockquote>
-<p>闲来无事，为了保证日更，从今天开始每天更新一道LeetCode题解。<br>做题顺序是这样的：随机选择一题“困难”类型的题目。<br>因本人ACM退役颇久，代码多有疏漏，望多多见谅。</p>
-</blockquote>
-<hr>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定数组$nums$由正整数组成，找到三个互不重叠的子数组的最大和。<br>每个子数组的长度为$k$，我们要使这$3k$个项的和最大化。<br>返回每个区间起始索引的列表（索引从 0 开始）。如果有多个结果，返回字典序最小的一个。</p>
-<p><strong>示例输入</strong><br>[1,2,1,2,6,7,5,1], 2</p>
-<p><strong>示例输出</strong><br>[0, 3, 5]</p>
-<p><strong>示例解释</strong><br>子数组 [1, 2], [2, 6], [7, 5] 对应的起始索引为 [0, 3, 5]。<br>我们也可以取 [2, 1], 但是结果 [1, 3, 5] 在字典序上更大。</p>
-<p><strong>提示</strong><br>$nums.length$ 的范围在[1, 20000]之间。<br>$nums[i]$ 的范围在[1, 65535]之间。<br>$k$ 的范围在[1, $floor(nums.legth/3)$ ]之间。</p>
-<hr>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>首先看数据范围，这题不能使用暴力，暴力时间复杂度是$O(n^3)$，一定会超时，所以考虑使用动态规划求解。</p>
-<p>下面考虑一般情况，也就是求解划分成$N$个不重叠数组的最大和。</p>
-<p>假设到第$i$个元素为止，一共已经产生了$j$个不重叠数组，那么令$dp[i][j]$表示这$j$个不重叠数组的最大和。</p>
-<p>然后就要寻找状态转移方程。对于第$i$个元素，分为两种情况，可取可不取。</p>
-<p>如果取，那就说明$nums[i]$是第$j$个子数组的最后一个元素，那么转移方程为：</p>
-<p>\[<br>    dp[i][j] = dp[i-k][j-1] + nums_{i-k+1:i}<br>\]</p>
-<p>也就是说，从$i-k+1$到$i$，这$k$个元素构成了第$j$个子数组，那我们只需要求到第$i-k$个元素为止，产生$j-1$个不重叠数组的最大和即可。</p>
-<p>如果不取，那问题就变成了求到第$i-1$个元素为止，产生$j$个不重叠数组的最大和，那么转移方程为：</p>
-<p>\[<br>    dp[i][j] = dp[i-1][j]<br>\]</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定数组 $nums$ 由正整数组成，找到三个互不重叠的子数组的最大和。<br>每个子数组的长度为 $k$ ，我们要使这 $3k$ 个项的和最大化。<br>返回每个区间起始索引的列表（索引从 0 开始）。如果有多个结果，返回字典序最小的一个。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+[1,2,1,2,6,7,5,1], 2
+输出：
+[0, 3, 5]
+解释：
+子数组 [1, 2], [2, 6], [7, 5] 对应的起始索引为 [0, 3, 5]。
+我们也可以取 [2, 1], 但是结果 [1, 3, 5] 在字典序上更大。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>$nums.length$ 的范围在[1, 20000]之间。</li>
+<li>$nums[i]$ 的范围在[1, 65535]之间。</li>
+<li>$k$ 的范围在 [1, floor(nums.legth / 3)]之间。</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>首先看数据范围，这题不能使用暴力，暴力时间复杂度是 $O(n^3)$ ，一定会超时，所以考虑使用动态规划求解。</p>
+<p>下面考虑一般情况，也就是求解划分成 $N$ 个不重叠数组的最大和。</p>
+<p>假设到第 $i$ 个元素为止，一共已经产生了 $j$ 个不重叠数组，那么令 $dp[i][j]$ 表示这$j$个不重叠数组的最大和。</p>
+<p>然后就要寻找状态转移方程。对于第 $i$ 个元素，分为两种情况，可取可不取。</p>
+<p>如果取，那就说明 $nums[i]$ 是第 $j$ 个子数组的最后一个元素，那么转移方程为：</p>
+<p>$$<br>    dp[i][j] = dp[i-k][j-1] + nums_{i-k+1:i}<br>$$</p>
+<p>也就是说，从 $i-k+1$ 到 $i$ ，这 $k$ 个元素构成了第 $j$ 个子数组，那我们只需要求到第 $i-k$ 个元素为止，产生 $j-1$ 个不重叠数组的最大和即可。</p>
+<p>如果不取，那问题就变成了求到第 $i-1$ 个元素为止，产生 $j$ 个不重叠数组的最大和，那么转移方程为：</p>
+<p>$$<br>    dp[i][j] = dp[i-1][j]<br>$$</p>
 <p>当然这题还需要你还原出最大和的情况下，所有子数组的起始元素下标，所以需要另外用一个数组保存一下每一步的最优下标。</p>
-<p>同样，假设到第$i$个元素为止，一共已经产生了$j$个不重叠数组，用$path[i][j]$表示第$j$个子数组的末尾元素下标。</p>
-<p>那么按照上面的推断，如果取第$i$个元素，那么$path[i][j]=i$；否则的话$path[i][j]=path[i-1][j]$。</p>
-<p>最后就是根据$path$数组还原答案了。</p>
-<p>首先最后一个子数组的末尾元素下标一定是$idx=path[len-1][N]$，那么它的起始元素下标就是$idx-k+1$，然后前一个子数组末尾元素下标就是$idx=path[idx-k][N-1]$，依次下去，直到第一个子数组被求解完毕。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<p>同样，假设到第 $i$ 个元素为止，一共已经产生了 $j$ 个不重叠数组，用 $path[i][j]$ 表示第 $j$ 个子数组的末尾元素下标。</p>
+<p>那么按照上面的推断，如果取第 $i$ 个元素，那么 $path[i][j]=i$ ；否则的话 $path[i][j]=path[i-1][j]$ 。</p>
+<p>最后就是根据 $path$ 数组还原答案了。</p>
+<p>首先最后一个子数组的末尾元素下标一定是 $idx=path[len-1][N]$ ，那么它的起始元素下标就是 $idx-k+1$ ，然后前一个子数组末尾元素下标就是 $idx=path[idx-k][N-1]$ ，依次下去，直到第一个子数组被求解完毕。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">maxSumOfThreeSubarrays</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">int</span> len <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> N <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
@@ -543,7 +545,7 @@
         <span class="token keyword">return</span> res<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p><img src="1.jpg" alt></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p><img src="1.jpg" alt></p>
 <p>可以看到，时间和空间还有提升的余地。想到的可能优化方法是类似于0-1背包那样，去掉动态规划数组的第二个维度，来优化空间复杂度。</p>
 <p>但是这是有些问题的，暂时并没有想到不增加时间复杂度下减少空间开销的方法，欢迎大家提出自己的想法。</p>
 
@@ -1038,7 +1040,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="分享一些自用软件，学妹们用了都说好用！">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分享一些自用软件，学妹们用了都说好用！">
                         
                         <span class="card-title">分享一些自用软件，学妹们用了都说好用！</span>
                     </div>
@@ -1092,7 +1094,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="论文赏析[EMNLP19]如何在Transformer中融入句法树信息？这里给出了一种解决方案">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="论文赏析[EMNLP19]如何在Transformer中融入句法树信息？这里给出了一种解决方案">
                         
                         <span class="card-title">论文赏析[EMNLP19]如何在Transformer中融入句法树信息？这里给出了一种解决方案</span>
                     </div>
@@ -1303,7 +1305,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">146.9k</span>
+            <span class="white-color">148.3k</span>
             
 
             <br>

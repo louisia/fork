@@ -295,7 +295,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -478,7 +478,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="https://godweiyang.com/medias/contact.jpg" alt></p>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给你一个正整数的数组 A（其中的元素不一定完全不同），请你返回可在 一次交换（交换两数字 A[i] 和 A[j] 的位置）后得到的、按字典序排列小于 A 的最大可能排列。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个正整数的数组 A（其中的元素不一定完全不同），请你返回可在 一次交换（交换两数字 A[i] 和 A[j] 的位置）后得到的、按字典序排列小于 A 的最大可能排列。</p>
 <p>如果无法这么操作，就请返回原数组。</p>
 <p><strong>示例1</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
@@ -513,7 +513,7 @@
 <li>1 &lt;= A.length &lt;= 10000</li>
 <li>1 &lt;= A[i] &lt;= 10000</li>
 </ul>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>这题主要出发点有以下几点：</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题主要出发点有以下几点：</p>
 <ul>
 <li>首先要求交换后的字典序变小，那么一定要<strong>大的和小的交换，并且大的在前</strong>。</li>
 <li>其次要求交换后的字典序尽量大，那么在满足第一点的情况下，<strong>大的元素要尽量靠后</strong>。</li>
@@ -522,7 +522,7 @@
 <p>满足这几点条件，也就是要从最右边开始往左寻找，找到<strong>第一个上升</strong>的数字 A[i]（从左往右看是下降，即 A[i] &gt; A[i+1]）。<br>这一点只为了保证上面的条件1，也就是 A[i] 右边存在比它小的元素。</p>
 <p>然后在 A[i+1] 到 A[n-1] 之间所有比 A[i] 小的数字中找最大的那个就行了。如果最大的有多个相同的，取最左边的一个。</p>
 <p>因为 A[i+1] 到 A[n-1] 子数组是单调递增的，所以不用全部遍历一遍，只需要从最右边开始往左找到第一个比 A[i] 小的数就行了。<br>然后从这个数开始，继续往左找和它相等的数，直到最左边一个相等的数 ，就是答案了。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">prevPermOpt1</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -545,7 +545,7 @@
         <span class="token keyword">return</span> A<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>最后不管是用时还是空间消耗都超越了100%的用户：<br><img src="1.png" alt="运行结果"></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>最后不管是用时还是空间消耗都超越了100%的用户：<br><img src="1.png" alt="运行结果"></p>
 
             </div>
             <hr />
@@ -1034,24 +1034,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/09/leetcode-1004/">
+                <a href="/2020/01/09/emnlp19-palm/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1004】最大连续1的个数 III">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="论文赏析【EMNLP19】语言模型效果不好？也许你可以给它添加一点句法信息">
                         
-                        <span class="card-title">每日算法系列【LeetCode 1004】最大连续1的个数 III</span>
+                        <span class="card-title">论文赏析【EMNLP19】语言模型效果不好？也许你可以给它添加一点句法信息</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-题目描述给定一个由若干 0 和 1 组成的数组 A ，我们最多可以将 K 个值从 0 变成 1 。
-返回仅包含 1 的最长（连续）子数组的长度。
-示例输入1
-A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
-示例输出1
+                            论文地址PaLM: A Hybrid Parser and Language Model
+介绍本文介绍了如何将一个句法分析器融入到神经网络语言模型中，这样在利用了句法信息增强语言模型效果的同时，还可以去掉句法上的监督信号，用来无监督地生成句
                         
                     </div>
                     <div class="publish-info">
@@ -1062,8 +1058,8 @@ A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
-                                    编程技巧
+                            <a href="/categories/深度学习/" class="post-category" target="_blank">
+                                    深度学习
                                 </a>
                             
                             
@@ -1073,12 +1069,24 @@ A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/算法/" target="_blank">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/自然语言处理/" target="_blank">
+                        <span class="chip bg-color">自然语言处理</span>
                     </a>
                     
-                    <a href="/tags/leetcode/" target="_blank">
-                        <span class="chip bg-color">leetcode</span>
+                    <a href="/tags/神经网络/" target="_blank">
+                        <span class="chip bg-color">神经网络</span>
+                    </a>
+                    
+                    <a href="/tags/深度学习/" target="_blank">
+                        <span class="chip bg-color">深度学习</span>
+                    </a>
+                    
+                    <a href="/tags/EMNLP/" target="_blank">
+                        <span class="chip bg-color">EMNLP</span>
+                    </a>
+                    
+                    <a href="/tags/语言模型/" target="_blank">
+                        <span class="chip bg-color">语言模型</span>
                     </a>
                     
                 </div>
@@ -1096,7 +1104,7 @@ A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="每日算法系列【LeetCode 315】计算右侧小于当前元素的个数">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="每日算法系列【LeetCode 315】计算右侧小于当前元素的个数">
                         
                         <span class="card-title">每日算法系列【LeetCode 315】计算右侧小于当前元素的个数</span>
                     </div>
@@ -1105,11 +1113,12 @@ A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
                     <div class="summary block-with-text">
                         
                             
+题目描述给定一个整数数组 nums ，按要求返回一个新数组 counts 。数组 counts 有该性质： counts[i] 的值是 nums[i] 右侧小于 nums[i] 的元素的数量。
+示例1
+输入：
+[5,2,6,1]
+输出：
 
-发现leetcode的困难难度做起来还是需要点时间的（还是我太菜了），而且可能大多数人也不能接受，所以明天开始穿插做中等难度题目。
-
-
-题目描述给定一个整数数组nums，按要求返回一个新数组counts。数组counts有该性质：cou
                         
                     </div>
                     <div class="publish-info">
@@ -1298,7 +1307,7 @@ A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">146.9k</span>
+            <span class="white-color">148.3k</span>
             
 
             <br>
