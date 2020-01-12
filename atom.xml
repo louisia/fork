@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-01-11T12:03:21.071Z</updated>
+  <updated>2020-01-12T09:35:16.245Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>每日算法系列【LeetCode 357】计算各个位数不同的数字个数</title>
+    <link href="https://godweiyang.com/2020/01/12/leetcode-357/"/>
+    <id>https://godweiyang.com/2020/01/12/leetcode-357/</id>
+    <published>2020-01-12T08:42:08.000Z</published>
+    <updated>2020-01-12T09:35:16.245Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;给定一个非负整数 n
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>每日算法系列【LeetCode 992】K个不同整数的子数组</title>
     <link href="https://godweiyang.com/2020/01/11/leetcode-992/"/>
     <id>https://godweiyang.com/2020/01/11/leetcode-992/</id>
     <published>2020-01-11T05:30:22.000Z</published>
-    <updated>2020-01-11T12:03:21.071Z</updated>
+    <updated>2020-01-12T08:51:14.640Z</updated>
     
     <summary type="html">
     
@@ -603,34 +632,6 @@
       <category term="句法分析" scheme="https://godweiyang.com/tags/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
     
       <category term="NAACL" scheme="https://godweiyang.com/tags/NAACL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法编程小白机试指南（大佬勿进）</title>
-    <link href="https://godweiyang.com/2019/07/12/algorithm-code-tricks/"/>
-    <id>https://godweiyang.com/2019/07/12/algorithm-code-tricks/</id>
-    <published>2019-07-12T06:26:27.000Z</published>
-    <updated>2020-01-07T10:28:28.998Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="机试" scheme="https://godweiyang.com/tags/%E6%9C%BA%E8%AF%95/"/>
     
   </entry>
   
