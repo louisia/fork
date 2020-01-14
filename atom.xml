@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-01-13T16:09:51.249Z</updated>
+  <updated>2020-01-14T07:27:31.788Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>5w2h-godweiyang</title>
+    <link href="https://godweiyang.com/2020/01/14/5w2h-godweiyang/"/>
+    <id>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</id>
+    <published>2020-01-14T07:27:31.000Z</published>
+    <updated>2020-01-14T07:27:31.788Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>每日算法系列【LeetCode 124】二叉树中的最大路径和</title>
@@ -597,35 +611,6 @@
       <category term="句法分析" scheme="https://godweiyang.com/tags/%E5%8F%A5%E6%B3%95%E5%88%86%E6%9E%90/"/>
     
       <category term="TACL" scheme="https://godweiyang.com/tags/TACL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python生成词云教程（附带QQ聊天记录生成词云实战）</title>
-    <link href="https://godweiyang.com/2019/07/27/wordcloud/"/>
-    <id>https://godweiyang.com/2019/07/27/wordcloud/</id>
-    <published>2019-07-27T14:39:05.000Z</published>
-    <updated>2020-01-07T10:28:29.751Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;很多同学对词云很感兴趣，就是给一段文本，然后根据它的词频，生成出好看的词云，就像下面这张图一样：&lt;br&gt;&lt;img src=&quot;1.png&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="计算机知识" scheme="https://godweiyang.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
-      <category term="词云" scheme="https://godweiyang.com/tags/%E8%AF%8D%E4%BA%91/"/>
     
   </entry>
   
