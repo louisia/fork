@@ -4,15 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="具体数学-第6课（下降阶乘幂）, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
+    <meta name="keywords" content="每日算法系列【LeetCode 1031】两个非重叠子数组的最大和, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-上节课讲到下降阶乘幂和差分运算，这节课继续讲它和差分的各种性质。
-性质1
-首先在后面章节会证明，${(x + y)^{\underline{m}}}$的二项展开形式和普通的${(x + y)^m}$是一样的，这里提一下，暂时用不到。
-性质">
+题目描述给出非负整数数组 A ，返回两个非重叠（连续）子数组中元素的最大和，子数组的长度分别为 L 和 M。（这里需要澄清的是，长为 L 的子数组可以出现在长为 M 的子数组之前或之后。）
+示例1
+输入：
+A = [0,6,5,2,2,5">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>具体数学-第6课（下降阶乘幂） | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 1031】两个非重叠子数组的最大和 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -294,13 +294,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        具体数学-第6课（下降阶乘幂）
+                        每日算法系列【LeetCode 1031】两个非重叠子数组的最大和
                     </div>
                 </div>
             </div>
@@ -411,8 +411,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/具体数学/" target="_blank">
-                            <span class="chip bg-color">具体数学</span>
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
                         </a>
                         
                     </div>
@@ -423,8 +427,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/数学/" class="post-category" target="_blank">
-                            数学
+                        <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                            编程技巧
                         </a>
                         
                     </div>
@@ -435,7 +439,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-04-02
+                    2020-01-15
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -449,14 +453,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    5 分
                 </div>
                 
                 
@@ -473,41 +477,125 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="/medias/contact.jpg" alt></p>
-<p>上节课讲到下降阶乘幂和差分运算，这节课继续讲它和差分的各种性质。</p>
-<h1 id="性质1"><a href="#性质1" class="headerlink" title="性质1"></a>性质1</h1><hr>
-<p>首先在后面章节会证明，${(x + y)^{\underline{m}}}$的二项展开形式和普通的${(x + y)^m}$是一样的，这里提一下，暂时用不到。</p>
-<h1 id="性质2"><a href="#性质2" class="headerlink" title="性质2"></a>性质2</h1><hr>
-<p>接下来给出下降阶乘幂为负数的定义：<br>\[{x^{ \underline{- m}}} = \frac{1}{ {(x + 1)(x + 2) \ldots (x + m)}}\]</p>
-<h1 id="性质3"><a href="#性质3" class="headerlink" title="性质3"></a>性质3</h1><hr>
-<p>和普通幂${x^{m + n}} = {x^m}{x^n}$不同，下降阶乘幂有如下性质：<br>\[{x^{\underline{m + n}}} = {x^{\underline{m}}}{(x - m)^{\underline{n}}}\]</p>
-<h1 id="性质4"><a href="#性质4" class="headerlink" title="性质4"></a>性质4</h1><hr>
-<p>上一节课说到，定义下降阶乘幂的好处就是为了求差分方便，下降阶乘幂的差分为：<br>\[\Delta ({x^{\underline{m}}}) = m{x^{\underline{ {m - 1}}}}\]<br>反之，类比不定积分，它的不定和为：<br>\[\sum\nolimits_a^b { {x^{\underline{m}}}\delta x}  = \left. {\frac{ { {x^{\underline{m + 1}}}}}{ {m + 1}}} \right|_a^b\]</p>
-<p>但是这里$m \ne  - 1$，那要是$m =  - 1$怎么办呢？<br>直接运用差分定义可以求出<br>\[\begin{array}{l}{x^{ \underline{- 1}}} = \frac{1}{ {x + 1}} = \Delta f(x) = f(x + 1) - f(x)\\ \Rightarrow f(x) = {H_x}\end{array}\]</p>
-<p>所以<br>\[\sum\nolimits_a^b { {x^{\underline{m}}}\delta x}  = \left\{ {\begin{array}{*{20}{c}}{\left. {\frac{ { {x^{\underline{m + 1}}}}}{ {m + 1}}} \right|_a^b,m \ne  - 1}\\{\left. { {H_x}} \right|_a^b,m =  - 1}\end{array}} \right.\]</p>
-<h1 id="性质5"><a href="#性质5" class="headerlink" title="性质5"></a>性质5</h1><hr>
-<p>在微积分里面，$e^x$的导数是它自身。那么什么函数的差分是自身呢？<br>通过定义可以很容易算出来：<br>\[\begin{array}{l}f(x + 1) - f(x) = f(x)\\ \Rightarrow f(x + 1) = 2f(x)\\ \Rightarrow f(x) = {2^x}\end{array}\]</p>
-<p>进一步推广可以得到：<br>\[\Delta ({c^x}) = {c^{x + 1}} - {c^x} = (c - 1){c^x}\]<br>所以得到如下一种新的等比数列计算方式：<br>\[\sum\limits_{a \le k &lt; b} { {c^k}}  = \sum\nolimits_a^b { {c^x}\delta x}  = \left. {\frac{ { {c^x}}}{ {c - 1}}} \right|_a^b = \frac{ { {c^b} - {c^a}}}{ {c - 1}}\]</p>
-<h1 id="性质6"><a href="#性质6" class="headerlink" title="性质6"></a>性质6</h1><hr>
-<p>结合律和分配律在差分运算里也适用。<br>\[\begin{array}{l}\Delta (cf) = c\Delta (f)\\\Delta (f + g) = \Delta (f) + \Delta (g)\end{array}\]</p>
-<h1 id="性质7"><a href="#性质7" class="headerlink" title="性质7"></a>性质7</h1><hr>
-<p>类似分部积分，这里也可以分部来求差分。<br>\[\begin{array}{l}\Delta (u(x)v(x)) = u(x + 1)v(x + 1) - u(x)v(x)\\ = u(x + 1)v(x + 1) - u(x)v(x + 1) + u(x)v(x + 1) - u(x)v(x)\\ = [u(x + 1) - u(x)]v(x + 1) + u(x)[v(x + 1) - v(x)]\\ = u(x)\Delta (v(x)) + v(x + 1)\Delta (u(x))\end{array}\]<br>这里给出一个新的记号叫做移位运算：<br>\[Ef(x) = f(x + 1)\]<br>所以就得到了差分的分部运算法则：<br>\[\Delta (uv) = u\Delta (v) + Ev\Delta (u)\]<br>对两边求和，又可以得到不定求和的分部运算法则：<br>\[\sum {u\Delta (v)}  = uv - \sum {Ev\Delta (u)} \]</p>
-<p>这个分部法则非常有用，下面举两个例子来说明一下怎么用。</p>
-<h2 id="例1"><a href="#例1" class="headerlink" title="例1"></a>例1</h2><p>一道老题，计算：<br>\[\sum\limits_{k = 0}^n {k{2^k}} \]<br>首先计算<br>\[\sum {x{2^x}\delta x} \]<br>在这里可以令<br>\[u = x,v = {2^x}\]<br>所以<br>\[\sum {x{2^x}\delta x}  = x{2^x} - \sum { {2^{x + 1}}\delta x}  = x{2^x} - {2^{x + 1}} + C\]<br>那么求和式就可以转化为不定求和来算了：<br>\[\begin{array}{l}\sum\limits_{k = 0}^n {k{2^k}}  = \sum\nolimits_0^{n + 1} {x{2^x}\delta x} \\ = \left. {x{2^x} - {2^{x + 1}}} \right|_0^{n + 1}\\ = (n - 1){2^{n + 1}} + 2\end{array}\]</p>
-<h2 id="例2"><a href="#例2" class="headerlink" title="例2"></a>例2</h2><p>计算<br>\[\sum\limits_{0 \le k &lt; n} {k{H_k}} \]<br>首先计算<br>\[\sum {x{H_x}\delta x} \]<br>这里注意要令<br>\[u = {H_x},\Delta v = x\]<br>不能倒过来哦，因为$H_x$的不定和很难求出来的。所以<br>\[\begin{array}{l}\sum {x{H_x}\delta x}  = \frac{ { {x^{\underline{2}}}}}{2}{H_x} - \sum {\frac{ { { {(x + 1)}^{\underline{2}}}}}{2}} {x^{ \underline{- 1}}}\delta x\\ = \frac{ { {x^{\underline{2}}}}}{2}{H_x} - \frac{1}{2}\sum { {x^{\underline{1}}}\delta x} \\ = \frac{ { {x^{\underline{2}}}}}{2}{H_x} - \frac{ { {x^{\underline{2}}}}}{4} + C\end{array}\]</p>
-<p>所以<br>\[\sum\limits_{0 \le k &lt; n} {k{H_k}}  = \sum\nolimits_0^n {x{H_x}\delta x}  = \frac{ { {n^{\underline{2}}}}}{2}({H_n} - \frac{1}{2})\]</p>
-<h1 id="无限求和"><a href="#无限求和" class="headerlink" title="无限求和"></a>无限求和</h1><hr>
-<p>回顾一下以前我们是怎么计算下面求和式的。<br>\[S = {\rm{1}} + \frac{1}{2} + \frac{1}{4} +  \cdots \]<br>首先两边同时乘2，得到：<br>\[2S = 2 + {\rm{1}} + \frac{1}{2} + \frac{1}{4} +  \cdots  = 2 + S\]<br>解出<br>\[S = 2\]</p>
-<p>那么可不可以用同样的方法计算下面式子呢？<br>\[T = 1 + 2 + 4 + 8 +  \cdots \]<br>两边同时乘2，得到：<br>\[2T = 2 + 4 + 8 +  \cdots  = T - 1\]<br>解出<br>\[T = -1\]<br>显然不可能，因为这里的$T$是发散的，所以不能这么求。那么如何用一般的方法来求解呢？</p>
-<p>首先我们只考虑正数求和，求解$\sum\limits_{k \in K} { {a_k}} $，其中$K$是一个无限集合。<br>那么，如果存在$A$，使得对任意$F \subset K$，都有<br>\[\sum\limits_{k \in F} { {a_k}}  \le A\]<br>那么我们说这个最小的$A$就是$\sum\limits_{k \in K} { {a_k}} $的结果。<br>如果不存在这么一个$A$，那么这个求和式就是发散的，即结果为正无穷。</p>
-<p>一般使用中，对于$K = N$，我们可以令$F = \{ 0,1,2, \ldots ,n\} $<br>所以<br>\[\sum\limits_{k \ge 0} { {a_k}}  = \mathop {\lim }\limits_{n \to \infty } \sum\limits_{k = 0}^n { {a_k}} \]</p>
-<p>举两个例子，比如<br>\[\sum\limits_{k \ge 0} { {x^k}}  = \mathop {\lim }\limits_{n \to \infty } \frac{ {1 - {x^{n + 1}}}}{ {1 - x}} = \left\{ {\begin{array}{*{20}{c}}{\frac{1}{ {1 - x}},0 \le x &lt; 1}\\{\infty ,x \ge 1}\end{array}} \right.\]<br>再如：<br>\[\sum\limits_{k \ge 0} {\frac{1}{ {(k + 1)(k + 2)}}}  = \sum\limits_{k \ge 0} { {k^{ \underline{- 2}}}}  = \mathop {\lim }\limits_{n \to \infty } \sum\limits_{k = 0}^n { {k^{ \underline{- 2}}}}  = \mathop {\lim }\limits_{n \to \infty } \left. {\frac{ { {k^{ \underline{- 1}}}}}{ { - 1}}} \right|_0^{n + 1} = 1\]</p>
-<p>剩下的问题就是如何求有正有负的和式？</p>
-<p>可以考虑的方案就是用不同的配对，将正负组合在一起，从而相消求和。</p>
-<p>但是不同的组合方式会得到不同的答案。就比如：<br>\[\sum\limits_{k \ge 0} { { {( - 1)}^k}}  = 1 - 1 + 1 - 1 +  \cdots \]<br>有两种组合方式：<br>\[(1 - 1) + (1 - 1) +  \cdots  = 0\]<br>和<br>\[1 - (1 - 1) - (1 - 1) -  \cdots  = 1\]<br>得到了两种不同的结果。</p>
-<p>事实上，我们可以将正数和负数分开求和，因为正数求和我们已经解决了，所以我们定义：<br>\[x = {x^ + } - {x^ - }\]<br>其中<br>\[{x^ + } = x \cdot [x &gt; 0],{x^ - } =  - x \cdot [x &lt; 0]\]</p>
-<p>所以求和式可以分成两部分分别求和：<br>\[\sum\limits_{k \in K} { {a_k}}  = \sum\limits_{k \in K} { {a_k}^ + }  - \sum\limits_{k \in K} { {a_k}^ - } \]</p>
-<p>最后推广到二重求和：<br>\[\sum\limits_{j \in J,k \in {K_j}} { {a_{j,k}}}  = \sum\limits_{j \in J} {\sum\limits_{k \in {K_j}} { {a_{j,k}}} }  = \sum\limits_{j \in J} { {A_j}}  = A\]</p>
-<p>这里也没啥好细说的，就先了解了解吧。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出非负整数数组 A ，返回两个非重叠（连续）子数组中元素的最大和，子数组的长度分别为 L 和 M。（这里需要澄清的是，长为 L 的子数组可以出现在长为 M 的子数组之前或之后。）</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+A = [0,6,5,2,2,5,1,9,4], L = 1, M = 2
+输出：
+20
+解释：
+子数组的一种选择中，[9] 长度为 1，[6,5] 长度为 2。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>示例2</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+A = [3,8,1,3,2,1,8,9,0], L = 3, M = 2
+输出：
+29
+解释：
+子数组的一种选择中，[3,8,1] 长度为 3，[8,9] 长度为 2。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>示例3</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
+输出：
+31
+解释：
+子数组的一种选择中，[5,6,0,9] 长度为 4，[0,3,8] 长度为 3。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>L &gt;= 1</li>
+<li>M &gt;= 1</li>
+<li>L + M &lt;= A.length &lt;= 1000</li>
+<li>0 &lt;= A[i] &lt;= 1000</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题意思就是找到两段给定长度的、不重合的、连续的区间，使得两段区间和最大。</p>
+<p>因为长度是给定的，所以我们只需要预处理好前缀和 sum ，然后给定区间右端点，就可以直接算出区间和。<br>那么如果枚举两段区间的右端点，时间复杂度也才 $O(n^2)$ ，极限情况下也就 1e6 左右，貌似也还可以接受。</p>
+<p>那有没有更快的方法呢？试试动态规划！因为两段区间有前后顺序，我们不妨假设长度为 L 的区间在后面。<br>用 dpm[i] 表示前 i 个数中长度为 M 的区间和的最大值。<br>那么 dpm[i] = max{dpm[i-1], sum[i] - sum[i-M]} ，也就是要么取最后 M 个数，要么最后一个数不取，在前 i - 1 个数里面找答案。<br>然后 dpm 全部处理完之后，遍历数组，假设长度为 L 的区间以 A[i] 结束，那么我们只需要在 A[0] 到 A[i-L] 中间找长度为 M 的区间最大和就行了，那答案不就是上面求好的 dpm[i-L] 吗？这样最终时间复杂度就是 $O(n)$ 了。</p>
+<p>结束了吗？并没有！空间还能不能优化呢？其实当我们遍历长度为 L 的区间时，长度为 M 的区间不用每次都重新遍历，可以重复利用之前的结果，每次向右移动直到和长度为 L 的区间衔接上为止。这样就等于用了两个指针，分别指向了两个区间的右端点，总共最多移动 2n 次就行了。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="动态规划（c-）"><a href="#动态规划（c-）" class="headerlink" title="动态规划（c++）"></a>动态规划（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> dpl<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> dpm<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">,</span> <span class="token keyword">int</span> L<span class="token punctuation">,</span> <span class="token keyword">int</span> M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>dpl<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> dpl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>dpm<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> dpm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sum<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        dpl<span class="token punctuation">[</span>L<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>L<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        dpm<span class="token punctuation">[</span>M<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>M<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">>=</span> L<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dpl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">+</span> dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">>=</span> M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dpm<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">+</span> dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="动态规划（python）"><a href="#动态规划（python）" class="headerlink" title="动态规划（python）"></a>动态规划（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> A<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> L<span class="token punctuation">:</span> int<span class="token punctuation">,</span> M<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        N <span class="token operator">=</span> <span class="token number">1010</span>
+        dpl <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
+        dpm <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
+        sum <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>A<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        dpl<span class="token punctuation">[</span>L<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>L<span class="token punctuation">]</span>
+        dpm<span class="token punctuation">[</span>M<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>M<span class="token punctuation">]</span>
+        res <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> i <span class="token operator">>=</span> L<span class="token punctuation">:</span>
+                dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> max<span class="token punctuation">(</span>dpl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">+</span> dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> i <span class="token operator">>=</span> M<span class="token punctuation">:</span>
+                dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> max<span class="token punctuation">(</span>dpm<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">+</span> dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="指针法（c-）"><a href="#指针法（c-）" class="headerlink" title="指针法（c++）"></a>指针法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> sum<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">,</span> <span class="token keyword">int</span> L<span class="token punctuation">,</span> <span class="token keyword">int</span> M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        sum<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> lmax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mmax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> L<span class="token operator">+</span>M<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            lmax <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>lmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            mmax <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>mmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> lmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> mmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="指针法（python）"><a href="#指针法（python）" class="headerlink" title="指针法（python）"></a>指针法（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> A<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> L<span class="token punctuation">:</span> int<span class="token punctuation">,</span> M<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        N <span class="token operator">=</span> <span class="token number">1010</span>
+        sum <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>A<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        lmax <span class="token operator">=</span> mmax <span class="token operator">=</span> res <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>L<span class="token operator">+</span>M<span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            lmax <span class="token operator">=</span> max<span class="token punctuation">(</span>lmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            mmax <span class="token operator">=</span> max<span class="token punctuation">(</span>mmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> lmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> mmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>思考问题要从简单往困难思考，先想想暴力怎么做？再想想怎么优化它。就算做出来了，也不要拘泥于一种解法，还有代码上能否优化？变量、写法上能否更优美一点？</p>
+<p>当然很熟练了之后这些都不用考虑了，上来像我一样直接一步到位就行了，嘻嘻。</p>
 
             </div>
             <hr />
@@ -666,9 +754,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《具体数学-第6课（下降阶乘幂）》
+                    《每日算法系列【LeetCode 1031】两个非重叠子数组的最大和》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/04/02/concrete-math-6/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/15/leetcode-1031/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -709,7 +797,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2018/04/02/concrete-math-6/',
+        id: '2020/01/15/leetcode-1031/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -992,50 +1080,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/04/09/concrete-math-7/">
+                <a href="/2020/01/15/leetcode-1031/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="具体数学-第7课（取整基础）">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1031】两个非重叠子数组的最大和">
                         
-                        <span class="card-title">具体数学-第7课（取整基础）</span>
+                        <span class="card-title">每日算法系列【LeetCode 1031】两个非重叠子数组的最大和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-首先声明一下，最近这段时间忙毕设，没时间更新博客了，大家见谅。
-今天这节课开始讲解取整相关知识，主要是数论相关的了。
-符号定义
-向下取整函数$\left\lfloor x \right\rfloor $定义为小于等于$x$的最大整数。向上
+题目描述给出非负整数数组 A ，返回两个非重叠（连续）子数组中元素的最大和，子数组的长度分别为 L 和 M。（这里需要澄清的是，长为 L 的子数组可以出现在长为 M 的子数组之前或之后。）
+示例1
+输入：
+A = [0,6,5,2,2,5
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-04-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数学/" class="post-category" target="_blank">
-                                    数学
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/具体数学/" target="_blank">
-                        <span class="chip bg-color">具体数学</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
@@ -1049,32 +1143,32 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/03/26/concrete-math-5/">
+                <a href="/2020/01/15/leetcode-330/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="具体数学-第5课（8种方法求和）">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="每日算法系列【LeetCode 330】按要求补齐数组">
                         
-                        <span class="card-title">具体数学-第5课（8种方法求和）</span>
+                        <span class="card-title">每日算法系列【LeetCode 330】按要求补齐数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-今天继续讲求和的方法。针对以下求和式，我们用8种方法来求解：\[{S_n} = \sum\limits_{0 \le k \le n} { {k^2}} \]大家应该都已经背上了它的答案：\[{S_n} = \frac{ {n(n + 1
+题目描述给定一个已排序的正整数数组 nums ，和一个正整数 n 。从 [1, n] 区间内选取任意个数字补充到 nums 中，使得 [1, n] 区间内的任何数字都可以用 nums 中某几个数字的和来表示。请输出满足上述要求的最少需要补
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-26
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数学/" class="post-category" target="_blank">
-                                    数学
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
@@ -1084,8 +1178,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/具体数学/" target="_blank">
-                        <span class="chip bg-color">具体数学</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
