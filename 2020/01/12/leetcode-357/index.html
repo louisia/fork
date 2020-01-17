@@ -298,7 +298,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -505,13 +505,13 @@
        <span class="token keyword">return</span> res <span class="token operator">*</span> <span class="token number">9</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="方法1（python）"><a href="#方法1（python）" class="headerlink" title="方法1（python）"></a>方法1（python）</h3><pre class="line-numbers language-py"><code class="language-py">class Solution:
-    def countNumbersWithUniqueDigits(self, n: int) -> int:
-        fact = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]
-        res = 0
-        for i in range(10-n, 10):
-            res += int(fact[9] / fact[i])
-        return res * 9 + 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="方法1（python）"><a href="#方法1（python）" class="headerlink" title="方法1（python）"></a>方法1（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">countNumbersWithUniqueDigits</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        fact <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">,</span> <span class="token number">720</span><span class="token punctuation">,</span> <span class="token number">5040</span><span class="token punctuation">,</span> <span class="token number">40320</span><span class="token punctuation">,</span> <span class="token number">362880</span><span class="token punctuation">]</span>
+        res <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">-</span>n<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            res <span class="token operator">+=</span> int<span class="token punctuation">(</span>fact<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">/</span> fact<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> res <span class="token operator">*</span> <span class="token number">9</span> <span class="token operator">+</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="方法2（c-）"><a href="#方法2（c-）" class="headerlink" title="方法2（c++）"></a>方法2（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">countNumbersWithUniqueDigits</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -519,10 +519,10 @@
        <span class="token keyword">return</span> res<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="方法2（python）"><a href="#方法2（python）" class="headerlink" title="方法2（python）"></a>方法2（python）</h3><pre class="line-numbers language-py"><code class="language-py">class Solution:
-    def countNumbersWithUniqueDigits(self, n: int) -> int:
-        res = [1, 10, 91, 739, 5275, 32491, 168571, 712891, 2345851, 5611771]
-        return res[n]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="方法2（python）"><a href="#方法2（python）" class="headerlink" title="方法2（python）"></a>方法2（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">countNumbersWithUniqueDigits</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">91</span><span class="token punctuation">,</span> <span class="token number">739</span><span class="token punctuation">,</span> <span class="token number">5275</span><span class="token punctuation">,</span> <span class="token number">32491</span><span class="token punctuation">,</span> <span class="token number">168571</span><span class="token punctuation">,</span> <span class="token number">712891</span><span class="token punctuation">,</span> <span class="token number">2345851</span><span class="token punctuation">,</span> <span class="token number">5611771</span><span class="token punctuation">]</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这题还可以用递归、解出和式的通式等方法求解，本质上没有太大区别。</p>
 
             </div>
@@ -1016,7 +1016,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="每日算法系列【LeetCode 124】二叉树中的最大路径和">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="每日算法系列【LeetCode 124】二叉树中的最大路径和">
                         
                         <span class="card-title">每日算法系列【LeetCode 124】二叉树中的最大路径和</span>
                     </div>
@@ -1078,7 +1078,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="每日算法系列【LeetCode 992】K个不同整数的子数组">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="每日算法系列【LeetCode 992】K个不同整数的子数组">
                         
                         <span class="card-title">每日算法系列【LeetCode 992】K个不同整数的子数组</span>
                     </div>
@@ -1277,7 +1277,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">158.5k</span>
+            <span class="white-color">159.6k</span>
             
 
             <br>

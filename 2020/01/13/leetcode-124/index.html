@@ -299,7 +299,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -549,30 +549,30 @@
         <span class="token keyword">return</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> l_max_sum<span class="token punctuation">,</span> r_max_sum<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">+</span> root<span class="token operator">-</span><span class="token operator">></span>val<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-py"><code class="language-py"># Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># Definition for a binary tree node.</span>
+<span class="token comment" spellcheck="true"># class TreeNode:</span>
+<span class="token comment" spellcheck="true">#     def __init__(self, x):</span>
+<span class="token comment" spellcheck="true">#         self.val = x</span>
+<span class="token comment" spellcheck="true">#         self.left = None</span>
+<span class="token comment" spellcheck="true">#         self.right = None</span>
 
-class Solution:
-    res = -sys.maxsize
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    res <span class="token operator">=</span> <span class="token operator">-</span>sys<span class="token punctuation">.</span>maxsize
 
-    def maxPathSum(self, root: TreeNode) -> int:
-        self.dfs(root)
-        return self.res
+    <span class="token keyword">def</span> <span class="token function">maxPathSum</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> root<span class="token punctuation">:</span> TreeNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>root<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>res
 
-    def dfs(self, root: TreeNode) -> int:
-        if root == None:
-            return 0
-        l_max_sum = self.dfs(root.left)
-        r_max_sum = self.dfs(root.right)
-        sum = root.val
-        sum = max(sum, sum + l_max_sum)
-        sum = max(sum, sum + r_max_sum)
-        self.res = max(self.res, sum)
-        return max(0, l_max_sum, r_max_sum) + root.val<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">def</span> <span class="token function">dfs</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> root<span class="token punctuation">:</span> TreeNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        <span class="token keyword">if</span> root <span class="token operator">==</span> None<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">0</span>
+        l_max_sum <span class="token operator">=</span> self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
+        r_max_sum <span class="token operator">=</span> self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span>
+        sum <span class="token operator">=</span> root<span class="token punctuation">.</span>val
+        sum <span class="token operator">=</span> max<span class="token punctuation">(</span>sum<span class="token punctuation">,</span> sum <span class="token operator">+</span> l_max_sum<span class="token punctuation">)</span>
+        sum <span class="token operator">=</span> max<span class="token punctuation">(</span>sum<span class="token punctuation">,</span> sum <span class="token operator">+</span> r_max_sum<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>res <span class="token operator">=</span> max<span class="token punctuation">(</span>self<span class="token punctuation">.</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> max<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> l_max_sum<span class="token punctuation">,</span> r_max_sum<span class="token punctuation">)</span> <span class="token operator">+</span> root<span class="token punctuation">.</span>val<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这题虽然是困难题，但是也是树形 dp 的入门题，思考起来和实现起来 trick 还是挺多的。</p>
 
             </div>
@@ -1066,7 +1066,7 @@ class Solution:
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="5W2H | 关于写博客的七点反思">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="5W2H | 关于写博客的七点反思">
                         
                         <span class="card-title">5W2H | 关于写博客的七点反思</span>
                     </div>
@@ -1116,7 +1116,7 @@ When？什么时候开始写的？第一次写博客是 2015 年了，在 CSDN �
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="每日算法系列【LeetCode 357】计算各个位数不同的数字个数">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="每日算法系列【LeetCode 357】计算各个位数不同的数字个数">
                         
                         <span class="card-title">每日算法系列【LeetCode 357】计算各个位数不同的数字个数</span>
                     </div>
@@ -1321,7 +1321,7 @@ When？什么时候开始写的？第一次写博客是 2015 年了，在 CSDN �
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">158.5k</span>
+            <span class="white-color">159.6k</span>
             
 
             <br>

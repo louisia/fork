@@ -292,7 +292,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/24.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -528,31 +528,31 @@ A = [1,2,1,3,4], K = 3
         <span class="token keyword">return</span> res<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-py"><code class="language-py">class Solution:
-    def subarraysWithKDistinct(self, A: List[int], K: int) -> int:
-        n = len(A)
-        cl = [0] * (n+1)
-        cr = [0] * (n+1)
-        l = r = nl = nr = res = 0
-        for i in range(n):
-            if cl[A[i]] == 0:
-                nl += 1
-            cl[A[i]] += 1
-            while nl > K:
-                cl[A[l]] -= 1
-                if cl[A[l]] == 0:
-                    nl -= 1
-                l += 1
-            if cr[A[i]] == 0:
-                nr += 1
-            cr[A[i]] += 1
-            while nr >= K:
-                cr[A[r]] -= 1
-                if cr[A[r]] == 0:
-                    nr -= 1
-                r += 1
-            res += r - l
-        return res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">subarraysWithKDistinct</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> A<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> K<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>A<span class="token punctuation">)</span>
+        cl <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+        cr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+        l <span class="token operator">=</span> r <span class="token operator">=</span> nl <span class="token operator">=</span> nr <span class="token operator">=</span> res <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> cl<span class="token punctuation">[</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                nl <span class="token operator">+=</span> <span class="token number">1</span>
+            cl<span class="token punctuation">[</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">while</span> nl <span class="token operator">></span> K<span class="token punctuation">:</span>
+                cl<span class="token punctuation">[</span>A<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">-=</span> <span class="token number">1</span>
+                <span class="token keyword">if</span> cl<span class="token punctuation">[</span>A<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                    nl <span class="token operator">-=</span> <span class="token number">1</span>
+                l <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">if</span> cr<span class="token punctuation">[</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                nr <span class="token operator">+=</span> <span class="token number">1</span>
+            cr<span class="token punctuation">[</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">while</span> nr <span class="token operator">>=</span> K<span class="token punctuation">:</span>
+                cr<span class="token punctuation">[</span>A<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">-=</span> <span class="token number">1</span>
+                <span class="token keyword">if</span> cr<span class="token punctuation">[</span>A<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                    nr <span class="token operator">-=</span> <span class="token number">1</span>
+                r <span class="token operator">+=</span> <span class="token number">1</span>
+            res <span class="token operator">+=</span> r <span class="token operator">-</span> l
+        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>其实这题想起来可能好想，但是写起来容易写错，因为区间范围需要好好琢磨。这一类问题统称为“窗口滑动”问题，都是不特别难，想清楚了两个状态之间窗口如何滑动就行了。</p>
 
             </div>
@@ -1046,7 +1046,7 @@ A = [1,2,1,3,4], K = 3
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="每日算法系列【LeetCode 357】计算各个位数不同的数字个数">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="每日算法系列【LeetCode 357】计算各个位数不同的数字个数">
                         
                         <span class="card-title">每日算法系列【LeetCode 357】计算各个位数不同的数字个数</span>
                     </div>
@@ -1107,7 +1107,7 @@ A = [1,2,1,3,4], K = 3
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1250】检查「好数组」">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1250】检查「好数组」">
                         
                         <span class="card-title">每日算法系列【LeetCode 1250】检查「好数组」</span>
                     </div>
@@ -1309,7 +1309,7 @@ n
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">158.5k</span>
+            <span class="white-color">159.6k</span>
             
 
             <br>
