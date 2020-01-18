@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-01-17T08:31:27.223Z</updated>
+  <updated>2020-01-18T14:55:10.671Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>每日算法系列【拒绝采样】LeetCode 470. 用 Rand7() 实现 Rand10()</title>
+    <link href="https://godweiyang.com/2020/01/18/leetcode-470/"/>
+    <id>https://godweiyang.com/2020/01/18/leetcode-470/</id>
+    <published>2020-01-18T12:33:29.000Z</published>
+    <updated>2020-01-18T14:55:10.671Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>每日算法系列【LeetCode 827】最大人工岛</title>
     <link href="https://godweiyang.com/2020/01/17/leetcode-827/"/>
     <id>https://godweiyang.com/2020/01/17/leetcode-827/</id>
     <published>2020-01-17T08:07:47.000Z</published>
-    <updated>2020-01-17T08:31:27.223Z</updated>
+    <updated>2020-01-17T08:31:28.000Z</updated>
     
     <summary type="html">
     
@@ -50,7 +82,7 @@
     <link href="https://godweiyang.com/2020/01/16/leetcode-354/"/>
     <id>https://godweiyang.com/2020/01/16/leetcode-354/</id>
     <published>2020-01-16T12:28:17.000Z</published>
-    <updated>2020-01-17T06:07:46.606Z</updated>
+    <updated>2020-01-17T06:07:48.000Z</updated>
     
     <summary type="html">
     
@@ -79,7 +111,7 @@
     <link href="https://godweiyang.com/2020/01/15/leetcode-1031/"/>
     <id>https://godweiyang.com/2020/01/15/leetcode-1031/</id>
     <published>2020-01-15T12:56:17.000Z</published>
-    <updated>2020-01-15T14:51:23.459Z</updated>
+    <updated>2020-01-15T14:51:24.000Z</updated>
     
     <summary type="html">
     
@@ -108,7 +140,7 @@
     <link href="https://godweiyang.com/2020/01/15/leetcode-330/"/>
     <id>https://godweiyang.com/2020/01/15/leetcode-330/</id>
     <published>2020-01-14T16:03:07.000Z</published>
-    <updated>2020-01-17T06:10:49.222Z</updated>
+    <updated>2020-01-17T06:10:50.000Z</updated>
     
     <summary type="html">
     
@@ -137,7 +169,7 @@
     <link href="https://godweiyang.com/2020/01/14/5w2h-godweiyang/"/>
     <id>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</id>
     <published>2020-01-14T07:27:31.000Z</published>
-    <updated>2020-01-14T16:04:58.796Z</updated>
+    <updated>2020-01-14T16:05:00.000Z</updated>
     
     <summary type="html">
     
@@ -164,7 +196,7 @@
     <link href="https://godweiyang.com/2020/01/13/leetcode-124/"/>
     <id>https://godweiyang.com/2020/01/13/leetcode-124/</id>
     <published>2020-01-13T14:48:39.000Z</published>
-    <updated>2020-01-17T06:09:55.975Z</updated>
+    <updated>2020-01-17T06:09:56.000Z</updated>
     
     <summary type="html">
     
@@ -193,7 +225,7 @@
     <link href="https://godweiyang.com/2020/01/12/leetcode-357/"/>
     <id>https://godweiyang.com/2020/01/12/leetcode-357/</id>
     <published>2020-01-12T08:42:08.000Z</published>
-    <updated>2020-01-17T06:10:56.176Z</updated>
+    <updated>2020-01-17T06:10:58.000Z</updated>
     
     <summary type="html">
     
@@ -222,7 +254,7 @@
     <link href="https://godweiyang.com/2020/01/11/leetcode-992/"/>
     <id>https://godweiyang.com/2020/01/11/leetcode-992/</id>
     <published>2020-01-11T05:30:22.000Z</published>
-    <updated>2020-01-17T06:11:05.234Z</updated>
+    <updated>2020-01-17T06:11:06.000Z</updated>
     
     <summary type="html">
     
@@ -251,7 +283,7 @@
     <link href="https://godweiyang.com/2020/01/10/leetcode-1250/"/>
     <id>https://godweiyang.com/2020/01/10/leetcode-1250/</id>
     <published>2020-01-10T15:58:57.000Z</published>
-    <updated>2020-01-17T06:11:27.200Z</updated>
+    <updated>2020-01-17T06:11:28.000Z</updated>
     
     <summary type="html">
     
@@ -280,7 +312,7 @@
     <link href="https://godweiyang.com/2020/01/09/leetcode-1004/"/>
     <id>https://godweiyang.com/2020/01/09/leetcode-1004/</id>
     <published>2020-01-09T14:30:29.000Z</published>
-    <updated>2020-01-09T12:44:12.434Z</updated>
+    <updated>2020-01-09T12:44:14.000Z</updated>
     
     <summary type="html">
     
@@ -309,7 +341,7 @@
     <link href="https://godweiyang.com/2020/01/09/emnlp19-palm/"/>
     <id>https://godweiyang.com/2020/01/09/emnlp19-palm/</id>
     <published>2020-01-09T12:53:48.000Z</published>
-    <updated>2020-01-09T18:43:55.913Z</updated>
+    <updated>2020-01-09T18:43:56.000Z</updated>
     
     <summary type="html">
     
@@ -343,7 +375,7 @@
     <link href="https://godweiyang.com/2020/01/09/leetcode-1053/"/>
     <id>https://godweiyang.com/2020/01/09/leetcode-1053/</id>
     <published>2020-01-09T11:29:31.000Z</published>
-    <updated>2020-01-09T12:44:43.985Z</updated>
+    <updated>2020-01-09T12:44:44.000Z</updated>
     
     <summary type="html">
     
@@ -372,7 +404,7 @@
     <link href="https://godweiyang.com/2020/01/08/leetcode-315/"/>
     <id>https://godweiyang.com/2020/01/08/leetcode-315/</id>
     <published>2020-01-08T11:37:46.000Z</published>
-    <updated>2020-01-09T16:21:37.963Z</updated>
+    <updated>2020-01-09T16:21:38.000Z</updated>
     
     <summary type="html">
     
@@ -401,7 +433,7 @@
     <link href="https://godweiyang.com/2020/01/07/software-share/"/>
     <id>https://godweiyang.com/2020/01/07/software-share/</id>
     <published>2020-01-07T14:00:48.000Z</published>
-    <updated>2020-01-07T16:02:51.554Z</updated>
+    <updated>2020-01-07T16:02:52.000Z</updated>
     
     <summary type="html">
     
@@ -430,7 +462,7 @@
     <link href="https://godweiyang.com/2020/01/07/leetcode-689/"/>
     <id>https://godweiyang.com/2020/01/07/leetcode-689/</id>
     <published>2020-01-07T06:21:35.000Z</published>
-    <updated>2020-01-09T16:35:03.346Z</updated>
+    <updated>2020-01-09T16:35:04.000Z</updated>
     
     <summary type="html">
     
@@ -459,7 +491,7 @@
     <link href="https://godweiyang.com/2020/01/06/emnlp19-tree-transformer/"/>
     <id>https://godweiyang.com/2020/01/06/emnlp19-tree-transformer/</id>
     <published>2020-01-06T10:03:27.000Z</published>
-    <updated>2020-01-09T07:16:30.085Z</updated>
+    <updated>2020-01-09T07:16:32.000Z</updated>
     
     <summary type="html">
     
@@ -494,7 +526,7 @@
     <link href="https://godweiyang.com/2020/01/05/tacl19-indigo/"/>
     <id>https://godweiyang.com/2020/01/05/tacl19-indigo/</id>
     <published>2020-01-04T16:06:13.000Z</published>
-    <updated>2020-01-07T10:28:29.751Z</updated>
+    <updated>2020-01-07T10:28:30.000Z</updated>
     
     <summary type="html">
     
@@ -529,7 +561,7 @@
     <link href="https://godweiyang.com/2019/12/29/wechat-analysis/"/>
     <id>https://godweiyang.com/2019/12/29/wechat-analysis/</id>
     <published>2019-12-29T11:35:58.000Z</published>
-    <updated>2020-01-14T07:40:00.022Z</updated>
+    <updated>2020-01-14T07:40:02.000Z</updated>
     
     <summary type="html">
     
@@ -557,7 +589,7 @@
     <link href="https://godweiyang.com/2019/12/25/acl18-probe/"/>
     <id>https://godweiyang.com/2019/12/25/acl18-probe/</id>
     <published>2019-12-25T08:32:31.000Z</published>
-    <updated>2020-01-07T10:28:28.998Z</updated>
+    <updated>2020-01-07T10:28:30.000Z</updated>
     
     <summary type="html">
     
@@ -582,41 +614,6 @@
       <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
       <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="可解释性" scheme="https://godweiyang.com/tags/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>论文赏析[EMNLP19]Designing and Interpreting Probes with Control Tasks</title>
-    <link href="https://godweiyang.com/2019/12/19/emnlp19-probe/"/>
-    <id>https://godweiyang.com/2019/12/19/emnlp19-probe/</id>
-    <published>2019-12-19T12:45:08.000Z</published>
-    <updated>2020-01-07T10:28:29.459Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;论文地址：&lt;/strong&gt;&lt;a href=&quot;https://www.aclweb.org/anthology/D19-1275.pdf&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="深度学习" scheme="https://godweiyang.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
-      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="EMNLP" scheme="https://godweiyang.com/tags/EMNLP/"/>
     
       <category term="可解释性" scheme="https://godweiyang.com/tags/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
     
