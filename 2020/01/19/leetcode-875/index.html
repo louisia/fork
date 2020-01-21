@@ -295,7 +295,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    739
+                    758
                 </div>
                 
 
@@ -509,7 +509,7 @@ piles = [30,11,23,4,20], H = 6
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>简单复述一下题意，就是有 N 堆香蕉，每堆有 piles[i] 个，现在要求一个整数速度 K ，吃一堆香蕉要的时间是 piles[i] / K （不是整数要上取整），问使得吃完所有香蕉所需总时间小于等于 H 的最小速度 K 是多少？</p>
 <p>显然 K 越小，吃每堆香蕉所需要的时间就越长，总时间也就越长，那么自然而然可以想到二分答案 K 。</p>
 <p>对于当前的 K ，我们遍历数组，算出总时间，如果总时间大于 H ，那就说明 K 太小了，还得提速；如果总时间小于等于 H ，那就说明速度 K 还可以降一点，总时间可能不变（因为存在上取整），也可能变大。</p>
-<p>这样最终的时间复杂度仅仅只有 $O(n log \text{INT_MAX})$ 。但其实这里还可以优化一下二分的上下界，比如上界，最大其实就是数组中的最大元素大小， K 再大也没有意义了。</p>
+<p>这样最终的时间复杂度仅仅只有 $O(n log \mathcal{M})$ ，其中 $\mathcal{M}$ 是数组中的最大值，也就是二分上界。但其实这里还可以优化一下二分的上下界，比如上界，最大其实就是数组中的最大元素大小， K 再大也没有意义了。</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">minEatingSpeed</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> piles<span class="token punctuation">,</span> <span class="token keyword">int</span> H<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1033,18 +1033,17 @@ piles = [30,11,23,4,20], H = 6
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/19/leetcode-875/">
+                <a href="/2020/01/20/leetcode-907/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="每日算法系列【LeetCode 875】爱吃香蕉的珂珂">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="每日算法系列【LeetCode 907】子数组的最小值之和">
                         
-                        <span class="card-title">每日算法系列【LeetCode 875】爱吃香蕉的珂珂</span>
+                        <span class="card-title">每日算法系列【LeetCode 907】子数组的最小值之和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1054,14 +1053,17 @@ piles = [30,11,23,4,20], H = 6
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述珂珂喜欢吃香蕉。这里有 N 堆香蕉，第 i 堆中有 piles[i] 根香蕉。警卫已经离开了，将在 H 小时后回来。
-珂珂可以决定她吃香蕉的速度 K （单位：根/小时）。每个小
+题目描述给定一个整数数组 A，找到 min(B) 的总和，其中 B 的范围为 A 的每个（连续）子数组。
+由于答案可能很大，因此返回答案模 10^9 + 7。
+示例1
+输入：
+[3,1
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-19
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1074,7 +1076,6 @@ piles = [30,11,23,4,20], H = 6
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1101,7 +1102,7 @@ piles = [30,11,23,4,20], H = 6
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="每日算法系列【LeetCode 470】用 Rand7() 实现 Rand10()">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="每日算法系列【LeetCode 470】用 Rand7() 实现 Rand10()">
                         
                         <span class="card-title">每日算法系列【LeetCode 470】用 Rand7() 实现 Rand10()</span>
                     </div>
@@ -1303,7 +1304,7 @@ piles = [30,11,23,4,20], H = 6
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">161.6k</span>
+            <span class="white-color">163.2k</span>
             
 
             <br>
