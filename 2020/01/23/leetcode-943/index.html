@@ -298,7 +298,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -510,7 +510,7 @@
 <p>最暴力的方法当然就是枚举所有排列，然后把他们拼起来看长度，这样的话光是阶乘的复杂度就不可接受了。</p>
 <p>这题就要用到<strong>状态压缩动态规划</strong>了，按照字面意思理解就是动态规划的状态是经过压缩的，那具体什么意思呢？</p>
 <p>首先我们用二进制来表示每个字符串选取状态， 1 表示选取， 0 表示没有选取。比如 4 个字符串 ，我们选取了第 0 个和第 2 个，那么我们就可以用 1010 来表示这个选取状态，而 1010 转化成 10 进制就是 10 ，所以我们就可以用 10 这个数字来表示这种选取状态。状态最小值是 0 ，表示一个都没有选取，最大值是 $2^n-1$ ，表示所有的字符串都选取了。</p>
-<p>然后定义 $dp[s][i]$ 表示选取状态为 s 的情况下，最后一个字符串是第 i 个的情况下，最短的长度是多少。那么去掉第 i 个字符串，选取状态就变成了 $s \oplus 2^i$ ，其中 $\oplus$ 表示异或操作。然后遍历所有的 $dp[s \oplus 2^i][j]$ ，也就是看前一个状态以哪个字符串结尾长度最短。那么状态更新就是：<br>$$<br>dp[s][i]=min{dp[s \oplus 2^i][j]+A[i].length-o[j][i]}<br>$$<br>其中 $o[j][i]$ 表示 $A[j]$ 和 $A[i]$ 最大重合的长度，可以预处理出来。</p>
+<p>然后定义 $dp[s][i]$ 表示选取状态为 s 的情况下，最后一个字符串是第 i 个的情况下，最短的长度是多少。那么去掉第 i 个字符串，选取状态就变成了 $s \oplus 2^i$ ，其中 $\oplus$ 表示异或操作。然后遍历所有的 $dp[s \oplus 2^i][j]$ ，也就是看前一个状态以哪个字符串结尾长度最短。那么状态更新就是：<br>$$<br>dp[s][i]=\min{\{dp[s \oplus 2^i][j]+A[i].length-o[j][i]\}}<br>$$<br>其中 $o[j][i]$ 表示 $A[j]$ 和 $A[i]$ 最大重合的长度，可以预处理出来。</p>
 <p>与此同时，我们还需要一个数组 $path[s][i]$ ，用来保存 s 状态下结尾是 $A[i]$ 时，前一个字符串最优是哪个。在做完动态规划之后，再进行回溯，找出整个最优序列是什么。</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -1102,18 +1102,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/23/leetcode-943/">
+                <a href="/2020/01/24/leetcode-376/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="每日算法系列【LeetCode 943】最短超级串">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="每日算法系列【LeetCode 376】摆动序列">
                         
-                        <span class="card-title">每日算法系列【LeetCode 943】最短超级串</span>
+                        <span class="card-title">每日算法系列【LeetCode 376】摆动序列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1123,17 +1122,14 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给定一个字符串数组 A，找到以 A 中每个字符串作为子字符串的最短字符串。
-我们可以假设 A 中没有字符串是 A 中另一个字符串的子字符串。
-示例1
-输入：
-["alex","
+题目描述如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为摆动序列。第一个差（如果存在的话）可能是正数或负数。少于两个元素的序列也是摆动序列。
+例如， [1,7,4,9,2
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-23
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1146,7 +1142,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1173,7 +1168,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="每日算法系列【LeetCode 881】救生艇">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="每日算法系列【LeetCode 881】救生艇">
                         
                         <span class="card-title">每日算法系列【LeetCode 881】救生艇</span>
                     </div>
@@ -1376,7 +1371,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">166k</span>
+            <span class="white-color">167.7k</span>
             
 
             <br>

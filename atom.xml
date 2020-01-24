@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-01-23T13:26:06.144Z</updated>
+  <updated>2020-01-24T12:42:34.291Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>每日算法系列【LeetCode 376】摆动序列</title>
+    <link href="https://godweiyang.com/2020/01/24/leetcode-376/"/>
+    <id>https://godweiyang.com/2020/01/24/leetcode-376/</id>
+    <published>2020-01-24T04:24:23.000Z</published>
+    <updated>2020-01-24T12:42:34.291Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>每日算法系列【LeetCode 943】最短超级串</title>
     <link href="https://godweiyang.com/2020/01/23/leetcode-943/"/>
     <id>https://godweiyang.com/2020/01/23/leetcode-943/</id>
     <published>2020-01-23T12:14:54.000Z</published>
-    <updated>2020-01-23T13:26:06.144Z</updated>
+    <updated>2020-01-24T06:28:36.069Z</updated>
     
     <summary type="html">
     
@@ -585,35 +617,6 @@
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分享一些自用软件，学妹们用了都说好用！</title>
-    <link href="https://godweiyang.com/2020/01/07/software-share/"/>
-    <id>https://godweiyang.com/2020/01/07/software-share/</id>
-    <published>2020-01-07T14:00:48.000Z</published>
-    <updated>2020-01-07T16:02:52.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;今天我给大家分享一些我平时自用的软件，有学习的、编程的、娱乐的、工具类的等等。&lt;/p&gt;
-&lt;p&gt;有些软件是破解版的，去除了广告，都很实用！&lt;/p&gt;
-&lt;h1 id=&quot;迅雷极速版&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="计算机知识" scheme="https://godweiyang.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="软件" scheme="https://godweiyang.com/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
