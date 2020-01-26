@@ -4,15 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日算法系列【LeetCode 1031】两个非重叠子数组的最大和, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 386】字典序排数, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-题目描述给出非负整数数组 A ，返回两个非重叠（连续）子数组中元素的最大和，子数组的长度分别为 L 和 M。（这里需要澄清的是，长为 L 的子数组可以出现在长为 M 的子数组之前或之后。）
-示例1
-输入：
-A = [0,6,5,2,2,5">
+题目描述给定一个整数 n, 返回从 1 到 n 的字典顺序。
+例如，给定 n = 13，返回 [1,10,11,12,13,2,3,4,5,6,7,8,9] 。
+请尽可能的优化算法的时间复杂度和空间复杂度。 输入的数据 n 小于等于 5,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@ A = [0,6,5,2,2,5">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日算法系列【LeetCode 1031】两个非重叠子数组的最大和 | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 386】字典序排数 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -294,13 +293,13 @@ A = [0,6,5,2,2,5">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日算法系列【LeetCode 1031】两个非重叠子数组的最大和
+                        每日算法系列【LeetCode 386】字典序排数
                     </div>
                 </div>
             </div>
@@ -439,7 +438,7 @@ A = [0,6,5,2,2,5">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-15
+                    2020-01-26
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -453,14 +452,14 @@ A = [0,6,5,2,2,5">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    600
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    2 分
                 </div>
                 
                 
@@ -477,125 +476,69 @@ A = [0,6,5,2,2,5">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="/medias/contact.jpg" alt></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出非负整数数组 A ，返回两个非重叠（连续）子数组中元素的最大和，子数组的长度分别为 L 和 M。（这里需要澄清的是，长为 L 的子数组可以出现在长为 M 的子数组之前或之后。）</p>
-<p><strong>示例1</strong></p>
-<pre class="line-numbers language-text"><code class="language-text">输入：
-A = [0,6,5,2,2,5,1,9,4], L = 1, M = 2
-输出：
-20
-解释：
-子数组的一种选择中，[9] 长度为 1，[6,5] 长度为 2。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>示例2</strong></p>
-<pre class="line-numbers language-text"><code class="language-text">输入：
-A = [3,8,1,3,2,1,8,9,0], L = 3, M = 2
-输出：
-29
-解释：
-子数组的一种选择中，[3,8,1] 长度为 3，[8,9] 长度为 2。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>示例3</strong></p>
-<pre class="line-numbers language-text"><code class="language-text">输入：
-A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
-输出：
-31
-解释：
-子数组的一种选择中，[5,6,0,9] 长度为 4，[0,3,8] 长度为 3。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>提示</strong></p>
-<ul>
-<li>L &gt;= 1</li>
-<li>M &gt;= 1</li>
-<li>L + M &lt;= A.length &lt;= 1000</li>
-<li>0 &lt;= A[i] &lt;= 1000</li>
-</ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题意思就是找到两段给定长度的、不重合的、连续的区间，使得两段区间和最大。</p>
-<p>因为长度是给定的，所以我们只需要预处理好前缀和 sum ，然后给定区间右端点，就可以直接算出区间和。<br>那么如果枚举两段区间的右端点，时间复杂度也才 $O(n^2)$ ，极限情况下也就 1e6 左右，貌似也还可以接受。</p>
-<p>那有没有更快的方法呢？试试动态规划！因为两段区间有前后顺序，我们不妨假设长度为 L 的区间在后面。<br>用 dpm[i] 表示前 i 个数中长度为 M 的区间和的最大值。<br>那么 dpm[i] = max{dpm[i-1], sum[i] - sum[i-M]} ，也就是要么取最后 M 个数，要么最后一个数不取，在前 i - 1 个数里面找答案。<br>然后 dpm 全部处理完之后，遍历数组，假设长度为 L 的区间以 A[i] 结束，那么我们只需要在 A[0] 到 A[i-L] 中间找长度为 M 的区间最大和就行了，那答案不就是上面求好的 dpm[i-L] 吗？这样最终时间复杂度就是 $O(n)$ 了。</p>
-<p>结束了吗？并没有！空间还能不能优化呢？其实当我们遍历长度为 L 的区间时，长度为 M 的区间不用每次都重新遍历，可以重复利用之前的结果，每次向右移动直到和长度为 L 的区间衔接上为止。这样就等于用了两个指针，分别指向了两个区间的右端点，总共最多移动 2n 次就行了。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="动态规划（c-）"><a href="#动态规划（c-）" class="headerlink" title="动态规划（c++）"></a>动态规划（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个整数 n, 返回从 1 到 n 的字典顺序。</p>
+<p>例如，给定 n = 13，返回 [1,10,11,12,13,2,3,4,5,6,7,8,9] 。</p>
+<p>请尽可能的优化算法的时间复杂度和空间复杂度。 输入的数据 n 小于等于 5,000,000。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="排序法"><a href="#排序法" class="headerlink" title="排序法"></a>排序法</h3><p>首先把 1 到 n 所有整数的字符串形式放进数组，然后对这个字符串数组进行排序，最后把所有字符串转换成对应的整数就行了。</p>
+<p>时间复杂度是 $O(n \log n)$ ，空间复杂度是 $O(n)$。</p>
+<h3 id="字典树法"><a href="#字典树法" class="headerlink" title="字典树法"></a>字典树法</h3><p>还可以按从小到大顺序直接生成所有整数，首先观察如下的字典树：</p>
+<p><img src="1.jpg" alt="字典树"></p>
+<p>可以看出来，这是一棵 10 叉的字典树，第一层根节点，第二层没有 0 （因为不能有前导 0 ），后面的每一层都是在上一层的基础上添加一位 0 到 9 。</p>
+<p>而如果按照前序遍历的顺序遍历这棵树，得到的整数序列就是字典序从小到大的。但是这棵树深度是没有限制的啊，所以如果遍历到的数字 x 大于 n 的话，就要结束遍历，回溯到上一层。</p>
+<p>时间复杂度是 $O(n)$ ，空间复杂度是 $O(n)$。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="排序法（c-）"><a href="#排序法（c-）" class="headerlink" title="排序法（c++）"></a>排序法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> dpl<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> dpm<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">int</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">,</span> <span class="token keyword">int</span> L<span class="token punctuation">,</span> <span class="token keyword">int</span> M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token function">memset</span><span class="token punctuation">(</span>dpl<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> dpl<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">memset</span><span class="token punctuation">(</span>dpm<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> dpm<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        sum<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">lexicalOrder</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        vector<span class="token operator">&lt;</span>string<span class="token operator">></span> s<span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> res<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+            s<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token function">to_string</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">sort</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        dpl<span class="token punctuation">[</span>L<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>L<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        dpm<span class="token punctuation">[</span>M<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>M<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">>=</span> L<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dpl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">+</span> dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">>=</span> M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dpm<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">+</span> dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
+            res<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token function">atoi</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
         <span class="token keyword">return</span> res<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="动态规划（python）"><a href="#动态规划（python）" class="headerlink" title="动态规划（python）"></a>动态规划（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> A<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> L<span class="token punctuation">:</span> int<span class="token punctuation">,</span> M<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
-        N <span class="token operator">=</span> <span class="token number">1010</span>
-        dpl <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
-        dpm <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
-        sum <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>A<span class="token punctuation">)</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        dpl<span class="token punctuation">[</span>L<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>L<span class="token punctuation">]</span>
-        dpm<span class="token punctuation">[</span>M<span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>M<span class="token punctuation">]</span>
-        res <span class="token operator">=</span> <span class="token number">0</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">if</span> i <span class="token operator">>=</span> L<span class="token punctuation">:</span>
-                dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> max<span class="token punctuation">(</span>dpl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">+</span> dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            <span class="token keyword">if</span> i <span class="token operator">>=</span> M<span class="token punctuation">:</span>
-                dpm<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> max<span class="token punctuation">(</span>dpm<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">+</span> dpl<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="指针法（c-）"><a href="#指针法（c-）" class="headerlink" title="指针法（c++）"></a>指针法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="排序法（python）"><a href="#排序法（python）" class="headerlink" title="排序法（python）"></a>排序法（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">lexicalOrder</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        res<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        res <span class="token operator">=</span> <span class="token punctuation">[</span>int<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> res<span class="token punctuation">]</span>
+        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="字典树法（c-）"><a href="#字典树法（c-）" class="headerlink" title="字典树法（c++）"></a>字典树法（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> sum<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">int</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">,</span> <span class="token keyword">int</span> L<span class="token punctuation">,</span> <span class="token keyword">int</span> M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        sum<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">int</span> lmax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mmax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> L<span class="token operator">+</span>M<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            lmax <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>lmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            mmax <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>mmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> lmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> mmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">lexicalOrder</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> res<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+            <span class="token function">dfs</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> n<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> res<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="指针法（python）"><a href="#指针法（python）" class="headerlink" title="指针法（python）"></a>指针法（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">maxSumTwoNoOverlap</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> A<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> L<span class="token punctuation">:</span> int<span class="token punctuation">,</span> M<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
-        N <span class="token operator">=</span> <span class="token number">1010</span>
-        sum <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> N
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>A<span class="token punctuation">)</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            sum<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        lmax <span class="token operator">=</span> mmax <span class="token operator">=</span> res <span class="token operator">=</span> <span class="token number">0</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>L<span class="token operator">+</span>M<span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-            lmax <span class="token operator">=</span> max<span class="token punctuation">(</span>lmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            mmax <span class="token operator">=</span> max<span class="token punctuation">(</span>mmax<span class="token punctuation">,</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> lmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>M<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> mmax <span class="token operator">+</span> sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> sum<span class="token punctuation">[</span>i<span class="token operator">-</span>L<span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>思考问题要从简单往困难思考，先想想暴力怎么做？再想想怎么优化它。就算做出来了，也不要拘泥于一种解法，还有代码上能否优化？变量、写法上能否更优美一点？</p>
-<p>当然很熟练了之后这些都不用考虑了，上来像我一样直接一步到位就行了，嘻嘻。</p>
+
+    <span class="token keyword">void</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">></span> n<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+        res<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">dfs</span><span class="token punctuation">(</span>x<span class="token operator">*</span><span class="token number">10</span><span class="token operator">+</span>i<span class="token punctuation">,</span> n<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="字典树法（python）"><a href="#字典树法（python）" class="headerlink" title="字典树法（python）"></a>字典树法（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">lexicalOrder</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>i<span class="token punctuation">,</span> n<span class="token punctuation">,</span> res<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> res
+
+    <span class="token keyword">def</span> <span class="token function">dfs</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">,</span> n<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> x <span class="token operator">></span> n<span class="token punctuation">:</span>
+            <span class="token keyword">return</span>
+        res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>x<span class="token operator">*</span><span class="token number">10</span><span class="token operator">+</span>i<span class="token punctuation">,</span> n<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>字典序法的递归需要耗费更大的空间，而在实际运行中， python 代码排序法的运行速度甚至比字典序法更快，这说明了 python 递归是真的慢。</p>
 
             </div>
             <hr />
@@ -754,9 +697,9 @@ A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日算法系列【LeetCode 1031】两个非重叠子数组的最大和》
+                    《每日算法系列【LeetCode 386】字典序排数》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/15/leetcode-1031/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/26/leetcode-386/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -797,7 +740,7 @@ A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2020/01/15/leetcode-1031/',
+        id: '2020/01/26/leetcode-386/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1080,31 +1023,33 @@ A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/01/16/leetcode-354/">
+                <a href="/2020/01/26/leetcode-386/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="每日算法系列【LeetCode 354】俄罗斯套娃信封问题">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="每日算法系列【LeetCode 386】字典序排数">
                         
-                        <span class="card-title">每日算法系列【LeetCode 354】俄罗斯套娃信封问题</span>
+                        <span class="card-title">每日算法系列【LeetCode 386】字典序排数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-题目描述给定一些标记了宽度和高度的信封，宽度和高度以整数对形式 (w, h) 出现。当另一个信封的宽度和高度都比这个信封大的时候，这个信封就可以放进另一个信封里，如同俄罗斯套娃一样。
-请计算最多能有多少个信封能组成一组“俄罗斯套娃”信封（
+题目描述给定一个整数 n, 返回从 1 到 n 的字典顺序。
+例如，给定 n = 13，返回 [1,10,11,12,13,2,3,4,5,6,7,8,9] 。
+请尽可能的优化算法的时间复杂度和空间复杂度。 输入的数据 n 小于等于 5,
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1117,6 +1062,7 @@ A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1139,25 +1085,29 @@ A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/15/leetcode-330/">
+                <a href="/2020/01/25/leetcode-825/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="每日算法系列【LeetCode 330】按要求补齐数组">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="每日算法系列【LeetCode 825】适龄的朋友">
                         
-                        <span class="card-title">每日算法系列【LeetCode 330】按要求补齐数组</span>
+                        <span class="card-title">每日算法系列【LeetCode 825】适龄的朋友</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-题目描述给定一个已排序的正整数数组 nums ，和一个正整数 n 。从 [1, n] 区间内选取任意个数字补充到 nums 中，使得 [1, n] 区间内的任何数字都可以用 nums 中某几个数字的和来表示。请输出满足上述要求的最少需要补
+题目描述人们会互相发送好友请求，现在给定一个包含有他们年龄的数组，ages[i] 表示第 i 个人的年龄。
+当满足以下条件时，A 不能给 B（A、B不为同一人）发送好友请求：
+
+age[B] &lt;= 0.5 * age[A] + 7
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-25
                             </span>
                         <span class="publish-author">
                             
