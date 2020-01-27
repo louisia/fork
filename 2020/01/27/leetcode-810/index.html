@@ -4,13 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日算法系列【LeetCode 354】俄罗斯套娃信封问题, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 810】黑板异或游戏, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-题目描述给定一些标记了宽度和高度的信封，宽度和高度以整数对形式 (w, h) 出现。当另一个信封的宽度和高度都比这个信封大的时候，这个信封就可以放进另一个信封里，如同俄罗斯套娃一样。
-请计算最多能有多少个信封能组成一组“俄罗斯套娃”信封（">
+题目描述一个黑板上写着一个非负整数数组 nums[i] 。小红和小明轮流从黑板上擦掉一个数字，小红先手。如果擦除一个数字后，剩余的所有数字按位异或运算得出的结果等于 0 的话，当前玩家游戏失败。 (另外，如果只剩一个数字，按位异或运算得到">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日算法系列【LeetCode 354】俄罗斯套娃信封问题 | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 810】黑板异或游戏 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -292,13 +291,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日算法系列【LeetCode 354】俄罗斯套娃信封问题
+                        每日算法系列【LeetCode 810】黑板异或游戏
                     </div>
                 </div>
             </div>
@@ -437,7 +436,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-16
+                    2020-01-27
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -451,14 +450,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    872
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    3 分
                 </div>
                 
                 
@@ -475,98 +474,46 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="/medias/contact.jpg" alt></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一些标记了宽度和高度的信封，宽度和高度以整数对形式 (w, h) 出现。当另一个信封的宽度和高度都比这个信封大的时候，这个信封就可以放进另一个信封里，如同俄罗斯套娃一样。</p>
-<p>请计算最多能有多少个信封能组成一组“俄罗斯套娃”信封（即可以把一个信封放到另一个信封里面）。</p>
-<p><strong>说明:</strong><br>不允许旋转信封。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>一个黑板上写着一个非负整数数组 nums[i] 。小红和小明轮流从黑板上擦掉一个数字，小红先手。如果擦除一个数字后，剩余的所有数字按位异或运算得出的结果等于 0 的话，当前玩家游戏失败。 (另外，如果只剩一个数字，按位异或运算得到它本身；如果无数字剩余，按位异或运算结果为 0。）</p>
+<p>换种说法就是，轮到某个玩家时，如果当前黑板上所有数字按位异或运算结果等于 0，这个玩家获胜。</p>
+<p>假设两个玩家每步都使用最优解，当且仅当小红获胜时返回 true。</p>
 <p><strong>示例1</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-envelopes = [[5,4],[6,4],[6,7],[2,3]]
+nums = [1, 1, 2]
 输出：
-3
+false
 解释：
-最多信封的个数为 3, 组合为: [2,3] => [5,4] => [6,7]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>题目要求矩形一个套着一个，然后求出最多套多少个，而一个矩形能套在另一个矩形上面的条件是长宽都大于另一个。</p>
-<p>那么我们可以按照长度从小到大排个序，这样只有排在后面的矩形可以套在前面的矩形上。但是宽度也有限制条件，也得大于前面的矩形，那么问题就转化成了，把宽度看成一个序列，找到一个最长的上升序列，序列的长度就是我们要的答案。但是这里有个问题，就是矩形如果是相同长度，它们的宽度按照什么来排序呢？如果也是从小到大排，那么可能会出现多个相同长度的矩形套在一起，这是不符合题意的。所以我们对相同长度的矩形采取宽度降序的方法排序，这样它们之中最多只会被选中一个了。</p>
-<p>那么问题就变成了经典的<strong>最长上升子序列问题了</strong>。</p>
-<h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p>用 dp[i] 表示以第 i 个元素 a[i] 结尾的最长子序列的长度，那么我们可以遍历所有 a[i] 之前的元素 a[j] ，如果 a[j] 小于 a[i] ，那就说明 a[i] 可以加在 a[j] 后面，然后长度就变成了 dp[j] + 1 。所以遍历所有符合条件的 j ，找到长度最长的，然后更新 dp[i] = dp[j] + 1 。最后的答案就是 dp 数组中最大的值。</p>
-<p>这种方法时间复杂度是 $O(n^2)$，如果序列太长会超时。本题中 c++ 没有超时，但是 python 超时了。</p>
-<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p>那么有什么方法来优化呢？下面介绍一种二分优化方法。</p>
-<p>这次假设 dp[len] 表示长度为 len 的上升子序列最后一个元素的最小值。这个值要尽量小，什么意思呢？也就是相同长度的上升序列，最后一个元素小的那个序列，后面可以加的元素可选择余地肯定更大。那么这个数组怎么更新呢？</p>
-<p>初始的时候 len 就是 0 ，因为没有找到任何上升子序列。如果现在找到了长度为 len 的子序列，然后最后一个元素最小值是 dp[len] ，这时候来了一个新元素 a[i] ，如果它比 dp[len] 大，说明 a[i] 可以加在 dp[len] 后面，那么 len 就变成了 len + 1 ， 并且 dp[len + 1] 更新为 a[i]。那如果 a[i] 小于等于 dp[len] 呢？那就继续往前遍历，找到第一个 dp[l] &lt; a[i] &lt;= dp[l+1] 的位置，这个位置说明了什么呢？说明了 a[i] 可以加在 dp[l] 后面构成长度为 l + 1 的子序列，并且 dp[l+1] 可以变得更小，所以更新为 a[i] 。这样 a[i] 就处理完了，最后 len 就是答案。</p>
-<p>但是这样看起来复杂度没有变啊，其实这里有一个很好的性质，因为长度越大的序列，最后一个元素的最小值一定是大于长度小的序列最后一个元素的，所以 dp 数组是单调递增的，这样我们就可以用二分来寻找 a[i] 适合插入的位置。时间复杂度降到了 $O(n\log n)$。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="方法1（c-）"><a href="#方法1（c-）" class="headerlink" title="方法1（c++）"></a>方法1（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+小红有两个选择: 擦掉数字 1 或 2。
+如果擦掉 1, 数组变成 [1, 2]。剩余数字按位异或得到 1 XOR 2 = 3。那么小明可以擦掉任意数字，因为小红会成为擦掉最后一个数字的人，她总是会输。
+如果小红擦掉 2，那么数组变成[1, 1]。剩余数字按位异或得到 1 XOR 1 = 0。小红仍然会输掉游戏。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>1 &lt;= N &lt;= 1000</li>
+<li>0 &lt;= nums[i] &lt;= 2^16</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>小红获胜的条件就是，某一步轮到她的时候，所有数异或等于 0 。</p>
+<p>而反过来，她输的条件就是，面对 n 个数，无论她选哪个数，去掉这个数之后剩下的数的异或都等于 0 。</p>
+<p>假设 n 个数的异或为 S ，也就是令：<br>$$<br>S = x_1 \oplus x_2 \oplus \dots \oplus x_n<br>$$<br>因为两个相同的数的异或为 0 ，所以去掉任意一个数 $x_i$ 之后的异或为 $S \oplus x_i = 0$ ，所以 $S = x_i$ ，也就是所有的数都相等。</p>
+<p>此时如果 n 是偶数，那么 n 个数的异或必为 0 ，和小红必输矛盾了，所以 n 一定要是奇数。</p>
+<p>也就是说，如果 n 是偶数，那么小红总有办法去掉一个数，然后使得剩下的数异或不为 0 ，这时小明就没办法获胜。而不管小明擦除哪个数，轮到小红的时候个数又变成了偶数，小红就可以继续不输擦除下去。直到最后，一定是小红面对着空的数集，最终获胜。</p>
+<p>而 n 是奇数的时候，无论小红选什么数，小明面对的都是偶数个数，那么小明必胜。</p>
+<p>综上，n 是偶数小红必胜，或者刚开始 n 个数异或就是 0 ，这样不管奇偶，小红都能获胜。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">int</span> <span class="token function">maxEnvelopes</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> envelopes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> envelopes<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token function">sort</span><span class="token punctuation">(</span>envelopes<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> envelopes<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> cmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">dp</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>envelopes<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> envelopes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
-            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> <span class="token function">xorGame</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> i <span class="token operator">:</span> nums<span class="token punctuation">)</span> x <span class="token operator">^</span><span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token operator">!</span>x<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-
-    <span class="token keyword">static</span> <span class="token keyword">bool</span> <span class="token function">cmp</span><span class="token punctuation">(</span><span class="token keyword">const</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> a<span class="token punctuation">,</span> <span class="token keyword">const</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">return</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">></span> b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="方法1（python）"><a href="#方法1（python）" class="headerlink" title="方法1（python）"></a>方法1（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">maxEnvelopes</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> arr<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
-        arr<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">-</span>x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        nums <span class="token operator">=</span> <span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> arr<span class="token punctuation">]</span>
-        dp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> n
-        res <span class="token operator">=</span> <span class="token number">0</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                    dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> max<span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
-            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="方法2（c-）"><a href="#方法2（c-）" class="headerlink" title="方法2（c++）"></a>方法2（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">int</span> <span class="token function">maxEnvelopes</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> envelopes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> envelopes<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token function">sort</span><span class="token punctuation">(</span>envelopes<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> envelopes<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> cmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">dp</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> INT_MAX<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token function">lower_bound</span><span class="token punctuation">(</span>dp<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dp<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> envelopes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span> dp<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            dp<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> envelopes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-            len <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>len<span class="token punctuation">,</span> idx<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> len<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">static</span> <span class="token keyword">bool</span> <span class="token function">cmp</span><span class="token punctuation">(</span><span class="token keyword">const</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> a<span class="token punctuation">,</span> <span class="token keyword">const</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">return</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">></span> b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="方法2（python）"><a href="#方法2（python）" class="headerlink" title="方法2（python）"></a>方法2（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> bisect <span class="token keyword">import</span> bisect_left
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> functools <span class="token keyword">import</span> reduce
 
 <span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">maxEnvelopes</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> arr<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
-        arr<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">-</span>x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        nums <span class="token operator">=</span> <span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> arr<span class="token punctuation">]</span>
-        dp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-            idx <span class="token operator">=</span> bisect_left<span class="token punctuation">(</span>dp<span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            <span class="token keyword">if</span> idx <span class="token operator">==</span> len<span class="token punctuation">(</span>dp<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                dp<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                dp<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        <span class="token keyword">return</span> len<span class="token punctuation">(</span>dp<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这题还有智障解法：就是两两遍历每一个矩形对，根据包含关系建立一个拓扑图，然后求图上的最长距离。没错，我刚开始就是这么想的，我是智障。这个方法没有错，还真能过这题，就是时间太慢了。</p>
+    <span class="token keyword">def</span> <span class="token function">xorGame</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> bool<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">or</span> reduce<span class="token punctuation">(</span>operator<span class="token punctuation">.</span>xor<span class="token punctuation">,</span> nums<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>官方题解是这么说的：如果 n 是偶数，那么小红有很大概率获胜，因为如果游戏能够一直进行下去，小明将会是擦除最后一个数的人，轮到小红时黑板上已经没有数，小红获胜。然后再推测 n 是偶数情况下的必胜条件，但是这样带有一点先猜后验证的成分。</p>
+<p>所以我的推测方法直接从必胜条件出发，推测出 n 是偶数，这样过渡自然，更符合思考的路线。</p>
 
             </div>
             <hr />
@@ -725,9 +672,9 @@ envelopes = [[5,4],[6,4],[6,7],[2,3]]
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日算法系列【LeetCode 354】俄罗斯套娃信封问题》
+                    《每日算法系列【LeetCode 810】黑板异或游戏》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/16/leetcode-354/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/27/leetcode-810/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -768,7 +715,7 @@ envelopes = [[5,4],[6,4],[6,7],[2,3]]
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2020/01/16/leetcode-354/',
+        id: '2020/01/27/leetcode-810/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1051,34 +998,31 @@ envelopes = [[5,4],[6,4],[6,7],[2,3]]
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/01/17/leetcode-827/">
+                <a href="/2020/01/27/leetcode-810/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="每日算法系列【LeetCode 827】最大人工岛">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="每日算法系列【LeetCode 810】黑板异或游戏">
                         
-                        <span class="card-title">每日算法系列【LeetCode 827】最大人工岛</span>
+                        <span class="card-title">每日算法系列【LeetCode 810】黑板异或游戏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-题目描述在二维地图上， 0 代表海洋， 1 代表陆地，我们最多只能将一格 0 海洋变成 1 变成陆地。
-进行填海之后，地图上最大的岛屿面积是多少？（上、下、左、右四个方向相连的 1 可形成岛屿）
-示例1
-输入：
-[[1, 0], [0, 
+题目描述一个黑板上写着一个非负整数数组 nums[i] 。小红和小明轮流从黑板上擦掉一个数字，小红先手。如果擦除一个数字后，剩余的所有数字按位异或运算得出的结果等于 0 的话，当前玩家游戏失败。 (另外，如果只剩一个数字，按位异或运算得到
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1091,6 +1035,7 @@ envelopes = [[5,4],[6,4],[6,7],[2,3]]
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1113,28 +1058,31 @@ envelopes = [[5,4],[6,4],[6,7],[2,3]]
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/15/leetcode-1031/">
+                <a href="/2020/01/26/leetcode-153/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1031】两个非重叠子数组的最大和">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="每日算法系列【LeetCode 153】寻找旋转排序数组中的最小值">
                         
-                        <span class="card-title">每日算法系列【LeetCode 1031】两个非重叠子数组的最大和</span>
+                        <span class="card-title">每日算法系列【LeetCode 153】寻找旋转排序数组中的最小值</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-题目描述给出非负整数数组 A ，返回两个非重叠（连续）子数组中元素的最大和，子数组的长度分别为 L 和 M。（这里需要澄清的是，长为 L 的子数组可以出现在长为 M 的子数组之前或之后。）
+题目描述假设按照升序排序的数组在预先未知的某个点上进行了旋转。
+(例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2])。
+请找出其中最小的元素。
+你可以假设数组中不存在重复元素。
 示例1
 输入：
-A = [0,6,5,2,2,5
+[3,4
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-26
                             </span>
                         <span class="publish-author">
                             
