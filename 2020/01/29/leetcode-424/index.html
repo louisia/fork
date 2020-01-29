@@ -457,14 +457,14 @@ s = &#34;ABAB&#34;, k = 2
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    702
+                    886
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
                 
@@ -532,6 +532,10 @@ s = "AABABBA", k = 1
             r <span class="token operator">+=</span> <span class="token number">1</span>
         <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>注意这里代码实现上面有个很大的问题，就是右移左端点缩小窗口的时候， cmax 并没有跟着减小，这样为什么还是对的呢？这种情况下， cmax保存的其实是历史出现次数最多的字母的次数。而你不改变 cmax ，就会导致中间过程中出现很多不符合题意的窗口，也就是实际要修改的数量大于 k 的窗口，但是因为你 cmax 偏大，算下来修改数量偏小，它又是符合题意的。不过不影响，这些错误的窗口的长度一定是小于你之前算到的正确窗口的长度的（如果大于了，那么 cmax 一定会被更新）。</p>
+<p><strong>下面解释来自于algsCG：</strong></p>
+<blockquote>
+<p>因为我们只对最长有效的子字符串感兴趣，所以我们的滑动窗口不需要收缩，即使窗口可能覆盖无效的子字符串。我们可以通过在右边添加一个字符来扩展窗口，或者将整个窗口向右边移动一个字符。而且我们只在新字符的计数超过历史最大计数（来自覆盖有效子字符串的前一个窗口）时才增长窗口。也就是说，我们不需要精确的当前窗口的最大计数;我们只关心最大计数是否超过历史最大计数;这只会因为新字符而发生。</p>
+</blockquote>
 
             </div>
             <hr />
@@ -1287,7 +1291,7 @@ s = "ABAB", k = 2
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">173.4k</span>
+            <span class="white-color">173.6k</span>
             
 
             <br>
