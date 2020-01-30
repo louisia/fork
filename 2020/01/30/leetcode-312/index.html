@@ -4,16 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="具体数学-第12课（数论进阶与组合数入门）, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 312】戳气球, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-
-这节课内容太多了，再加上感冒身体不舒服，下面的定理就不一一证明了，大家可以自行练习。以后有空我会补上的！
-
-例题1
-首先接着上节课同余继续讲，在第三章例题2中，我们遗留了一个问题：对于如下序列\[0\bmod m,n\bmod m,2n">
+题目描述有 n 个气球，编号为0 到 n-1，每个气球上都标有一个数字，这些数字存在数组 nums 中。
+现在要求你戳破所有的气球。每当你戳破一个气球 i 时，你可以获得 nums[left]  nums[i]  nums[right] ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>具体数学-第12课（数论进阶与组合数入门） | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 312】戳气球 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -295,13 +292,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        具体数学-第12课（数论进阶与组合数入门）
+                        每日算法系列【LeetCode 312】戳气球
                     </div>
                 </div>
             </div>
@@ -412,8 +409,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/具体数学/" target="_blank">
-                            <span class="chip bg-color">具体数学</span>
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
                         </a>
                         
                     </div>
@@ -424,8 +425,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/数学/" class="post-category" target="_blank">
-                            数学
+                        <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                            编程技巧
                         </a>
                         
                     </div>
@@ -436,7 +437,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-05-14
+                    2020-01-30
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -450,14 +451,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    962
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    4 分
                 </div>
                 
                 
@@ -474,45 +475,103 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="/medias/contact.jpg" alt></p>
-<blockquote>
-<p>这节课内容太多了，再加上感冒身体不舒服，下面的定理就不一一证明了，大家可以自行练习。以后有空我会补上的！</p>
-</blockquote>
-<h1 id="例题1"><a href="#例题1" class="headerlink" title="例题1"></a>例题1</h1><hr>
-<p>首先接着上节课同余继续讲，在<a href="http://godweiyang.com/2018/04/23/concrete-math-9/">第三章例题2</a>中，我们遗留了一个问题：对于如下序列<br>\[0\bmod m,n\bmod m,2n\bmod m, \ldots ,(m - 1)n\bmod m\]<br>它的值就是<br>\[0,d,2d, \ldots ,(m/d - 1)d\]<br>的某个排列，并且重复了$d$次。其中$d = gcd(m, n)$</p>
-<p>首先我们有如下同余式：<br>\[jn \equiv kn(\bmod m) \Leftrightarrow j(n/d) \equiv k(n/d)(\bmod m/d)\]<br>这就可以看出该序列的确是重复出现了$d$次，那么剩下的问题就是证明这$m/d$个数恰好就是<br>\[\{ 0,d,2d, \ldots ,m - d\} \]<br>的某个排列。<br>令$m = m’d,n = n’d$，所以有<br>\[kn\bmod m = d(kn’\bmod m’)\]<br>所以我们只考虑$m \bot n$的情形，在此情形下，我们可以得到<br>\[jn \equiv kn(\bmod m) \Leftrightarrow j \equiv k(\bmod m)\]<br>由此可以看出，这$m-1$个数一定就是<br>\[\{ 0,1,2, \ldots ,m - 1\} \]<br>至此得证。</p>
-<p>下面介绍几个著名的数论定理。</p>
-<h1 id="费马最后定理"><a href="#费马最后定理" class="headerlink" title="费马最后定理"></a>费马最后定理</h1><hr>
-<p>对于所有的正整数$a,b,c,n&gt;2$，有<br>\[{a^n} + {b^n} \ne {c^n}\]</p>
-<h1 id="费马小定理"><a href="#费马小定理" class="headerlink" title="费马小定理"></a>费马小定理</h1><hr>
-<p>如果$n \bot p$，那么有<br>\[{n^{p - 1}} \equiv 1(\bmod p)\]</p>
-<p>证明也很好证。</p>
-<p>之前证过了，序列<br>\[n\bmod p,2n\bmod p, \ldots ,(p - 1)n\bmod p\]<br>结果就是<br>\[1,2, \ldots ,p-1\]<br>的某个排列，所以有<br>\[n \cdot (2n) \cdot  \ldots  \cdot ((p - 1)n) \equiv (p - 1)!\]<br>所以<br>\[(p - 1)!{n^{p - 1}} \equiv (p - 1)!(\bmod p)\]<br>所以<br>\[{n^{p - 1}} \equiv 1(\bmod p)\]</p>
-<h1 id="欧拉函数"><a href="#欧拉函数" class="headerlink" title="欧拉函数"></a>欧拉函数</h1><hr>
-<p>定义$\varphi (m)$为小于$m$且与其互素的正整数个数。</p>
-<p>所以我们有欧拉定理<br>\[{n^{\varphi (m)}} \equiv 1(\bmod m)\]<br>其中$n \bot m$，可以发现，当$m$是素数时，欧拉定理就是费马小定理，所以欧拉定理是费马小定理的推广形式。</p>
-<p>欧拉定理有很多有趣的性质，这里就不一一介绍了，详情见<a href="https://blog.csdn.net/howe_young/article/details/50282775" target="_blank" rel="noopener">博客地址</a>。</p>
-<h1 id="莫比乌斯函数"><a href="#莫比乌斯函数" class="headerlink" title="莫比乌斯函数"></a>莫比乌斯函数</h1><hr>
-<p>定义莫比乌斯函数$\mu (m)$为<br>\[\sum\limits_{d|m} {\mu (d)}  = [m = 1]\]</p>
-<p>这个定义看起来很奇怪是不是？其实这是一个递归定义，可以递归地计算得到所有的值。</p>
-<p>这个函数有什么用呢？主要用来进行莫比乌斯反演：<br>\[g(m) = \sum\limits_{d|m} {f(d)}  \Leftrightarrow f(m) = \sum\limits_{d|m} {\mu (d)g(\frac{m}{d})} \]</p>
-<p>详细的性质及应用也不介绍了，给大家推荐一个牛逼的博客<a href="https://blog.csdn.net/acdreamers/article/details/8542292" target="_blank" rel="noopener">博客地址</a>，我当时学ACM的时候这部分都是看着他的学的。</p>
-<h1 id="组合数入门"><a href="#组合数入门" class="headerlink" title="组合数入门"></a>组合数入门</h1><hr>
-<p>定义组合数$\left( {\begin{array}{c}n\\k\end{array}} \right)$为从$n$个物品中取出$k$个物品的方法数，具体计算为<br>\[\left( {\begin{array}{c}n\\k\end{array}} \right) = \frac{ {n(n - 1) \ldots (n - k + 1)}}{ {k(k - 1) \ldots 1}}\]</p>
-<p>推广到实数领域，定义<br>\[\left( {\begin{array}{c}r\\k\end{array}} \right) = \left\{ {\begin{array}{c}{\frac{ {r(r - 1) \ldots (r - k + 1)}}{ {k(k - 1) \ldots 1}} = \frac{ { {r^{\underline{k}}}}}{ {k!}},k \ge 0}\\{0,k &lt; 0}\end{array}} \right.\]</p>
-<p>下面介绍一些组合数性质。</p>
-<h2 id="性质1"><a href="#性质1" class="headerlink" title="性质1"></a>性质1</h2><p>\[\left( {\begin{array}{c}n\\k\end{array}} \right) = \left( {\begin{array}{c}n\\{n - k}\end{array}} \right),n,k \in \mathbb{Z},n \ge 0\]<br>这里为什么要限定$n \ge 0$呢？举个例子，如果$n = -1$，那么有<br>\[\left( {\begin{array}{c}{ - 1}\\k\end{array}} \right) \ne \left( {\begin{array}{c}{ - 1}\\{ - 1 - k}\end{array}} \right)\]<br>因为左边等于${( - 1)^k}$，而右边等于${( - 1)^{-1-k}}$。</p>
-<h2 id="性质2"><a href="#性质2" class="headerlink" title="性质2"></a>性质2</h2><p>\[\left( {\begin{array}{c}r\\k\end{array}} \right) = \frac{r}{k}\left( {\begin{array}{c}{r - 1}\\{k - 1}\end{array}} \right)\]</p>
-<h2 id="性质3"><a href="#性质3" class="headerlink" title="性质3"></a>性质3</h2><p>\[(r - k)\left( {\begin{array}{c}r\\k\end{array}} \right) = r\left( {\begin{array}{c}{r - 1}\\k\end{array}} \right)\]</p>
-<h2 id="性质4"><a href="#性质4" class="headerlink" title="性质4"></a>性质4</h2><p>\[\left( {\begin{array}{c}r\\k\end{array}} \right) = \left( {\begin{array}{c}{r - 1}\\k\end{array}} \right) + \left( {\begin{array}{c}{r - 1}\\{k - 1}\end{array}} \right)\]<br>这条性质可以通过性质3和性质4两边分别相加得到。</p>
-<h2 id="性质5"><a href="#性质5" class="headerlink" title="性质5"></a>性质5</h2><p>\[\sum\limits_{k \le n} {\left( {\begin{array}{c}{r + k}\\k\end{array}} \right)}  = \left( {\begin{array}{c}{r + n + 1}\\n\end{array}} \right)\]</p>
-<h2 id="性质6"><a href="#性质6" class="headerlink" title="性质6"></a>性质6</h2><p>\[\sum\limits_{0 \le k \le n} {\left( {\begin{array}{c}k\\m\end{array}} \right)}  = \left( {\begin{array}{c}{n + 1}\\{m + 1}\end{array}} \right)\]</p>
-<h2 id="性质7"><a href="#性质7" class="headerlink" title="性质7"></a>性质7</h2><p>微分形式：<br>\[\Delta \left( {\left( {\begin{array}{c}x\\m\end{array}} \right)} \right) = \left( {\begin{array}{c}{x + 1}\\m\end{array}} \right) - \left( {\begin{array}{c}x\\m\end{array}} \right) = \left( {\begin{array}{c}x\\{m - 1}\end{array}} \right)\]<br>\[\sum {\left( {\begin{array}{c}x\\m\end{array}} \right)\delta x = } \left( {\begin{array}{c}x\\{m + 1}\end{array}} \right) + C\]</p>
-<h1 id="二项式系数"><a href="#二项式系数" class="headerlink" title="二项式系数"></a>二项式系数</h1><hr>
-<p>\[{(x + y)^r} = \sum\limits_k {\left( {\begin{array}{c}r\\k\end{array}} \right)} {x^k}{y^{r - k}},r \in \mathbb{Z}\]</p>
-<p>二项式系数也有很多有趣的性质。</p>
-<p>\[{2^n} = \left( {\begin{array}{c}n\\0\end{array}} \right) + \left( {\begin{array}{c}n\\1\end{array}} \right) +  \cdots  + \left( {\begin{array}{c}n\\n\end{array}} \right)\]</p>
-<p>\[{0^n} = \left( {\begin{array}{c}n\\0\end{array}} \right) - \left( {\begin{array}{c}n\\1\end{array}} \right) +  \cdots  + {( - 1)^n}\left( {\begin{array}{c}n\\n\end{array}} \right)\]<br>即奇数项系数和等于偶数项系数和。</p>
-<p>推广到实数域：<br>\[{(1 + z)^r} = \sum\limits_k {\left( {\begin{array}{c}r\\k\end{array}} \right){z^k}} ,\left| z \right| &lt; 1,r \in \mathbb{R}\]<br>可以通过泰勒展开证明。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>有 n 个气球，编号为0 到 n-1，每个气球上都标有一个数字，这些数字存在数组 nums 中。</p>
+<p>现在要求你戳破所有的气球。每当你戳破一个气球 i 时，你可以获得 nums[left] <em> nums[i] </em> nums[right] 个硬币。 这里的 left 和 right 代表和 i 相邻的两个气球的序号。注意当你戳破了气球 i 后，气球 left 和气球 right 就变成了相邻的气球。</p>
+<p>求所能获得硬币的最大数量。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+[3,1,5,8]
+输出：
+167
+解释：
+nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
+coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>你可以假设 nums[-1] = nums[n] = 1，但注意它们不是真实存在的所以并不能被戳破。</li>
+<li>0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="dfs-记忆化搜索"><a href="#dfs-记忆化搜索" class="headerlink" title="dfs+记忆化搜索"></a>dfs+记忆化搜索</h3><p>对于区间 [l, r] ，我们考虑最后一个被戳破的气球 k ，那么之前的步骤我们可以分为两步，也就是求 [l, k-1] 和 [k+1, r] 之间的最大分数。</p>
+<p>那么为什么不考虑先戳破 k 呢？因为这样的话 [l, k-1] 和 [k+1, r] 就会连接在一起，两个子状态就不能独立计算了，互相会产生影响。</p>
+<p>两个子区间的最大的分算完之后，最后 k 的得分就是 nums[l-1] <em> nums[k] </em> nums[r+1] ，取使得总得分最高的 k 就行了。</p>
+<p>有一个小技巧就是，提示里也说了，就是刚开始的时候在首尾各添加一个分数为 1 的虚拟气球。</p>
+<p>但是直接这样递归会超时，因为有很多的子状态都重复计算了，所以可以用一个全局的数组保存每个状态的分数。初始化为 -1 ，如果某个状态计算过了，就直接返回它的值就行了，不然就递归计算。</p>
+<h3 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h3><p>上面的方法是自顶向下的，其实也可以转化成自底向上的，也就是从小的区间开始算起，最后算最大的，这就是动态规划的方法，具体的实现细节和上面是一模一样的。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="dfs-记忆化搜索（c-）"><a href="#dfs-记忆化搜索（c-）" class="headerlink" title="dfs+记忆化搜索（c++）"></a>dfs+记忆化搜索（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">510</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> dp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> <span class="token function">maxCoins</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        nums<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        nums<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>dp<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> dp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>dp<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> dp<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>l <span class="token operator">></span> r<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> l<span class="token punctuation">;</span> k <span class="token operator">&lt;=</span> r<span class="token punctuation">;</span> <span class="token operator">++</span>k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> nums<span class="token punctuation">[</span>l<span class="token number">-1</span><span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>r<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token function">dfs</span><span class="token punctuation">(</span>l<span class="token punctuation">,</span> k<span class="token number">-1</span><span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">dfs</span><span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">=</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="动态规划（c-）"><a href="#动态规划（c-）" class="headerlink" title="动态规划（c++）"></a>动态规划（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">510</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> dp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> <span class="token function">maxCoins</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        nums<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        nums<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>dp<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> dp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> len <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>len<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">+</span>len<span class="token number">-1</span> <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">int</span> j <span class="token operator">=</span> i <span class="token operator">+</span> len <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> i<span class="token punctuation">;</span> k <span class="token operator">&lt;=</span> j<span class="token punctuation">;</span> <span class="token operator">++</span>k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="dfs-记忆化搜索（python）"><a href="#dfs-记忆化搜索（python）" class="headerlink" title="dfs+记忆化搜索（python）"></a>dfs+记忆化搜索（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">maxCoins</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
+        nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> nums <span class="token operator">+</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>dp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">for</span> _ <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        res <span class="token operator">=</span> self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">,</span> nums<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> res
+
+    <span class="token keyword">def</span> <span class="token function">dfs</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>dp<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>dp<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">[</span>r<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> l <span class="token operator">></span> r<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">0</span>
+        res <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> k <span class="token keyword">in</span> range<span class="token punctuation">(</span>l<span class="token punctuation">,</span> r<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> nums<span class="token punctuation">[</span>l<span class="token number">-1</span><span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>r<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>l<span class="token punctuation">,</span> k<span class="token number">-1</span><span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token operator">+</span>self<span class="token punctuation">.</span>dfs<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>dp<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">=</span> res
+        <span class="token keyword">return</span> res
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="动态规划（python）"><a href="#动态规划（python）" class="headerlink" title="动态规划（python）"></a>动态规划（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">maxCoins</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
+        nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> nums <span class="token operator">+</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+        dp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">for</span> _ <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> l <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token operator">-</span>l<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                j <span class="token operator">=</span> i <span class="token operator">+</span> l <span class="token operator">-</span> <span class="token number">1</span>
+                <span class="token keyword">for</span> k <span class="token keyword">in</span> range<span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> max<span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -671,9 +730,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《具体数学-第12课（数论进阶与组合数入门）》
+                    《每日算法系列【LeetCode 312】戳气球》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/05/14/concrete-math-12/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/30/leetcode-312/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -714,7 +773,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2018/05/14/concrete-math-12/',
+        id: '2020/01/30/leetcode-312/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -997,51 +1056,54 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/05/27/concrete-math-13/">
+                <a href="/2020/01/30/leetcode-312/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="具体数学-第13课（组合数各种性质）">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="每日算法系列【LeetCode 312】戳气球">
                         
-                        <span class="card-title">具体数学-第13课（组合数各种性质）</span>
+                        <span class="card-title">每日算法系列【LeetCode 312】戳气球</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-
-首先庆祝我自己顺利毕业了，忙完了毕业论文答辩一直在浪，所以上周的具体数学没有更新，现在补更一下，大家见谅。
-
-首先这节课讲的基本都是组合数的相关性质，而且特别多，所以我就不在这里详细证明了，如果你们对某一个性质感兴趣，可以自己证明去。
-
+题目描述有 n 个气球，编号为0 到 n-1，每个气球上都标有一个数字，这些数字存在数组 nums 中。
+现在要求你戳破所有的气球。每当你戳破一个气球 i 时，你可以获得 nums[left]  nums[i]  nums[right] 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数学/" class="post-category" target="_blank">
-                                    数学
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/具体数学/" target="_blank">
-                        <span class="chip bg-color">具体数学</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
@@ -1055,34 +1117,39 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/05/07/concrete-math-11/">
+                <a href="/2020/01/29/leetcode-424/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="具体数学-第11课（Stern-Brocot树和同余关系）">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="每日算法系列【LeetCode 424】替换后的最长重复字符">
                         
-                        <span class="card-title">具体数学-第11课（Stern-Brocot树和同余关系）</span>
+                        <span class="card-title">每日算法系列【LeetCode 424】替换后的最长重复字符</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-Stern-Brocot树
-我们接着上节课讲到的Stern-Brocot树继续往下讲。
-LR序列表示对于任意分数$\frac{a}{b}$，我们从$\frac{1}{1}$开始走到它所在的结点。如果向左走就记为L，向右走记为R，最终可以得
+题目描述给你一个仅由大写英文字母组成的字符串，你可以将任意位置上的字符替换成另外的字符，总共可最多替换 k 次。在执行上述操作后，找到包含重复字母的最长子串的长度。
+示例1
+输入：
+s = "ABAB", k = 2
+输出：
+4
+解释：
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-05-07
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数学/" class="post-category" target="_blank">
-                                    数学
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
@@ -1092,8 +1159,12 @@ LR序列表示对于任意分数$\frac{a}{b}$，我们从$\frac{1}{1}$开始走�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/具体数学/" target="_blank">
-                        <span class="chip bg-color">具体数学</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
