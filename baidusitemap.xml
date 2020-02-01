@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://godweiyang.com/2018/04/13/hexo-blog/</loc>
+    <lastmod>2020-02-01</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</loc>
     <lastmod>2020-02-01</lastmod>
   </url>  <url>
@@ -167,9 +170,6 @@
     <lastmod>2020-02-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2020/01/24/happy-shu-year/</loc>
-    <lastmod>2020-02-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/04/13/hexo-blog/</loc>
     <lastmod>2020-02-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2017/11/13/iclr17-1/</loc>
