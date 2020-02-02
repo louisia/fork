@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-02-01T10:58:23.662Z</updated>
+  <updated>2020-02-02T04:28:03.820Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 523】连续的子数组和</title>
+    <link href="https://godweiyang.com/2020/02/02/leetcode-523/"/>
+    <id>https://godweiyang.com/2020/02/02/leetcode-523/</id>
+    <published>2020-02-02T03:53:29.000Z</published>
+    <updated>2020-02-02T04:28:03.820Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>每日算法系列【LeetCode 115】不同的子序列</title>
@@ -596,38 +628,6 @@
     <id>https://godweiyang.com/2020/01/16/leetcode-354/</id>
     <published>2020-01-16T12:28:17.000Z</published>
     <updated>2020-02-01T10:58:58.075Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 1031】两个非重叠子数组的最大和</title>
-    <link href="https://godweiyang.com/2020/01/15/leetcode-1031/"/>
-    <id>https://godweiyang.com/2020/01/15/leetcode-1031/</id>
-    <published>2020-01-15T12:56:17.000Z</published>
-    <updated>2020-02-01T11:01:39.441Z</updated>
     
     <summary type="html">
     

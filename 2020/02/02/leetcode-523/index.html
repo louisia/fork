@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日算法系列【LeetCode 1053】交换一次的先前排列, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 523】连续的子数组和, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
@@ -12,8 +12,8 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给你一个正整数的数组 A（其中的元素不一定完全不同），请你返回可在 一次交换（交换两数字 A[i] 和 A[j] 的位置）后得到的、按字典序排列小于 A 的最大可能排列。
-如果">
+题目描述给定一个包含非负数的数组和一个目标整数 k，编写一个函数来判断该数组是否含有连续的子数组，其大小至少为 2，总和为 k 的倍数，即总和为 n*k，其中 n 也是一个整数。
+示例">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日算法系列【LeetCode 1053】交换一次的先前排列 | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 523】连续的子数组和 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -295,13 +295,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日算法系列【LeetCode 1053】交换一次的先前排列
+                        每日算法系列【LeetCode 523】连续的子数组和
                     </div>
                 </div>
             </div>
@@ -440,7 +440,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-09
+                    2020-02-02
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -454,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    608
+                    761
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
                 
@@ -480,75 +480,79 @@
                 <blockquote>
 <p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
 </blockquote>
-<p><img src="https://godweiyang.com/medias/contact.jpg" alt></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个正整数的数组 A（其中的元素不一定完全不同），请你返回可在 一次交换（交换两数字 A[i] 和 A[j] 的位置）后得到的、按字典序排列小于 A 的最大可能排列。</p>
-<p>如果无法这么操作，就请返回原数组。</p>
+<p><img src="/medias/contact.jpg" alt></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个包含非负数的数组和一个目标整数 k，编写一个函数来判断该数组是否含有连续的子数组，其大小至少为 2，总和为 k 的倍数，即总和为 n*k，其中 n 也是一个整数。</p>
 <p><strong>示例1</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-[3,2,1]
+[23,2,4,6,7], k = 6
 输出：
-[3,1,2]
+True
 解释：
-交换 2 和 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+[2,4] 是一个大小为 2 的子数组，并且和为 6。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>示例2</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-[1,1,5]
+[23,2,6,4,7], k = 6
 输出：
-[1,1,5]
-解释： 
-这已经是最小排列<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>示例3</strong></p>
-<pre class="line-numbers language-text"><code class="language-text">输入：
-[1,9,4,6,7]
-输出：
-[1,7,4,6,9]
+True
 解释：
-交换 9 和 7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>示例4</strong></p>
-<pre class="line-numbers language-text"><code class="language-text">输入：
-[3,1,1,3]
-输出：
-[1,3,1,3]
-解释：
-交换 1 和 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+[23,2,6,4,7]是大小为 5 的子数组，并且和为 42。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>提示</strong></p>
 <ul>
-<li>1 &lt;= A.length &lt;= 10000</li>
-<li>1 &lt;= A[i] &lt;= 10000</li>
+<li>数组的长度不会超过 10000 。</li>
+<li>你可以认为所有数字总和在 32 位有符号整数范围内。</li>
 </ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题主要出发点有以下几点：</p>
-<ul>
-<li>首先要求交换后的字典序变小，那么一定要<strong>大的和小的交换，并且大的在前</strong>。</li>
-<li>其次要求交换后的字典序尽量大，那么在满足第一点的情况下，<strong>大的元素要尽量靠后</strong>。</li>
-<li>最后<strong>小的元素要尽量大，并且靠左</strong>。</li>
-</ul>
-<p>满足这几点条件，也就是要从最右边开始往左寻找，找到<strong>第一个上升</strong>的数字 A[i]（从左往右看是下降，即 A[i] &gt; A[i+1]）。<br>这一点只为了保证上面的条件1，也就是 A[i] 右边存在比它小的元素。</p>
-<p>然后在 A[i+1] 到 A[n-1] 之间所有比 A[i] 小的数字中找最大的那个就行了。如果最大的有多个相同的，取最左边的一个。</p>
-<p>因为 A[i+1] 到 A[n-1] 子数组是单调递增的，所以不用全部遍历一遍，只需要从最右边开始往左找到第一个比 A[i] 小的数就行了。<br>然后从这个数开始，继续往左找和它相等的数，直到最左边一个相等的数 ，就是答案了。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="暴力法"><a href="#暴力法" class="headerlink" title="暴力法"></a>暴力法</h3><p>直接枚举所有的区间，然后求出每个区间的和，看是不是 k 的整数倍就行了。这种方法时间复杂度是 $O(n^3)$ ，一定过不了的。</p>
+<h3 id="前缀和优化"><a href="#前缀和优化" class="headerlink" title="前缀和优化"></a>前缀和优化</h3><p>还是枚举所有区间，但是预处理的时候把所有的前缀和保存到数组里，这样区间求和就可以直接计算出来了。最后时间复杂度是 $O(n^2)$ ，理论上应该还是没法通过，但是这题数据太弱，竟然勉强通过了。</p>
+<h3 id="求余优化"><a href="#求余优化" class="headerlink" title="求余优化"></a>求余优化</h3><p>假设前缀和为 sum ，那么区间 [i, j] 的和就可以表示为 sum[j]-sum[i-1] ，如果它是 k 的倍数，就说明了 sum[j] 和 sum[i-1] 模 k 的余数是相同的。</p>
+<p>那么我们就可以提前把 sum 数组里的每个数都对 k 求余，然后看有没有两个余数是相同的，并且距离大于等于 2 就行了。</p>
+<p>这只需要用一个哈希表就可以判断一个数有没有在之前出现过了。如果一个数没有出现过，就把它的下标放进哈希表。否则的话就判断当前下标和哈希表中的下标差值，如果大于等于 2 ，就找到合法区间了，直接返回 true 。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">prevPermOpt1</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> A<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n<span class="token number">-2</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">></span> A<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> n<span class="token number">-1</span><span class="token punctuation">;</span> j <span class="token operator">></span> i<span class="token punctuation">;</span> <span class="token operator">--</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    <span class="token keyword">if</span> <span class="token punctuation">(</span>A<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> j<span class="token punctuation">;</span> k <span class="token operator">>=</span> i<span class="token punctuation">;</span> <span class="token operator">--</span>k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                            <span class="token keyword">if</span> <span class="token punctuation">(</span>A<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">!=</span> A<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                                <span class="token function">swap</span><span class="token punctuation">(</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> A<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                                <span class="token keyword">break</span><span class="token punctuation">;</span>
-                            <span class="token punctuation">}</span>
-                        <span class="token punctuation">}</span>
-                        <span class="token keyword">break</span><span class="token punctuation">;</span>
-                    <span class="token punctuation">}</span>
+    <span class="token keyword">bool</span> <span class="token function">checkSubarraySum</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>nums<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
                 <span class="token punctuation">}</span>
-                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        unordered_map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span> mp<span class="token punctuation">;</span>
+        mp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token punctuation">(</span>sum <span class="token operator">+</span><span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">=</span> k<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>mp<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span> <span class="token operator">==</span> mp<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                mp<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">-</span> mp<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
             <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> A<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>最后不管是用时还是空间消耗都超越了100%的用户：<br><img src="1.png" alt="运行结果"></p>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">checkSubarraySum</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> k<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> bool<span class="token punctuation">:</span>
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> k <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">and</span> nums<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                    <span class="token keyword">return</span> <span class="token boolean">True</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+        mp <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        mp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+        sum <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sum <span class="token operator">+=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            sum <span class="token operator">%=</span> k
+            <span class="token keyword">if</span> sum <span class="token operator">not</span> <span class="token keyword">in</span> mp<span class="token punctuation">:</span>
+                mp<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span>
+            <span class="token keyword">elif</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">-</span> mp<span class="token punctuation">[</span>sum<span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">2</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">return</span> <span class="token boolean">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>c++ 有多种实现方法，可以用 map 、hash_map 、unordered_map 等多种数据结构。其中 hash_map 不在标准库里，这里没法使用。理论上 unordered_map 比 map 会快一点，但是实际运行中没有发现差别。</p>
 
             </div>
             <hr />
@@ -707,9 +711,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日算法系列【LeetCode 1053】交换一次的先前排列》
+                    《每日算法系列【LeetCode 523】连续的子数组和》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/09/leetcode-1053/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/02/leetcode-523/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -750,7 +754,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2020/01/09/leetcode-1053/',
+        id: '2020/02/02/leetcode-523/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1033,17 +1037,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/01/09/emnlp19-palm/">
+                <a href="/2020/02/02/leetcode-523/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="论文赏析【EMNLP19】语言模型效果不好？也许你可以给它添加一点句法信息">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="每日算法系列【LeetCode 523】连续的子数组和">
                         
-                        <span class="card-title">论文赏析【EMNLP19】语言模型效果不好？也许你可以给它添加一点句法信息</span>
+                        <span class="card-title">每日算法系列【LeetCode 523】连续的子数组和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1052,47 +1057,37 @@
                             
 关注公众号【算法码上来】，每日算法干货马上就来！
 
-论文地址PaLM: A Hybrid Parser and Language Model
-介绍本文介绍了如何将一个句法分析器融入到神经网络语言模型中，这样在利用了句法信息增强语言模型效果
+
+题目描述给定一个包含非负数的数组和一个目标整数 k，编写一个函数来判断该数组是否含有连续的子数组，其大小至少为 2，总和为 k 的倍数，即总和为 n*k，其中 n 也是一个整数。
+示例
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/深度学习/" class="post-category" target="_blank">
-                                    深度学习
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/自然语言处理/" target="_blank">
-                        <span class="chip bg-color">自然语言处理</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/神经网络/" target="_blank">
-                        <span class="chip bg-color">神经网络</span>
-                    </a>
-                    
-                    <a href="/tags/深度学习/" target="_blank">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/EMNLP/" target="_blank">
-                        <span class="chip bg-color">EMNLP</span>
-                    </a>
-                    
-                    <a href="/tags/语言模型/" target="_blank">
-                        <span class="chip bg-color">语言模型</span>
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
@@ -1106,13 +1101,13 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/08/leetcode-315/">
+                <a href="/2020/02/01/leetcode-115/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="每日算法系列【LeetCode 315】计算右侧小于当前元素的个数">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="每日算法系列【LeetCode 115】不同的子序列">
                         
-                        <span class="card-title">每日算法系列【LeetCode 315】计算右侧小于当前元素的个数</span>
+                        <span class="card-title">每日算法系列【LeetCode 115】不同的子序列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1122,12 +1117,13 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给定一个整数数组 nums ，按要求返回一个新数组 counts 。数组 counts 有该性质： counts[i] 的值是 nums[i] 右侧小于 nums[i] 的元素
+题目描述给定一个字符串 S 和一个字符串 T，计算在 S 的子序列中 T 出现的个数。
+一个字符串的一个子序列是指，通过删除一些（也可以不删除）字符且不干扰剩余字符相对位置所组成的新字
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-08
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-01
                             </span>
                         <span class="publish-author">
                             
