@@ -497,14 +497,14 @@
 数字 1 出现在以下数字中: 1, 10, 11, 12, 13 。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题是我搜数位 dp 题目搜出来的，于是我直接用数位 dp 方法把它过了，后来发现其实没必要这么麻烦，简单的计算就能算出来了，这里两个方法我都讲一下。</p>
 <h3 id="数学方法"><a href="#数学方法" class="headerlink" title="数学方法"></a>数学方法</h3><p>我们不妨用 n = 12345 来举个例子。要求小于等于 n 的数字里有多少个 1 ，我们不妨转换个角度，看某一位数字是 1 的话，有多少数字小于 n 。</p>
-<p>例如从右向左数第 i = 2 位（数字 3 ），如果这一位取 1 ，那么左边 2 位如果取 0<del>11 ，那么右边 2 位就没有任何限制，从 0 取到 99 都行。如果左边 2 位如果取 12 ，那么就得考虑 n 中第 i 位是几了，如果大于 1 ，那么右边 2 位还是没有限制；如果等于 1 ，那么右边 2 位只能取 0</del>45 ；如果等于 0 ，那就没得取了。</p>
+<p>例如从右向左数第 i = 2 位（数字 3 ），如果这一位取 1 ，那么左边 2 位如果取 0-11 ，那么右边 2 位就没有任何限制，从 0 取到 99 都行。如果左边 2 位如果取 12 ，那么就得考虑 n 中第 i 位是几了，如果大于 1 ，那么右边 2 位还是没有限制；如果等于 1 ，那么右边 2 位只能取 0-45 ；如果等于 0 ，那就没得取了。</p>
 <p>下面这张图是我打的草稿，看的更清楚一点：</p>
 <p><img src="1.jpg" alt></p>
 <p>一般化描述就是，考虑从右往左数第 i 位是 1 的数字数量。那么 n 中第 i 位左边部分的数字是 $\left\lfloor \frac{n}{10^{i+1}} \right\rfloor$ ，而右边可以取的数量是 $10^i$ ，相乘就是总的数量 $\left\lfloor \frac{n}{10^{i+1}} \right\rfloor \cdot 10^i$ 。如果左边直接取最大值，那么就要考虑第 i 位数字是几了，计算可以得到第 i 位数字为 $\left\lfloor \frac{n}{10^{i}} \right\rfloor \% 10$ ，记为 x 。如果 $x &gt; 1$ ，那么右边无限制，有 $10^i$ 种取法；如果 $x = 1$ ，那么右边有 $n \% 10^i + 1$ 种取法；如果 $x = 0$ ，那么右边无法取，因为第 i 位都没法取 1 。</p>
 <p>综上，令 $x = \left\lfloor \frac{n}{10^{i}} \right\rfloor \% 10$ ，那么答案就是：<br>$$<br>\left\lfloor \frac{n}{10^{i+1}} \right\rfloor \cdot 10^i + 10^i \cdot [x &gt; 1] + (n \% 10^i + 1) \cdot [x = 1]<br>$$</p>
 <h3 id="数位dp"><a href="#数位dp" class="headerlink" title="数位dp"></a>数位dp</h3><p>数位 dp 就麻烦许多了，不想看的可以直接跳过了。</p>
-<p>首先我们从最高位开始往右递归计算，用 pos, count, limit 来表示计算到第 pos 位（从左往右，和数学方法不一样）时，已经出现了 count 个 1 ，并且之后的数字有无限制（也就是能否取遍 0~9 ），这种状态之下方法数是多少。</p>
-<p>那么第 pos 位我们可以取的数字有哪些呢？如果 limit = 1 也就是有限制，那么只能取 0<del>n中第pos位，如果没有限制那就取 0</del>9 。</p>
+<p>首先我们从最高位开始往右递归计算，用 pos, count, limit 来表示计算到第 pos 位（从左往右，和数学方法不一样）时，已经出现了 count 个 1 ，并且之后的数字有无限制（也就是能否取遍 0-9 ），这种状态之下方法数是多少。</p>
+<p>那么第 pos 位我们可以取的数字有哪些呢？如果 limit = 1 也就是有限制，那么只能取 0-n中第pos位，如果没有限制那就取 0-9 。</p>
 <p>假设第 pos 位取 1 ，那么 pos 就转移到了 pos+1 ，count 转移到了 count+1 ，limit 呢？只有当原来有限制，并且第 pos 位正好取了最大值也就是 n 中第 pos 位数字时，limit 还是 1 ，否则的话限制取消，后面的数字随便取。如果第 pos 位不取 1 ，那么除了 count 不变以外，其他两个状态还是跟上面一样转移。</p>
 <p>终止状态的话，如果遍历到了最后一位结束，就返回 count 数量就行了，表示当前数字中有 count 个 1 。</p>
 <p>这样的话会有很多重复计算的状态，所以需要用到记忆化搜索，用 dp[pos][count] 来保存 pos, count, limit=0 状态下的答案。为什么只保存 limit=0 的答案呢？因为只有无限制的情况下，后面的数字才能随便取，跟 n 是多少没有关系。否则的话 n 变了后面的值就会受限于 n ，那么就不是一个定值了，没法保存。</p>
@@ -1039,63 +1039,55 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/02/03/leetcode-233/">
+                <a href="/2020/02/03/encoder-syntactic/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="每日算法系列【LeetCode 233】数字 1 的个数">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="收藏！编码器中如何融入句法信息？这几篇论文一定要看！">
                         
-                        <span class="card-title">每日算法系列【LeetCode 233】数字 1 的个数</span>
+                        <span class="card-title">收藏！编码器中如何融入句法信息？这几篇论文一定要看！</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-关注公众号【算法码上来】，每日算法干货马上就来！
-
-
-题目描述给定一个整数 n，计算所有小于等于 n 的非负整数中数字 1 出现的个数。
-示例1
-输入：
-13
-输出：
-6
-解释：
-数字 1 出现在以下数字中: 1, 10, 11, 12,
+                            引言编码器已经成为了很多 NLP 模型中的基本结构。不管你是做机器翻译，还是做句法分析，不管你是需要得到单词的上下文表示，还是需要得到句子的表示，你都需要一个强有力的编码器。输入一个句子，编码器最终输出每个单词的表示或者整个句子的表示。
+而
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
-                                    编程技巧
+                            <a href="/categories/深度学习/" class="post-category" target="_blank">
+                                    深度学习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/算法/" target="_blank">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/自然语言处理/" target="_blank">
+                        <span class="chip bg-color">自然语言处理</span>
                     </a>
                     
-                    <a href="/tags/leetcode/" target="_blank">
-                        <span class="chip bg-color">leetcode</span>
+                    <a href="/tags/神经网络/" target="_blank">
+                        <span class="chip bg-color">神经网络</span>
+                    </a>
+                    
+                    <a href="/tags/深度学习/" target="_blank">
+                        <span class="chip bg-color">深度学习</span>
                     </a>
                     
                 </div>
@@ -1315,7 +1307,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">182.4k</span>
+            <span class="white-color">182.8k</span>
             
 
             <br>
