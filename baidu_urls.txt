@@ -1,3 +1,4 @@
+https://godweiyang.com/2020/02/04/leetcode-495/
 https://godweiyang.com/2020/02/03/encoder-syntactic/
 https://godweiyang.com/2020/02/03/leetcode-233/
 https://godweiyang.com/2020/02/02/leetcode-523/
@@ -97,4 +98,3 @@ https://godweiyang.com/2018/01/15/paperdaily-4/
 https://godweiyang.com/2018/01/13/paperdaily-3/
 https://godweiyang.com/2018/01/10/paperdaily-2/
 https://godweiyang.com/2018/01/09/paperdaily-1/
-https://godweiyang.com/2018/01/01/pos-lm/
