@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Unsupervised Recurrent Neural Network Grammars, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 289】生命游戏, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
@@ -12,9 +12,8 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-论文地址：Unsupervised Recurrent Neural Network Grammars代码地址：github
-介绍
-这篇是新鲜出炉的NAACL19的关于无监督循环神经网">
+题目描述根据百度百科，生命游戏，简称为生命，是英国数学家约翰·何顿·康威在1970年发明的细胞自动机。
+给定一个包含 m × n 个格子的面板，每一个格子都可以看成是一个细胞。每个细胞">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Unsupervised Recurrent Neural Network Grammars | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 289】生命游戏 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -296,13 +295,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Unsupervised Recurrent Neural Network Grammars
+                        每日算法系列【LeetCode 289】生命游戏
                     </div>
                 </div>
             </div>
@@ -413,24 +412,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/自然语言处理/" target="_blank">
-                            <span class="chip bg-color">自然语言处理</span>
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
                         </a>
                         
-                        <a href="/tags/神经网络/" target="_blank">
-                            <span class="chip bg-color">神经网络</span>
-                        </a>
-                        
-                        <a href="/tags/深度学习/" target="_blank">
-                            <span class="chip bg-color">深度学习</span>
-                        </a>
-                        
-                        <a href="/tags/句法分析/" target="_blank">
-                            <span class="chip bg-color">句法分析</span>
-                        </a>
-                        
-                        <a href="/tags/NAACL/" target="_blank">
-                            <span class="chip bg-color">NAACL</span>
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
                         </a>
                         
                     </div>
@@ -441,8 +428,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/深度学习/" class="post-category" target="_blank">
-                            深度学习
+                        <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                            编程技巧
                         </a>
                         
                     </div>
@@ -453,7 +440,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-04-20
+                    2020-02-07
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -467,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.1k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    4 分
                 </div>
                 
                 
@@ -494,35 +481,88 @@
 <p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
 </blockquote>
 <p><img src="/medias/contact.jpg" alt></p>
-<p><strong>论文地址：</strong><a href="http://arxiv.org/abs/1904.03746" target="_blank" rel="noopener">Unsupervised Recurrent Neural Network Grammars</a><br><strong>代码地址：</strong><a href="https://github.com/harvardnlp/urnng" target="_blank" rel="noopener">github</a></p>
-<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><hr>
-<p>这篇是新鲜出炉的NAACL19的关于无监督循环神经网络文法（URNNG）的论文，在语言模型和无监督成分句法分析上都取得了非常不错的结果，主要采用了变分推理和RNNG。本文公式量较大，因此我也推了好久，算法也挺多的，首先上一张我推导的公式笔记：<br><img src="1.jpg" alt></p>
-<p>我这篇博客就不按照论文的顺序来讲了，就按照我上面这张笔记讲一讲我的理解吧，很多细节可能会忽略，请参见原文吧。</p>
-<p>首先对于无监督成分句法分析，常规做法就是学习一个生成模型$p_{\theta}(x, z)$，就比如RNNG就是一个生成模型，但是缺少句法树$z$的监督信号怎么办呢？现在给你的输入只有句子$x$，那么只能用语言模型$p_{\theta}(x)$来做监督了。习惯上我们喜欢取对数，也就是：<br>\[<br>\log p_{\theta}(x) = \log \sum_z p_{\theta}(x, z)<br>\]<br>这里就存在几个问题，比如$z$的状态空间太大了，不可能穷举所有的，所以接下来按步骤讲解如何求解。</p>
-<h1 id="URNNG模型"><a href="#URNNG模型" class="headerlink" title="URNNG模型"></a>URNNG模型</h1><hr>
-<p>先上一张模型图，让大家对整体模型有个大概的认知：<br><img src="2.png" alt><br>左边是一个推理网络（Inference Network），用来根据输入$x$推理出隐变量也就是句法树$z$的概率分布$q_{\phi}(z | x)$。右边是一个生成模型（Generative Model），用来计算从推理网络中采样出来的句法树$z$的联合概率$p_{\theta}(x, z)$，最后根据上面语言模型算出句子的概率，最大化这个概率即可。</p>
-<p>接下来分别讲解这两个部分和具体的优化方法。</p>
-<h2 id="Inference-Network-q-phi-z-x"><a href="#Inference-Network-q-phi-z-x" class="headerlink" title="Inference Network $q_{\phi}(z | x)$"></a>Inference Network $q_{\phi}(z | x)$</h2><p>首先将词向量$e_i$和位置向量$p_i$拼接，作为推理网络LSTM的输入：<br>\[<br>f_i, b_i = {\rm BiLSTM}([e_i, p_i])<br>\]<br>然后算出span $(i, j)$的得分，计算方式和以往一样，用BiLSTM前后向输出做差，然后通过一个前馈神经网络得到分数：<br>\[<br>s_{ij} = {\rm MLP}([f_{j+1} - f_i; b_{i-1} - b_j])<br>\]<br>接下来就需要计算句法树的概率分布了，这里不直接计算句法树$z$，而是计算它的邻接矩阵$B$的概率分布，这个邻接矩阵意思就是如果span $(i, j)$存在，那么$B_{ij} = 1$，否则的话$B_{ij} = 0$。然后就可以用CRF计算出邻接矩阵$B$对应的概率：<br>\[<br>q_{\phi}(B | x) = \frac{1}{Z_T(x)}\exp(\sum_{i \le j} B_{ij}s_{ij})<br>\]<br>其中$Z_T(x)$是配分函数，也就是用来将概率归约到0到1之间的：<br>\[<br>Z_T(x) = \sum_{B’ \in \mathcal B_T} \exp(\sum_{i \le j} B’_{ij}s_{ij})<br>\]<br>注意这里的$\mathcal B_T$并不是所有的01矩阵集合，而是必须满足能产生合法句法树的矩阵，而这情况也很多，不能穷举求解，在这里采用经典的inside算法来求解这个配分函数：<br><img src="3.jpg" alt><br>不过我觉得这里是错的！就是这里的两处$s_{ij}$应该改成$\exp(s_{ij})$。不过具体代码实现的时候并没有这么做，初始值一样都是$\beta[i,i]=s_{ii}$，但是递推的时候采用了如下式子：<br>\[<br>\beta[i, j] = \log\sum_{k=i}^{j-1}\exp(s_{ij}+\beta[i,k]+\beta[k+1,j])<br>\]<br>其实就是用$e^{\beta}$来取代$\beta$了，化简后就是代码实现这个式子，应该是为了防止数值溢出。</p>
-<p>然后就是采样了，推理网络目的就是计算出句法树的概率分布，然后根据这个分布采样出若干个句法树，那么现在给定一棵句法树可以根据上面的算法计算出它的概率了，那怎么采样呢？其实还是可以通过刚刚计算得出的$\beta$数组来采样，采样算法如下:<br><img src="4.jpg" alt><br>其实就是自顶向下的根据概率分布来采样每个span的split，用一个队列来保存所有还没有采样出split的span，然后把所有采样出的span在邻接矩阵中的对应值标为1。</p>
-<p>最后推理网络采样出了若干个句法树$z$，然后根据CRF计算出每个句法树的概率$q_{\phi}(z | x)$，后面的事情就交给生成网络了。</p>
-<h2 id="Generative-Model-p-theta-x-z"><a href="#Generative-Model-p-theta-x-z" class="headerlink" title="Generative Model $p_{\theta}(x, z)$"></a>Generative Model $p_{\theta}(x, z)$</h2><p>上面的推理网络采样出了若干个句法树$z$，生成网络的目的就是计算它的联合概率$p_{\theta}(x, z)$。这个其实不难，在之前的RNNG论文笔记中，我已经大致讲过了，可以去复习一下：<a href="https://godweiyang.com/2018/09/02/RNNG/">Recurrent Neural Network Grammars</a>，这里稍稍做了一些改进。</p>
-<p>首先需要定义一个栈用来存放转移的历史状态，这里定义栈里放的元素为二元组$(h, g)$，一个是stack-LSTM编码的输出，一个是子树的结构表示。首先需要预测下一步的action是什么，所以取出栈顶的元素$(h_{prev}, g_{prev})$，预测action的时候只要用到隐含层输出：<br>\[<br>p_t = \sigma(w^T h_{prev} + b)<br>\]<br>然后根据这个概率预测action是SHIFT还是REDUCE，下面分两种情况讨论。</p>
-<p>如果是SHIFT，那么因为是生成模型，所以需要预测下一个移进的单词是什么：<br>\[<br>x  \sim  softmax(Wh_{prev} + b)<br>\]<br>然后将单词$x$的词向量输入到stack-LSTM中得到下一个时刻的隐含层输出：<br>\[<br>h_{next} = {\rm LSTM}(e_x, h_{prev})<br>\]<br>最后将$(h_{next}, e_x)$推进栈里。</p>
-<p>如果是REDUCE，那么首先需要取出栈顶的两个元素$(h_r, g_r)$和$(h_l, g_l)$，然后用TreeLSTM计算出两个子结点合并后的子树的表示：<br>\[<br>g_{new} = {\rm TreeLSTM}(g_l, g_r)<br>\]<br>接着还是计算stack-LSTM下一个时刻的隐含层输出：<br>\[<br>h_{new} = {\rm LSTM}(g_{new}, h_{prev})<br>\]<br>最后将$(h_{new}, g_{new})$推进栈里。</p>
-<p>为了防止数值溢出，常规上我们计算联合概率的对数：<br>\[<br>\log p_{\theta}(x, z) = \sum_{t=1}^T \log p_{\theta}(x_t | x_{&lt; t}, z_{&lt; n(t)}) + \sum_{j=1}^{2T-1} \log p_{\theta}(z_j | x_{&lt; m(j)}, z_{&lt; j})<br>\]<br>从这个式子可以看出，联合概率定义为所有给定某段单词和action预测下一个单词和给定某段单词和action预测下一个action的概率之积。</p>
-<p>如果是监督任务比如RNNG，那么只需要最大化这个联合概率就足够了，但是现在要做无监督，没有$z$，注意别搞混了，推理网络采样出的$z$可不能用来监督哦，因为那本来就不是正确的，所以接下来要采用语言模型来作为最终的目标函数。</p>
-<h2 id="Variational-Inference"><a href="#Variational-Inference" class="headerlink" title="Variational Inference"></a>Variational Inference</h2><p>句子$x$的对数概率定义为：<br>\[<br>\log p_{\theta}(x) = \log \sum_{z \in {\mathcal Z}_T} {p_{\theta}(x, z)}<br>\]<br>其中${\mathcal Z}_T$是所有合法句法树的集合，但是这里不可能穷举所有的句法树，所以就要用到变分推理，具体的理论知识不仔细介绍了，可以去查阅变分推理相关知识，下面直接推导。<br>\[<br>\begin{array}{l}\log {p_\theta }(x) = \log \sum\limits_{z \in {\mathcal{Z}_T}} { {p_\theta }(x,z)} \\ = \log\sum\limits_{z \in {\mathcal{Z}_T}} { {q_\phi }(z|x)\frac{ { {p_\theta }(x,z)}}{ { {q_\phi }(z|x)}}} \\ = \log { {\mathbb E}_{ {q_\phi }(z|x)}}\left[ {\frac{ { {p_\theta }(x,z)}}{ { {q_\phi }(z|x)}}} \right]\\ \ge { {\mathbb E}_{ {q_\phi }(z|x)}}\left[ {\log \frac{ { {p_\theta }(x,z)}}{ { {q_\phi }(z|x)}}} \right]\end{array}<br>\]<br>其中最后一行叫做先验$\log p_{\theta}(x)$的证据下界（ELBO），要想最大化先验，可以最大化这个ELBO，如果我们对这个ELBO变化一下形式可以得到：<br>\[<br>\begin{array}{l}{\rm ELBO} = { {\mathbb E}_{ {q_\phi }(z|x)}}\left[ {\log \frac{ { {p_\theta }(x,z)}}{ { {q_\phi }(z|x)}}} \right]\\ = { {\mathbb E}_{ {q_\phi }(z|x)}}\left[ {\log \frac{ { {p_\theta }(z|x){p_\theta }(x)}}{ { {q_\phi }(z|x)}}} \right]\\ = { {\mathbb E}_{ {q_\phi }(z|x)}}\left[ {\log {p_\theta }(x)} \right] - { {\mathbb E}_{ {q_\phi }(z|x)}}\left[ {\log \frac{ { {q_\phi }(z|x)}}{ { {p_\theta }(z|x)}}} \right]\\ = \log {p_\theta }(x) - {\rm KL}({q_\phi }(z|x)\parallel {p_\theta }(z|x))\end{array}<br>\]<br>所以这个ELBO和先验就相差了一个KL散度，最大化ELBO的话等价于最小化KL散度，也就是使推理网络产生句法树的概率分布和生成模型尽量接近。</p>
-<p>但是这个ELBO还是不好算，尽管它把$\log$移到了求和符号也就是期望里面，所以转换一下形式：<br>\[<br>{\rm ELBO} = {\mathbb E}_{q_{\phi}(z|x)}\left[ \log p_{\theta}(x,z) \right] - {\mathbb H} \left[ q_{\phi}(z|x) \right]<br>\]<br>因为模型一共有两组参数，一个是推理网络的参数$\phi$，一个是生成网络的参数$\theta$，所以下面分别对两个参数求导。</p>
-<p>首先对$\theta$求偏导，因为只有第一项有这个参数，所以偏导为：<br>\[<br>\nabla_{\theta}{\rm ELBO} = {\mathbb E}_{q_{\phi}(z|x)}\left[ \nabla_{\theta} \log p_{\theta}(x,z) \right]<br>\]<br>这个偏导可以按照概率$q_{\phi}(z|x)$采样得到：<br>\[<br>\nabla_{\theta}{\rm ELBO} \approx \frac{1}{K}\sum_{k=1}^{K} {\nabla_{\theta} \log p_{\theta}(x,z_k)}<br>\]</p>
-<p>然后对$\phi$求偏导，因为有两项含有这个参数，分别求偏导。第二项是熵，它的值其实可以用之前的$\beta$数组算出来，算法如下：<br><img src="5.jpg" alt><br>然后偏导可以交给深度学习库的自动微分，就不用你自己求啦。</p>
-<p>至于第一项的偏导可以用类似于策略梯度的方法解决：<br>\[<br>\begin{array}{l}{\nabla _\phi }{\mathbb{E}_{ {q_\phi }(z|x)}}\left[ {\log {p_\theta }(x,z)} \right]\\ = {\nabla _\phi }\sum\limits_z { {q_\phi }(z|x)\log {p_\theta }(x,z)} \\ = \sum\limits_z {\log {p_\theta }(x,z){\nabla _\phi }{q_\phi }(z|x)} \\ = \sum\limits_z { {q_\phi }(z|x)\log {p_\theta }(x,z){\nabla _\phi }\log {q_\phi }(z|x)} \\ = {\mathbb{E}_{ {q_\phi }(z|x)}}\left[ {\log {p_\theta }(x,z){\nabla _\phi }\log {q_\phi }(z|x)} \right]\\ \approx \frac{1}{K}\sum\limits_{k = 1}^K {\log {p_\theta }(x,{z_k}){\nabla _\phi }\log {q_\phi }({z_k}|x)} \end{array}<br>\]<br>这里最后也是转化为了采样，和策略梯度做法类似，这里加入baseline来提升性能：<br>\[<br>\begin{array}{l}{\nabla _\phi }{\mathbb{E}_{ {q_\phi }(z|x)}}\left[ {\log {p_\theta }(x,z)} \right]\\ \approx \frac{1}{K}\sum\limits_{k = 1}^K {\log {p_\theta }(x,{z_k}){\nabla _\phi }\log {q_\phi }({z_k}|x)} \\ \approx \frac{1}{K}\sum\limits_{k = 1}^K {(\log {p_\theta }(x,{z_k}) - {r_k}){\nabla _\phi }\log {q_\phi }({z_k}|x)} \end{array}<br>\]<br>其中$r_k$定义为所有其他的对数联合概率的均值：<br>\[<br>r_k = \frac{1}{K-1} \sum_{j \ne k} \log p_{\theta}(x, z_j)<br>\]</p>
-<p>至此所有偏导都已求出来了，两个通过采样得到，一个通过inside算法结果自动微分得到，所以去掉导数符号并相加就得到了最终的损失函数：<br>\[<br>{\mathcal L}(\phi, \theta) \approx \frac{1}{K} \sum_{k=1}^K {\left[ \log p_{\theta}(x, z_k) + (\log p_{\theta}(x, z_k) - r_k)\log q_{\phi}(z_k|x) \right]} - {\mathbb H}\left[ q_{\phi}(z|x) \right]<br>\]<br>一定要注意，这里的$\log p_{\theta}(x, z_k) - r_k$在代码实现的时候不能传入梯度，不然的话对$\theta$的偏导就会多出这一项的偏导了！</p>
-<h1 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h1><hr>
-<p>实验结果这里就不多说了，细节具体看论文吧，就贴两个结果，一个是语言模型：<br><img src="6.jpg" alt><br>可以看出在标准的PTB数据集上，URNNG效果只比监督学习的RNNG和用URNNG损失函数微调后的RNNG效果略差一点，但是在大数据集上，URNNG的优势就体现出来了。</p>
-<p>另一个是无监督成分句法分析，这里是用的全部长度的测试集：<br><img src="7.jpg" alt><br>这个任务上URNNG效果是最好的。</p>
-<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><hr>
-<p>和之前两篇语言模型做无监督成分句法分析类似，这篇论文用推理网络学习句法树的概率分布并采样句法树，再用生成网络计算这些句法树和句子的联合概率，最后用变分推理最大化句子的概率，也就是学习出一个好的语言模型。</p>
-<p>这篇论文的工作还是挺令人惊叹的，融合了inside算法、RNNG、变分推理等等知识。本来我变分推理听老师讲了好几次了都云里雾里的，看了这篇论文后总算弄懂了一点了，不过所了解的还是很少，EM算法、VAE之类的高级境界根本不会。。。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>根据百度百科，生命游戏，简称为生命，是英国数学家约翰·何顿·康威在1970年发明的细胞自动机。</p>
+<p>给定一个包含 m × n 个格子的面板，每一个格子都可以看成是一个细胞。每个细胞具有一个初始状态 live（1）即为活细胞， 或 dead（0）即为死细胞。每个细胞与其八个相邻位置（水平，垂直，对角线）的细胞都遵循以下四条生存定律：</p>
+<ul>
+<li>如果活细胞周围八个位置的活细胞数少于两个，则该位置活细胞死亡；</li>
+<li>如果活细胞周围八个位置有两个或三个活细胞，则该位置活细胞仍然存活；</li>
+<li>如果活细胞周围八个位置有超过三个活细胞，则该位置活细胞死亡；</li>
+<li>如果死细胞周围正好有三个活细胞，则该位置死细胞复活；</li>
+</ul>
+<p>根据当前状态，写一个函数来计算面板上细胞的下一个（一次更新后的）状态。下一个状态是通过将上述规则同时应用于当前状态下的每个细胞所形成的，其中细胞的出生和死亡是同时发生的。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+[
+  [0,1,0],
+  [0,0,1],
+  [1,1,1],
+  [0,0,0]
+]
+输出：
+[
+  [0,0,0],
+  [1,0,1],
+  [0,1,1],
+  [0,1,0]
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>进阶</strong></p>
+<ul>
+<li>你可以使用原地算法解决本题吗？请注意，面板上所有格子需要同时被更新：你不能先更新某些格子，然后使用它们的更新后的值再更新其他格子。</li>
+<li>本题中，我们使用二维数组来表示面板。原则上，面板是无限的，但当活细胞侵占了面板边界时会造成问题。你将如何解决这些问题？</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题要求你根据数组每个元素四周的状态来更新数组元素。如果使用一个辅助数组，遍历原数组，然后保存更新后的状态到辅助数组里。这样的话轻轻松松，没有任何难度。但是这题意思是让你不使用辅助数组，直接修改原数组元素，达到一样的目的。</p>
+<p>这样的话就不能直接修改原数组元素了，不然当你遍历下一个元素的时候，它周围的值都变掉了，还怎么看它要不要变呢？所以我们应该想办法把变化前变化后的元素都保存下来。</p>
+<p>因为这题只有两个状态 0 和 1 ，所以我们可以用两位二进制来表示变化前和后的状态，第一位表示变化后，第二位表示变化前。 00，10，01，11 分别表示 0 不变、0 变到 1 、1 变到 0 、1 不变四种变化情况。这样的话就算你直接修改了元素值，也能获取到它的原来的值。最后只需要进行第二遍扫描，取出变化后的值，也就是第一位就行了。</p>
+<p>判断和修改都可以通过位运算来完成。判断修改前是否为 1 可以通过 $x\&amp;1$ 来看。用 m 表示修改（1）或者不修改（0），那么更新后元素就变成了 $x + (m &lt;&lt; 1)$ 。最后更新后的数组元素就是 $x &gt;&gt; 1$ 了。</p>
+<p>而边界问题很好处理，只需要判断一下有没有超出边界就行了。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">void</span> <span class="token function">gameOfLife</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> board<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> dx<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> dy<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> board<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> m <span class="token operator">=</span> board<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> y <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> <span class="token operator">++</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">int</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">int</span> nx <span class="token operator">=</span> x <span class="token operator">+</span> dx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> ny <span class="token operator">=</span> y <span class="token operator">+</span> dy<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">0</span> <span class="token operator">&lt;=</span> nx <span class="token operator">&amp;&amp;</span> nx <span class="token operator">&lt;</span> n <span class="token operator">&amp;&amp;</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> ny <span class="token operator">&amp;&amp;</span> ny <span class="token operator">&lt;</span> m <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>nx<span class="token punctuation">]</span><span class="token punctuation">[</span>ny<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>cnt <span class="token operator">==</span> <span class="token number">2</span> <span class="token operator">||</span> cnt <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>cnt <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> y <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> <span class="token operator">++</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">>>=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">gameOfLife</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> board<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> None<span class="token punctuation">:</span>
+        dx <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+        dy <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+        n<span class="token punctuation">,</span> m <span class="token operator">=</span> len<span class="token punctuation">(</span>board<span class="token punctuation">)</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>board<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> y <span class="token keyword">in</span> range<span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                cnt <span class="token operator">=</span> <span class="token number">0</span>
+                <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    nx<span class="token punctuation">,</span> ny <span class="token operator">=</span> x <span class="token operator">+</span> dx<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> y <span class="token operator">+</span> dy<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                    <span class="token keyword">if</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> nx <span class="token operator">&lt;</span> n <span class="token operator">and</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> ny <span class="token operator">&lt;</span> m <span class="token operator">and</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>nx<span class="token punctuation">]</span><span class="token punctuation">[</span>ny<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                        cnt <span class="token operator">+=</span> <span class="token number">1</span>
+                <span class="token keyword">if</span> board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+                    board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">if</span> cnt<span class="token operator">==</span><span class="token number">2</span> <span class="token operator">or</span> cnt<span class="token operator">==</span><span class="token number">3</span> <span class="token keyword">else</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">if</span> cnt<span class="token operator">==</span><span class="token number">3</span> <span class="token keyword">else</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> y <span class="token keyword">in</span> range<span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">>></span><span class="token operator">=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -681,9 +721,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Unsupervised Recurrent Neural Network Grammars》
+                    《每日算法系列【LeetCode 289】生命游戏》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/04/20/naacl19-urnng/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/07/leetcode-289/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -724,7 +764,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2019/04/20/naacl19-urnng/',
+        id: '2020/02/07/leetcode-289/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1007,17 +1047,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/07/12/algorithm-code-tricks/">
+                <a href="/2020/02/07/leetcode-289/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="算法编程小白机试指南（大佬勿进）">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="每日算法系列【LeetCode 289】生命游戏">
                         
-                        <span class="card-title">算法编程小白机试指南（大佬勿进）</span>
+                        <span class="card-title">每日算法系列【LeetCode 289】生命游戏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1027,14 +1068,77 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-
-大佬就不用往下看了，这篇文章没有任何逻辑，没有任何进阶的指导意义，纯粹为了应付各种机试（夏令营机试、保研机试、程序设计实践考试等等），对正经编程竞赛没有任何帮助。我就想到哪写到哪了，
+题目描述根据百度百科，生命游戏，简称为生命，是英国数学家约翰·何顿·康威在1970年发明的细胞自动机。
+给定一个包含 m × n 个格子的面板，每一个格子都可以看成是一个细胞。每个细胞
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-12
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/02/06/leetcode-556/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="每日算法系列【LeetCode 556】下一个更大元素 III">
+                        
+                        <span class="card-title">每日算法系列【LeetCode 556】下一个更大元素 III</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+关注公众号【算法码上来】，每日算法干货马上就来！
+
+
+题目描述给定一个32位正整数 n，你需要找到最小的32位整数，其与 n 中存在的位数完全相同，并且其值大于n。如果不存在这样的32位整数，则返回-1。
+示例1
+输入：
+12
+输出：
+2
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1054,79 +1158,8 @@
                         <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/机试/" target="_blank">
-                        <span class="chip bg-color">机试</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/03/31/iclr18-prpn/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Neural Language Modeling by Jointly Learning Syntax and Lexicon">
-                        
-                        <span class="card-title">Neural Language Modeling by Jointly Learning Syntax and Lexicon</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-关注公众号【算法码上来】，每日算法干货马上就来！
-
-
-论文地址：Neural Language Modeling by Jointly Learning Syntax and Lexicon代码地址：github
-
-最近开始转向去看看一些
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-31
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/深度学习/" class="post-category" target="_blank">
-                                    深度学习
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/自然语言处理/" target="_blank">
-                        <span class="chip bg-color">自然语言处理</span>
-                    </a>
-                    
-                    <a href="/tags/神经网络/" target="_blank">
-                        <span class="chip bg-color">神经网络</span>
-                    </a>
-                    
-                    <a href="/tags/深度学习/" target="_blank">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/句法分析/" target="_blank">
-                        <span class="chip bg-color">句法分析</span>
-                    </a>
-                    
-                    <a href="/tags/ICLR/" target="_blank">
-                        <span class="chip bg-color">ICLR</span>
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
