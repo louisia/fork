@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://godweiyang.com/2020/02/07/leetcode-289/</loc>
+    <loc>https://godweiyang.com/2020/02/06/leetcode-556/</loc>
     
-    <lastmod>2020-02-07T05:41:36.815Z</lastmod>
+    <lastmod>2020-02-08T03:52:20.874Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/02/06/leetcode-556/</loc>
+    <loc>https://godweiyang.com/2020/02/08/leetcode-719/</loc>
     
-    <lastmod>2020-02-06T02:12:59.291Z</lastmod>
+    <lastmod>2020-02-08T03:43:38.493Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2020/02/07/leetcode-289/</loc>
+    
+    <lastmod>2020-02-07T05:41:36.815Z</lastmod>
     
   </url>
   
