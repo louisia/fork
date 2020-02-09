@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="具体数学-第4课（多重求和方法）, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 16】最接近的三数之和, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
@@ -12,8 +12,7 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-今天讲了多重求和，也就是一个和式由多个下标来指定。
-首先是最简单的形式：\[\sum\limits_{1 \le j,k \le n} { {a_j}{b_k}}  = (\sum\l">
+题目描述给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>具体数学-第4课（多重求和方法） | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 16】最接近的三数之和 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -295,13 +294,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        具体数学-第4课（多重求和方法）
+                        每日算法系列【LeetCode 16】最接近的三数之和
                     </div>
                 </div>
             </div>
@@ -412,8 +411,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/具体数学/" target="_blank">
-                            <span class="chip bg-color">具体数学</span>
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
                         </a>
                         
                     </div>
@@ -424,8 +427,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/数学/" class="post-category" target="_blank">
-                            数学
+                        <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                            编程技巧
                         </a>
                         
                     </div>
@@ -436,7 +439,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-03-19
+                    2020-02-09
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -450,14 +453,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    542
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    2 分
                 </div>
                 
                 
@@ -477,21 +480,53 @@
 <p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
 </blockquote>
 <p><img src="/medias/contact.jpg" alt></p>
-<p>今天讲了多重求和，也就是一个和式由多个下标来指定。</p>
-<p>首先是最简单的形式：<br>\[\sum\limits_{1 \le j,k \le n} { {a_j}{b_k}}  = (\sum\limits_{1 \le j \le n} { {a_j}} )(\sum\limits_{1 \le k \le n} { {a_k}} )\]</p>
-<h1 id="例题1"><a href="#例题1" class="headerlink" title="例题1"></a>例题1</h1><hr>
-<p>下面给出一个对称矩阵：<br>\[A(i,j) = {a_i}{a_j}\]<br>求：<br>\[S = \sum\limits_{1 \le j \le k \le n} { {a_j}{a_k}} \]<br>这是这个矩阵的上三角加对角线求和，因为是对称的嘛，可以补全下三角，加上对角线就行了。<br>\[2S = \sum\limits_{1 \le j,k \le n} { {a_j}{a_k}}  + \sum\limits_{1 \le j = k \le n} { {a_j}{a_k}}  = {(\sum\limits_{1 \le k \le n} { {a_k}} )^2} + \sum\limits_{1 \le k \le n}^{} { {a_k}^2} \]<br>所以<br>\[S = \frac{1}{2}({(\sum\limits_{1 \le k \le n} { {a_k}} )^2} + \sum\limits_{1 \le k \le n}^{} { {a_k}^2} )\]</p>
-<h1 id="例题2"><a href="#例题2" class="headerlink" title="例题2"></a>例题2</h1><hr>
-<p>下面再看一个例子：<br>\[S = \sum\limits_{1 \le j &lt; k \le n} {({a_j} - {a_k})({b_j} - {b_k})} \]<br>同样模仿上例调换$j,k$位置，得到：<br>\[\begin{array}{l}2S = \sum\limits_{1 \le j,k \le n} {({a_j} - {a_k})({b_j} - {b_k})}  - \sum\limits_{1 \le j = k \le n} {({a_j} - {a_k})({b_j} - {b_k})} \\ = \sum\limits_{1 \le j,k \le n} {({a_j}{b_j} - {a_j}{b_k} - {a_k}{b_j} + {a_k}{b_k})} \\ = 2\sum\limits_{1 \le j,k \le n} { {a_j}{b_j}}  - 2\sum\limits_{1 \le j,k \le n} { {a_j}{b_k}} \\ = 2n\sum\limits_{1 \le j \le n} { {a_j}{b_j}}  - 2(\sum\limits_{1 \le j \le n} { {a_j}} )(\sum\limits_{1 \le k \le n} { {b_k}} )\end{array}\]<br>所以<br>\[S = n\sum\limits_{1 \le j \le n} { {a_j}{b_j}}  - (\sum\limits_{1 \le j \le n} { {a_j}} )(\sum\limits_{1 \le k \le n} { {b_k}} )\]<br>至此解完，然后可以推出一个著名的不等式————切比雪夫不等式：<br>\[(\sum\limits_{1 \le j \le n} { {a_j}} )(\sum\limits_{1 \le k \le n} { {b_k}} ) = n\sum\limits_{1 \le j \le n} { {a_j}{b_j}}  - \sum\limits_{1 \le j &lt; k \le n} {({a_j} - {a_k})({b_j} - {b_k})} \]<br>如果<br>\[{a_1} \le {a_2} \le  \cdots  \le {a_n},{b_1} \le {b_2} \le  \cdots  \le {b_n}\]<br>那么<br>\[(\sum\limits_{1 \le j \le n} { {a_j}} )(\sum\limits_{1 \le k \le n} { {b_k}} ) \le n\sum\limits_{1 \le j \le n} { {a_j}{b_j}} \]<br>反之如果<br>\[{a_1} \le {a_2} \le  \cdots  \le {a_n},{b_1} \ge {b_2} \ge  \cdots  \ge {b_n}\]<br>那么<br>\[(\sum\limits_{1 \le j \le n} { {a_j}} )(\sum\limits_{1 \le k \le n} { {b_k}} ) \ge n\sum\limits_{1 \le j \le n} { {a_j}{b_j}} \]<br>更一般的结论，给定两个序列$a$和$b$，求下面式子最大值与最小值：<br>\[\sum\limits_{k = 1}^n { {a_k}{b_{p(k)}}} \]<br>其中$p(k)$是$\{ 1,2, \cdots ,n\} $的一个排列。<br>答案是$b$增序最大，降序最小，至于为什么，下面给出两种证明方法。</p>
-<h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p><img src="1.jpg" alt><br>如上图所示，$a$和$b$按照递增顺序排列，每个方格的面积代表$a_i$与$b_j$的乘积，记为$s_{ij}$。<br>那么上面的求和式其实就是每一行每一列都必须有且只有一块被取。<br>考虑第一行，如果不取$s_{11}$，取其他的$s_{1j}$，那么第一列也只能取其他的$s_{i1}$，这样的话$s_{ij}$也就取不了了。但是发现<br>\[s_{11}+s_{ij} \ge s_{i1}+s_{1j}\]<br>并且两种取法影响的行和列都是相同的，这说明了，取$s_{i1}$和$s_{1j}$不如取$s_{11}$和$s_{ij}$。所以$s_{11}$必取，然后第一行第一列就不能取了。剩下的方阵用相同的方法可以得出必取$s_{22}, \cdots ,s_{nn}$，也就是主对角线。<br>同理最小取法用副对角线可以推出。</p>
-<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p>设数列$a$和$b$非单调递减，那么有如下证明：<br>\[\begin{array}{l}{S_k} = \sum\limits_{i = 1}^k { {b_i}} ,{ {S’}_k} = \sum\limits_{i = 1}^k { {b_{p(i)}}} \\ \Rightarrow {S_k} \le { {S’}_k}\\ \Rightarrow \\\sum\limits_{i = 1}^n { {a_i}{b_i}}  = {S_1}{a_1} - {S_1}{a_2} + {S_2}{a_2} - {S_2}{a_3} +  \cdots  + {S_n}{a_n}\\ = \sum\limits_{i = 1}^{n - 1} { {S_i}} ({a_i} - {a_{i + 1}}) + {S_n}{a_n}\\ \ge \sum\limits_{i = 1}^{n - 1} { { {S’}_i}} ({a_i} - {a_{i + 1}}) + {S_n}{a_n}\\ = \sum\limits_{i = 1}^n { {a_i}{b_{p(i)}}} \end{array}\]<br>反之亦证。</p>
-<p>题外话，其实切比雪夫不等式原来是以微积分形式给出的：<br>如果函数$f(x)$和$g(x)$非单调递减，那么有：<br>\[(\int_a^b {f(x)dx} )(\int_a^b {g(x)dx} ) \le (b - a)(\int_a^b {f(x)g(x)dx} )\]</p>
-<h1 id="例题3"><a href="#例题3" class="headerlink" title="例题3"></a>例题3</h1><hr>
-<p>求<br>\[S = \sum\limits_{1 \le j &lt; k \le n} {\frac{1}{ {k - j}}} \]<br>我将用三种方法来求解这个式子。</p>
-<h3 id="方法1-1"><a href="#方法1-1" class="headerlink" title="方法1"></a>方法1</h3><p>首先将$j$和$k$分开，首先计算对$j$求和：<br>\[\begin{array}{l}S = \sum\limits_{1 \le k \le n} {\sum\limits_{1 \le j &lt; k} {\frac{1}{ {k - j}}} } \\ = \sum\limits_{1 \le k \le n} {\sum\limits_{1 \le k - j &lt; k} {\frac{1}{j}} } \\ = \sum\limits_{1 \le k \le n} {\sum\limits_{0 &lt; j \le k - 1} {\frac{1}{j}} } \\ = \sum\limits_{1 \le k \le n} { {H_{k - 1}}} \\ = \sum\limits_{0 \le k &lt; n} { {H_k}} \end{array}\]</p>
-<h3 id="方法2-1"><a href="#方法2-1" class="headerlink" title="方法2"></a>方法2</h3><p>先计算对$k$求和：<br>\[\begin{array}{l}S = \sum\limits_{1 \le j \le n} {\sum\limits_{j &lt; k \le n} {\frac{1}{ {k - j}}} } \\ = \sum\limits_{1 \le j \le n} {\sum\limits_{j &lt; k + j \le n} {\frac{1}{k}} } \\ = \sum\limits_{1 \le j \le n} {\sum\limits_{0 &lt; k \le n - j} {\frac{1}{k}} } \\ = \sum\limits_{1 \le j \le n} { {H_{n - j}}} \\ = \sum\limits_{0 \le j &lt; n} { {H_j}} \end{array}\]</p>
-<h3 id="方法3"><a href="#方法3" class="headerlink" title="方法3"></a>方法3</h3><p>按对角线求和：<br>\[\begin{array}{l}S = \sum\limits_{1 \le j &lt; k \le n} {\frac{1}{ {k - j}}} \\ = \sum\limits_{1 \le j &lt; k + j \le n} {\frac{1}{k}} \\ = \sum\limits_{1 \le k \le n} {\sum\limits_{1 \le j \le n - k} {\frac{1}{k}} } \\ = \sum\limits_{1 \le k \le n} {\frac{ {n - k}}{k}} \\ = n\sum\limits_{1 \le k \le n} {\frac{1}{k} - } \sum\limits_{1 \le k \le n} 1 \\ = n{H_n} - n\end{array}\]</p>
-<p>由此得到了一个完全不同的表示形式！<br>所以我们得到了：<br>\[\sum\limits_{0 \le j &lt; n} { {H_j}}  = n{H_n} - n\]</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+nums = [-1，2，1，-4], target = 1.
+输出：
+2
+解释：
+与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>最暴力的方法就是直接枚举三个不同的数，然后求出差值最小的和，但是这样时间复杂度是 $O(n^3)$ ，太高了。</p>
+<p>那么我们先枚举一个数试试，并且假设它是最小的数，然后寻找比它大的两个数就行了，这就需要我们先对数组进行排序（假设排序后数组是 $a$ ）。</p>
+<p>如果枚举的数是 $a[i]$ ，那么我们只需要寻找和 $t - a[i]$ 差值最小的两个数之和就行了。</p>
+<p>如果用双指针的方法，初始时令 $l = i + 1$ ，同时 $r = n - 1$ 。那么如果 $a[i] + a[l] + a[r] &gt; t$ ，就说明 $r$ 太大了，需要左移。否则的话如果 $a[i] + a[l] + a[r] &lt; t$ ，就说明 $l$ 太小了，需要右移。在不断移动的过程中更新最小差值就行了，因为 $l$ 和 $r$ 最终一共只移动了 $O(n)$ 步，所以总的时间复杂度只有 $O(n \log n + n^2)$ ，忽略低阶项之后只有 $O(n^2)$ ，还是可以接受的。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">threeSumClosest</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> res <span class="token operator">=</span> <span class="token number">10000000</span><span class="token punctuation">;</span>
+        <span class="token function">sort</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nums<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> l <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">int</span> sum <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">abs</span><span class="token punctuation">(</span>sum<span class="token operator">-</span>target<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token function">abs</span><span class="token punctuation">(</span>res<span class="token operator">-</span>target<span class="token punctuation">)</span><span class="token punctuation">)</span> res <span class="token operator">=</span> sum<span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">></span> target<span class="token punctuation">)</span> r<span class="token operator">--</span><span class="token punctuation">;</span>
+                <span class="token keyword">else</span> l<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">threeSumClosest</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        n<span class="token punctuation">,</span> res <span class="token operator">=</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">10000000</span>
+        nums<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token number">-2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            l<span class="token punctuation">,</span> r <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token number">-1</span>
+            <span class="token keyword">while</span> l <span class="token operator">&lt;</span> r<span class="token punctuation">:</span>
+                s <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span>
+                <span class="token keyword">if</span> s <span class="token operator">==</span> target<span class="token punctuation">:</span>
+                    <span class="token keyword">return</span> s
+                <span class="token keyword">if</span> abs<span class="token punctuation">(</span>s<span class="token operator">-</span>target<span class="token punctuation">)</span> <span class="token operator">&lt;</span> abs<span class="token punctuation">(</span>res<span class="token operator">-</span>target<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    res <span class="token operator">=</span> s
+                <span class="token keyword">if</span> s <span class="token operator">></span> target<span class="token punctuation">:</span>
+                    r <span class="token operator">-=</span> <span class="token number">1</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    l <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -650,9 +685,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《具体数学-第4课（多重求和方法）》
+                    《每日算法系列【LeetCode 16】最接近的三数之和》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/03/19/concrete-math-4/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/09/leetcode-16/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -693,7 +728,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2018/03/19/concrete-math-4/',
+        id: '2020/02/09/leetcode-16/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -976,17 +1011,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/03/19/concrete-math-hw2/">
+                <a href="/2020/02/09/leetcode-16/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="具体数学-第二章作业解答">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="每日算法系列【LeetCode 16】最接近的三数之和">
                         
-                        <span class="card-title">具体数学-第二章作业解答</span>
+                        <span class="card-title">每日算法系列【LeetCode 16】最接近的三数之和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -996,32 +1032,35 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-这章作业提前先做掉了，不是很难，有些算着麻烦了一点，就是倒数第二题不大解释的清楚。
-
-
+题目描述给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数学/" class="post-category" target="_blank">
-                                    数学
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/具体数学/" target="_blank">
-                        <span class="chip bg-color">具体数学</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
@@ -1035,13 +1074,13 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/03/18/graduate-technique/">
+                <a href="/2020/02/08/leetcode-719/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="毕业论文相关细节记录">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="每日算法系列【LeetCode 719】找出第 k 小的距离对">
                         
-                        <span class="card-title">毕业论文相关细节记录</span>
+                        <span class="card-title">每日算法系列【LeetCode 719】找出第 k 小的距离对</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1051,22 +1090,23 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-随机数种子
-这是玄学，姑且就设为我的QQ号792321264，看起来效果不错。
-神经网络维数
-不断测试发现，64维效果最好，但最后可能改成512维的。而且64维的话CPU跑的比GPU还
+题目描述给定一个整数数组，返回所有数对之间的第 k 个最小距离。一对 (A, B) 的距离被定义为 A 和 B 之间的绝对差值。
+示例1
+输入：
+nums = [1,3,1]
+k = 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-18
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/深度学习/" class="post-category" target="_blank">
-                                    深度学习
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
@@ -1076,20 +1116,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/自然语言处理/" target="_blank">
-                        <span class="chip bg-color">自然语言处理</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/神经网络/" target="_blank">
-                        <span class="chip bg-color">神经网络</span>
-                    </a>
-                    
-                    <a href="/tags/深度学习/" target="_blank">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/句法分析/" target="_blank">
-                        <span class="chip bg-color">句法分析</span>
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
