@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://godweiyang.com/2020/02/10/leetcode-503/</loc>
+    
+    <lastmod>2020-02-10T02:38:23.745Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
+    
+    <lastmod>2020-02-10T02:00:37.539Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godweiyang.com/2020/02/09/leetcode-16/</loc>
     
     <lastmod>2020-02-09T04:43:02.886Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://godweiyang.com/2020/02/05/leetcode-1039/</loc>
     
     <lastmod>2020-02-05T02:41:01.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
-    
-    <lastmod>2020-02-04T10:00:35.376Z</lastmod>
     
   </url>
   
