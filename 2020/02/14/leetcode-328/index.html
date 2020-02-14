@@ -4,11 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="leetcode-328, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 328】奇偶链表, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="leetcode-328 | 韦阳的博客">
+    <meta name="description" content="
+关注公众号【算法码上来】，每日算法干货马上就来！
+
+
+题目描述给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。
+请尝试使用原地算法完成。你的算法的空间">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>leetcode-328 | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 328】奇偶链表 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -290,13 +295,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        leetcode-328
+                        每日算法系列【LeetCode 328】奇偶链表
                     </div>
                 </div>
             </div>
@@ -406,11 +411,28 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                            编程技巧
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -432,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    961
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
                 
@@ -455,7 +477,81 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <blockquote>
+<p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
+</blockquote>
+<p><img src="/medias/contact.jpg" alt></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。</p>
+<p>请尝试使用原地算法完成。你的算法的空间复杂度应为 O(1)，时间复杂度应为 O(nodes)，nodes 为节点总数。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+1->2->3->4->5->NULL
+输出：
+1->3->5->2->4->NULL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>示例2</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+2->1->3->5->6->4->7->NULL
+输出：
+2->3->6->7->1->5->4->NULL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>应当保持奇数节点和偶数节点的相对顺序。</li>
+<li>链表的第一个节点视为奇数节点，第二个节点视为偶数节点，以此类推。</li>
+</ul>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>本题要求使用原地算法，也就是不允许额外新建一个链表，只能使用常数的空间复杂度来实现。</p>
+<p>要把奇数位置串起来，再把偶数位置串起来，最后把偶数位置链表接到奇数位置链表末尾。因为 <code>head</code> 表示的就是奇数位置链表的第一个结点，所以我们只需要再新建一个变量 <code>even_head</code> 指向 <code>head-&gt;next</code> ，也就是偶数位置链表的第一个结点。</p>
+<p>此外还需要新建两个指针 <code>odd</code> 和 <code>even</code> 分别指向当前遍历到的奇偶结点，初始时分别指向奇偶头结点。</p>
+<p>接下来只需要分成奇偶两条链，各自串联下去就行了。也就是每次把 <code>odd-&gt;next</code> 指向 <code>odd-&gt;next-&gt;next</code> ，把 <code>even-&gt;next</code> 指向 <code>even-&gt;next-&gt;next</code> 。也就是隔了一个元素，把当前结点下一个结点指向它的下一个和它奇偶位置相同的结点。注意的是，这里一定要先改变 <code>even-&gt;next</code> ，再改变 <code>odd-&gt;next</code> 。因为 <code>odd</code> 是在 <code>even</code> 前一个的，先改变它指向的下一个元素并不会影响 <code>even</code> 后面的元素。但是如果你先改变了 <code>even</code> 指向的下一个元素，那么 <code>odd-&gt;next-&gt;next</code> 就变了，就无法指向正确的结点了。</p>
+<p>如果我们换个写法，先把 <code>odd-&gt;next</code> 指向 <code>even-&gt;next</code> ，再把 <code>even-&gt;next</code> 指向 <code>even-&gt;next-&gt;next</code> ，你就能很清楚的看出来了，必须先改变 <code>odd-&gt;next</code> ，因为它依赖于 <code>even-&gt;next</code> 。</p>
+<p>最后把 <code>odd</code> 指向 <code>odd-&gt;next</code> ，把 <code>even</code> 指向 <code>even-&gt;next</code> ，继续遍历下一个结点。</p>
+<p>什么时候停止呢？链表的最后一个结点要么是奇数结点，要么是偶数结点。如果是偶数结点，那么最后 <code>even</code> 不为空，但是它的下一个结点 <code>even-&gt;next</code> 为空，这时候结束遍历。如果是奇数结点，那么最后 <code>odd</code> 不为空，但是 <code>even</code> 为空，那么也结束遍历。综上，如果 <code>even</code> 或者 <code>even-&gt;next</code> 为空的时候，结束遍历。</p>
+<p>最后只需要把 <code>odd</code> 的下一个结点指向 <code>even_head</code> 就能把两个链表串起来了。</p>
+<p>时间复杂度是 $O(n)$ ，空间复杂度是 $O(1)$ ，因为只用到了 3 个额外指针。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    ListNode<span class="token operator">*</span> <span class="token function">oddEvenList</span><span class="token punctuation">(</span>ListNode<span class="token operator">*</span> head<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+        ListNode<span class="token operator">*</span> even_head <span class="token operator">=</span> head<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+        ListNode<span class="token operator">*</span> odd <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        ListNode<span class="token operator">*</span> even <span class="token operator">=</span> head<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>even <span class="token operator">&amp;&amp;</span> even<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            odd<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> even<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+            even<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> even<span class="token operator">-</span><span class="token operator">></span>next<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+            odd <span class="token operator">=</span> odd<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+            even <span class="token operator">=</span> even<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        odd<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> even_head<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># Definition for singly-linked list.</span>
+<span class="token comment" spellcheck="true"># class ListNode:</span>
+<span class="token comment" spellcheck="true">#     def __init__(self, x):</span>
+<span class="token comment" spellcheck="true">#         self.val = x</span>
+<span class="token comment" spellcheck="true">#         self.next = None</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">oddEvenList</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">:</span> ListNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> ListNode<span class="token punctuation">:</span>
+        <span class="token keyword">if</span> head <span class="token keyword">is</span> None<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> head
+        even_head<span class="token punctuation">,</span> odd<span class="token punctuation">,</span> even <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">,</span> head<span class="token punctuation">,</span> head<span class="token punctuation">.</span>next
+        <span class="token keyword">while</span> even <span class="token keyword">is</span> <span class="token operator">not</span> None <span class="token operator">and</span> even<span class="token punctuation">.</span>next <span class="token keyword">is</span> <span class="token operator">not</span> None<span class="token punctuation">:</span>
+            odd<span class="token punctuation">.</span>next <span class="token operator">=</span> even<span class="token punctuation">.</span>next
+            even<span class="token punctuation">.</span>next <span class="token operator">=</span> even<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next
+            odd <span class="token operator">=</span> odd<span class="token punctuation">.</span>next
+            even <span class="token operator">=</span> even<span class="token punctuation">.</span>next
+        odd<span class="token punctuation">.</span>next <span class="token operator">=</span> even_head
+        <span class="token keyword">return</span> head<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
             </div>
             <hr />
 
@@ -613,7 +709,7 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《leetcode-328》
+                    《每日算法系列【LeetCode 328】奇偶链表》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/14/leetcode-328/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -948,15 +1044,20 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="leetcode-328">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="每日算法系列【LeetCode 328】奇偶链表">
                         
-                        <span class="card-title">leetcode-328</span>
+                        <span class="card-title">每日算法系列【LeetCode 328】奇偶链表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+关注公众号【算法码上来】，每日算法干货马上就来！
+
+
+题目描述给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。
+请尝试使用原地算法完成。你的算法的空间
                         
                     </div>
                     <div class="publish-info">
@@ -965,10 +1066,29 @@
                             </span>
                         <span class="publish-author">
                             
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
+                                </a>
+                            
+                            
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1185,7 +1305,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">191k</span>
+            <span class="white-color">191.9k</span>
             
 
             <br>
