@@ -1,3 +1,6 @@
+https://godweiyang.com/2020/02/14/leetcode-328/
+https://godweiyang.com/2020/02/13/leetcode-926/
+https://godweiyang.com/2020/02/12/leetcode-1186/
 https://godweiyang.com/2020/02/11/leetcode-927/
 https://godweiyang.com/2020/02/10/leetcode-503/
 https://godweiyang.com/2020/02/09/leetcode-16/
@@ -95,6 +98,3 @@ https://godweiyang.com/2018/03/19/concrete-math-hw2/
 https://godweiyang.com/2018/03/19/concrete-math-4/
 https://godweiyang.com/2018/03/18/graduate-technique/
 https://godweiyang.com/2018/03/12/concrete-math-3/
-https://godweiyang.com/2018/03/09/nvidia-cuda-dynet/
-https://godweiyang.com/2018/03/05/concrete-math-hw1/
-https://godweiyang.com/2018/03/05/concrete-math-2/

@@ -291,7 +291,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    427
+                    653
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -483,6 +483,9 @@
 <p>下面就给大家简要分享 11 篇融入了句法结构信息的 LSTM 和 Transformer 变体的论文，其中 LSTM 变体有 5 篇， Transformer 变体有 6 篇。</p>
 <h2 id="LSTM"><a href="#LSTM" class="headerlink" title="LSTM"></a>LSTM</h2><h3 id="01"><a href="#01" class="headerlink" title="01"></a>01</h3><p><a href="http://arxiv.org/abs/1711.02013" title="ICLR18: Neural Language Modeling by Jointly Learning Syntax and Lexicon" target="_blank" rel="noopener">Neural Language Modeling by Jointly Learning Syntax and Lexicon</a></p>
 <p><img src="1.jpg" alt></p>
+<p><strong>代码地址：</strong><br><a href="https://github.com/yikangshen/PRPN" target="_blank" rel="noopener">https://github.com/yikangshen/PRPN</a></p>
+<p>本文提出了一种新的语言模型叫做 PRPN ，隐式地建模句法树信息。因为可以更好的捕获到句子的句法信息，所以对语言模型有提升效果。同时还可以无监督地提取出句子的句法树，虽然可能不大准，但是也像模像样了。</p>
+<p>具体实现上，模型分为了三个部分：Parsing 模块、Reading 模块和 Predict 模块。其中 Parsing 模块用 CNN 来预测相邻两个单词的句法距离（概念详见 <a href="http://aclweb.org/anthology/P18-1108" title="ACL18: Straight to the Tree: Constituency Parsing with Neural Syntactic Distance" target="_blank" rel="noopener">Straight to the Tree: Constituency Parsing with Neural Syntactic Distance</a>），通过句法距离就可以还原出句子的句法树了。Reading 模块用来建模上下文，同时还融入了前面时刻预测出来的句法距离信息。Predict 模块用来预测下一个单词是什么，做语言模型。</p>
 <h3 id="02"><a href="#02" class="headerlink" title="02"></a>02</h3><p><a href="https://www.aclweb.org/anthology/N19-1116/" title="NAACL19: Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Autoencoders" target="_blank" rel="noopener">Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Autoencoders</a></p>
 <p><img src="3.jpg" alt></p>
 <h3 id="03"><a href="#03" class="headerlink" title="03"></a>03</h3><p><a href="http://arxiv.org/abs/1904.03746" title="NAACL19: Unsupervised Recurrent Neural Network Grammars" target="_blank" rel="noopener">Unsupervised Recurrent Neural Network Grammars</a></p>
@@ -500,8 +503,8 @@
 <h3 id="09"><a href="#09" class="headerlink" title="09"></a>09</h3><p><a href="http://arxiv.org/abs/1908.00449" title="CoRR19: Tree-Transformer: A Transformer-Based Method for Correction of Tree-Structured Data" target="_blank" rel="noopener">Tree-Transformer: A Transformer-Based Method for Correction of Tree-Structured Data</a></p>
 <p><img src="9.jpg" alt></p>
 <h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><p><a href="https://openreview.net/pdf?id=HJxK5pEYvr" title="ICLR20: Tree-Structured Attention with Hierarchical Accumulation" target="_blank" rel="noopener">Tree-Structured Attention with Hierarchical Accumulation</a></p>
-<p><strong>代码地址：</strong><br><a href="https://github.com/nxphi47/tree_transformer" target="_blank" rel="noopener">https://github.com/nxphi47/tree_transformer</a></p>
 <p><img src="11.jpg" alt></p>
+<p><strong>代码地址：</strong><br><a href="https://github.com/nxphi47/tree_transformer" target="_blank" rel="noopener">https://github.com/nxphi47/tree_transformer</a></p>
 <h3 id="11"><a href="#11" class="headerlink" title="11"></a>11</h3><p><a href="https://openreview.net/pdf?id=BJgQ4lSFPH" title="ICLR20: StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding" target="_blank" rel="noopener">StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding</a></p>
 <p><img src="12.jpg" alt></p>
 
@@ -996,7 +999,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="每日算法系列【LeetCode 495】提莫攻击">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="每日算法系列【LeetCode 495】提莫攻击">
                         
                         <span class="card-title">每日算法系列【LeetCode 495】提莫攻击</span>
                     </div>
@@ -1055,7 +1058,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="每日算法系列【LeetCode 233】数字 1 的个数">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="每日算法系列【LeetCode 233】数字 1 的个数">
                         
                         <span class="card-title">每日算法系列【LeetCode 233】数字 1 的个数</span>
                     </div>
@@ -1263,7 +1266,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">189.1k</span>
+            <span class="white-color">191k</span>
             
 
             <br>

@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://godweiyang.com/2020/02/14/leetcode-328/</loc>
+    <lastmod>2020-02-14</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2020/02/13/leetcode-926/</loc>
+    <lastmod>2020-02-13</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
+    <lastmod>2020-02-12</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2020/02/12/leetcode-1186/</loc>
+    <lastmod>2020-02-12</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2020/02/11/leetcode-927/</loc>
     <lastmod>2020-02-11</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2020/02/10/leetcode-503/</loc>
-    <lastmod>2020-02-10</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
     <lastmod>2020-02-10</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2020/02/09/leetcode-16/</loc>
