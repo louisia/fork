@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</loc>
+    
+    <lastmod>2020-02-17T13:25:50.829Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godweiyang.com/2020/02/16/sort-algorithms/</loc>
     
-    <lastmod>2020-02-17T06:39:20.511Z</lastmod>
+    <lastmod>2020-02-17T13:25:34.348Z</lastmod>
     
   </url>
   
@@ -117,13 +124,6 @@
     <loc>https://godweiyang.com/2018/04/13/hexo-blog/</loc>
     
     <lastmod>2020-02-01T12:12:46.669Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</loc>
-    
-    <lastmod>2020-02-01T11:07:09.498Z</lastmod>
     
   </url>
   
