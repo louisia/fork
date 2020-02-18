@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
+    <lastmod>2020-02-18</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2020/02/18/eoj-3031/</loc>
     <lastmod>2020-02-18</lastmod>
   </url>  <url>
@@ -18,9 +21,6 @@
   </url>  <url>
     <loc>https://godweiyang.com/2020/02/13/leetcode-926/</loc>
     <lastmod>2020-02-13</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
-    <lastmod>2020-02-12</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2020/02/12/leetcode-1186/</loc>
     <lastmod>2020-02-12</lastmod>
