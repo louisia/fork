@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://godweiyang.com/2018/04/13/hexo-blog/</loc>
+    <lastmod>2020-02-19</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2018/03/18/graduate-technique/</loc>
+    <lastmod>2020-02-19</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
     <lastmod>2020-02-18</lastmod>
   </url>  <url>
@@ -54,9 +60,6 @@
   </url>  <url>
     <loc>https://godweiyang.com/2020/02/02/leetcode-523/</loc>
     <lastmod>2020-02-02</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/04/13/hexo-blog/</loc>
-    <lastmod>2020-02-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2018/01/22/2017-conclusion/</loc>
     <lastmod>2020-02-01</lastmod>
@@ -215,9 +218,6 @@
     <lastmod>2020-02-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2017/09/19/eoj3328/</loc>
-    <lastmod>2020-02-01</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2018/03/18/graduate-technique/</loc>
     <lastmod>2020-02-01</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2020/01/24/happy-shu-year/</loc>
