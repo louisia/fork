@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Head-Lexicalized Bidirectional Tree LSTMs, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 684】冗余连接, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
@@ -12,7 +12,8 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-首先给大家说明一下，前两天因为新入手了一个ukulele（就是下图这玩意），所以痴迷于学习弹奏，没有更新博客。照这个节奏下去，PaperDaily恐怕是要变成PaperWeekly了。">
+题目描述在本问题中, 树指的是一个连通且无环的无向图。
+输入一个图，该图由一个有着 $N$ 个节点（节点值不重复 $1, 2, …, N$）的树及一条附加的边构成。附加的边的两个顶点包">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Head-Lexicalized Bidirectional Tree LSTMs | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 684】冗余连接 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -294,13 +295,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Head-Lexicalized Bidirectional Tree LSTMs
+                        每日算法系列【LeetCode 684】冗余连接
                     </div>
                 </div>
             </div>
@@ -411,20 +412,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/自然语言处理/" target="_blank">
-                            <span class="chip bg-color">自然语言处理</span>
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
                         </a>
                         
-                        <a href="/tags/神经网络/" target="_blank">
-                            <span class="chip bg-color">神经网络</span>
-                        </a>
-                        
-                        <a href="/tags/深度学习/" target="_blank">
-                            <span class="chip bg-color">深度学习</span>
-                        </a>
-                        
-                        <a href="/tags/TACL/" target="_blank">
-                            <span class="chip bg-color">TACL</span>
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
                         </a>
                         
                     </div>
@@ -435,8 +428,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/深度学习/" class="post-category" target="_blank">
-                            深度学习
+                        <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                            编程技巧
                         </a>
                         
                     </div>
@@ -447,7 +440,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-13
+                    2020-02-21
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -461,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    821
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    5 分
                 </div>
                 
                 
@@ -488,25 +481,121 @@
 <p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
 </blockquote>
 <p><img src="/medias/contact.jpg" alt></p>
-<p>首先给大家说明一下，前两天因为新入手了一个ukulele（就是下图这玩意），所以痴迷于学习弹奏，没有更新博客。照这个节奏下去，PaperDaily恐怕是要变成PaperWeekly了。（囧。。。）寒假一定要学会《小幸运》，嗯。<br><img src="ukulele.jpg" alt></p>
-<p>好了，今天开始恢复吧（说不准过两天我又鸽了，嘻嘻嘻）。</p>
-<p>今天要讲的这篇是TACL2017的，是关于树状LSTM的。</p>
-<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><hr>
-<p>前两年已经有人提出了树状LSTM的概念，之前一直不知道是个啥高大上的结构。其实就是递归神经网络中的结点单元替换成LSTM的结点单元。那有人要问了，LSTM不是有$x$输入吗，还有一个$h_{t-1}$输入，那这树状的哪来这两个输入？其实很简单，只要把这两个输入替换成左右儿子的输出表示就行了。瞬间感觉也没啥意思，就是换了结点函数，使得树状LSTM具有了遗忘功能，从而能够处理很长的句子罢了。</p>
-<p>今天介绍的这篇paper就是在这基础上做了两点改进。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在本问题中, 树指的是一个连通且无环的无向图。</p>
+<p>输入一个图，该图由一个有着 $N$ 个节点（节点值不重复 $1, 2, …, N$）的树及一条附加的边构成。附加的边的两个顶点包含在 $1$ 到 $N$ 中间，这条附加的边不属于树中已存在的边。</p>
+<p>结果图是一个以边组成的二维数组。每一个边的元素是一对 $[u, v]$ ，满足 $u &lt; v$，表示连接顶点 $u$ 和 $v$ 的无向图的边。</p>
+<p>返回一条可以删去的边，使得结果图是一个有着 $N$ 个节点的树。如果有多个答案，则返回二维数组中最后出现的边。答案边 $[u, v]$ 应满足相同的格式 $u &lt; v$。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+[[1,2], [1,3], [2,3]]
+输出：
+[2,3]
+解释：
+  1
+ / \
+2 - 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>示例2</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+[[1,2], [2,3], [3,4], [1,4], [1,5]]
+输出：
+[1,4]
+解释：
+5 - 1 - 2
+    |   |
+    4 - 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>提示</strong></p>
 <ul>
-<li>除了左右儿子作为输入之外，还增加了$x$输入。$x$是啥呢？就是左右儿子中的头结点，头结点的话传统方法是根据规则来判断谁是头结点的，这里省去了这些复杂的步骤，直接将头结点的判断丢进神经网络中训练。</li>
-<li>增加了反向的树状LSTM，也就是top-down的LSTM。那有人就很好奇了，一个结点分解成两个结点，怎么可能？其实从头结点到任意一个其他结点的路径都可以看成一个独立的LSTM，如果向左参数就是$U_L$，否则就是$U_R$。</li>
+<li>输入的二维数组大小在 $3$ 到 $1000$。</li>
+<li>二维数组中的整数在 $1$ 到 $N$ 之间，其中 $N$ 是输入数组的大小。</li>
 </ul>
-<h1 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h1><hr>
-<p><img src="1.png" alt><br>图1是序列LSTM和树状LSTM的结构区别，这个树状LSTM是之前传统的树状LSTM，不带head结点的。</p>
-<p>之前的基本的树状LSTM的结点单元的具体公式如下：<br><img src="5.png" alt><br>具体我就不解释了（懒。。。），自行类比序列LSTM。</p>
-<p>加入head结点之后，公式区别如下（加粗所示）：<br><img src="2.png" alt><br><img src="3.png" alt><br><img src="4.png" alt></p>
-<p>那么top-down是怎么做的呢？<br><img src="6.png" alt><br>这里可以看出来，向左向右是用的两套不同的参数。注意到，top-down方向的LSTM前提是一定要用head机制作为支撑！不然头结点的$x$算不出来的话是没有办法计算的哦。</p>
-<p>具体训练过程等等就不再阐述了。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><hr>
-<p>这个模型主要是用在了文本分类和情感分类上，我在想能不能用在我的毕设上面。</p>
-<p>我觉得head机制可以加进去，但是反向LSTM貌似是不可行的，因为这里的短语结构树全部是给定的，所以向下计算知道什么时候停止。但是我是做句法分析任务的，没有给定句法树，向下计算无法知道什么时候停止扩展，情况有无数种！向上计算倒是无所谓，最多卡特兰数级别，加上动态规划，可以缩小到$n\log n$级别。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>首先因为这是一个无向图，所以不需要考虑谁是树根。</p>
+<p>那么我们一条条边加入到图里去，直到出现了环为止，那么这条边就是冲突的边，需要删除掉。</p>
+<p>那么怎么判断是否出现了环呢？如果加入一条边 $[u, v]$ 的时候，两个结点所在的连通块不是同一个，那么一定没有环。否则的话，两个结点连在了同一棵子树上，那么一定会产生一个环。</p>
+<p>如何高效的判断两个结点是否在同一棵子树上呢？这就需要用到一个数据结构——<strong>并查集</strong>。</p>
+<p>并查集采用一个数组 $f[i]$ 来表示结点 $i$ 的父结点。那么初始的时候没有任何边，定义所有结点的父结点等于它自身： $f[i] = i$ 。</p>
+<p>当加入一条边 $[u, v]$ 的时候，可以沿着 $u \to f[u] \to f[f[u]] \to \cdots$ 的路径递归找到 $u$ 所在子树的根结点 $ru$（$v$ 同理得到 $rv$），然后只需要判断两个根结点是否相同就行了。如果根结点相同，那么就产生环了，直接输出这个冲突边就行。否则的话就要把这两棵子树连到一起，最简单的做法就是直接把 $ru$ 连到 $rv$ 下面，当作它的子结点，那么就需要更新 $f[ru] = rv$ 。</p>
+<p>下面讲两个常用的并查集优化。</p>
+<p><strong>路径压缩：</strong><br>因为我们无需关注每一棵子树结构是什么样的，我们只关注它的根结点是谁。所以为了减小查找根结点的时间，每个结点离根结点要尽量近。</p>
+<p>那么我们定义查找根结点函数 $find(u)$ ，如果 $u = f[u]$ ，那么不用找了，它自己就是根结点。否则的话调用 $find(f[u])$ 递归寻找子树的根结点。最后做一步路径压缩的优化，把根结点当作 $u$ 的父结点：$f[u] = find(f[u])$ 。这样下次再查找的时候，路径长度就变为了 $1$ ，一步就能找到根结点了。</p>
+<p><strong>按秩合并：</strong><br>合并两棵子树的时候，为了使得合并后的子树高度尽量小，我们需要把高度小的那棵子树接在高度高的那棵下面，当作儿子。</p>
+<p>所以我们定义一个 $rank[i]$ 数组，用来记录 $i$ 这个结点作为根结点的子树高度，初始时全都是 $1$ 。那么在合并的时候，把 $rank$ 值小的接到大的下面去，如果一样怎么办呢？随便接，然后把合并后的根结点 $rank$ 值加 $1$ 就行了。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> rank<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">findRedundantConnection</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> edges<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> e <span class="token operator">:</span> edges<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> u <span class="token operator">=</span> e<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> v <span class="token operator">=</span> e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">same</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span>u<span class="token punctuation">,</span> v<span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token function">join</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            rank<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> u<span class="token operator">==</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">?</span> u <span class="token operator">:</span> f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">join</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        u <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        v <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>u <span class="token operator">==</span> v<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>rank<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">&lt;</span> rank<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            f<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">=</span> v<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            f<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> u<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>rank<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">==</span> rank<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                rank<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">bool</span> <span class="token function">same</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        u <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        v <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> u <span class="token operator">==</span> v<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">findRedundantConnection</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> edges<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        n <span class="token operator">=</span> len<span class="token punctuation">(</span>edges<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>f <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>rank <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> <span class="token punctuation">[</span>u<span class="token punctuation">,</span> v<span class="token punctuation">]</span> <span class="token keyword">in</span> edges<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>same<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token punctuation">[</span>u<span class="token punctuation">,</span> v<span class="token punctuation">]</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>join<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">find</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> u <span class="token operator">==</span> self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> u
+        self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">join</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        u<span class="token punctuation">,</span> v <span class="token operator">=</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> u <span class="token operator">==</span> v<span class="token punctuation">:</span>
+            <span class="token keyword">return</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>rank<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">&lt;</span> self<span class="token punctuation">.</span>rank<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">=</span> v
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> u
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>rank<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">==</span> self<span class="token punctuation">.</span>rank<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>rank<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+
+    <span class="token keyword">def</span> <span class="token function">same</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        u<span class="token punctuation">,</span> v <span class="token operator">=</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> u <span class="token operator">==</span> v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -665,9 +754,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Head-Lexicalized Bidirectional Tree LSTMs》
+                    《每日算法系列【LeetCode 684】冗余连接》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/01/13/paperdaily-3/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/21/leetcode-684/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -708,7 +797,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2018/01/13/paperdaily-3/',
+        id: '2020/02/21/leetcode-684/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -991,17 +1080,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/01/15/paperdaily-4/">
+                <a href="/2020/02/21/leetcode-684/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Top-down Tree Long Short-Term Memory Networks">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="每日算法系列【LeetCode 684】冗余连接">
                         
-                        <span class="card-title">Top-down Tree Long Short-Term Memory Networks</span>
+                        <span class="card-title">每日算法系列【LeetCode 684】冗余连接</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1011,44 +1101,36 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-昨天又鸽了一天，由于水平有限，最主要还是懒，一篇paper看了两天才看了个大概。最近很颓废啊，白天啥都不想干一天就这么过去了，明天开始还是写写毕设代码吧，再好好研究研究。
-介绍
-这次介
+题目描述在本问题中, 树指的是一个连通且无环的无向图。
+输入一个图，该图由一个有着 $N$ 个节点（节点值不重复 $1, 2, …, N$）的树及一条附加的边构成。附加的边的两个顶点包
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/深度学习/" class="post-category" target="_blank">
-                                    深度学习
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/自然语言处理/" target="_blank">
-                        <span class="chip bg-color">自然语言处理</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/神经网络/" target="_blank">
-                        <span class="chip bg-color">神经网络</span>
-                    </a>
-                    
-                    <a href="/tags/深度学习/" target="_blank">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/NAACL/" target="_blank">
-                        <span class="chip bg-color">NAACL</span>
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
@@ -1062,13 +1144,13 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/10/paperdaily-2/">
+                <a href="/2020/02/20/leetcode-1006/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Parsing with Compositional Vector Grammars">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="每日算法系列【LeetCode 1006】笨阶乘">
                         
-                        <span class="card-title">Parsing with Compositional Vector Grammars</span>
+                        <span class="card-title">每日算法系列【LeetCode 1006】笨阶乘</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1078,19 +1160,19 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-今天也没看新的paper，就讲讲我的毕设的paper吧，估计等我文本挖掘这门课上完，也不会再看太多序列标注相关的了，重点要转移到parsing了。毕竟序列标注效果也已经很好了，迁移学习
+题目描述通常，正整数 n 的阶乘是所有小于或等于 n 的正整数的乘积。例如，factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-10
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/深度学习/" class="post-category" target="_blank">
-                                    深度学习
+                            <a href="/categories/编程技巧/" class="post-category" target="_blank">
+                                    编程技巧
                                 </a>
                             
                             
@@ -1100,24 +1182,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ACL/" target="_blank">
-                        <span class="chip bg-color">ACL</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/自然语言处理/" target="_blank">
-                        <span class="chip bg-color">自然语言处理</span>
-                    </a>
-                    
-                    <a href="/tags/神经网络/" target="_blank">
-                        <span class="chip bg-color">神经网络</span>
-                    </a>
-                    
-                    <a href="/tags/深度学习/" target="_blank">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/句法分析/" target="_blank">
-                        <span class="chip bg-color">句法分析</span>
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
