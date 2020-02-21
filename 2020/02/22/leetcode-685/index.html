@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日算法系列【LeetCode 658】找到 K 个最接近的元素, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 685】冗余连接 II, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
@@ -12,7 +12,8 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给定一个排序好的数组，两个整数 k 和 x，从数组中找到最靠近 x（两数之差最小）的 k 个数。返回的结果必须要是按升序排好的。如果有两个数与 x 的差值一样，优先选择数值较小">
+题目描述在本问题中，有根树指满足以下条件的有向图。该树只有一个根节点，所有其他节点都是该根节点的后继。每一个节点只有一个父节点，除了根节点没有父节点。
+输入一个有向图，该图由一个有着 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日算法系列【LeetCode 658】找到 K 个最接近的元素 | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 685】冗余连接 II | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -294,13 +295,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日算法系列【LeetCode 658】找到 K 个最接近的元素
+                        每日算法系列【LeetCode 685】冗余连接 II
                     </div>
                 </div>
             </div>
@@ -439,7 +440,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-15
+                    2020-02-22
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -453,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    625
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    3 分
                 </div>
                 
                 
@@ -480,122 +481,133 @@
 <p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
 </blockquote>
 <p><img src="/medias/contact.jpg" alt></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个排序好的数组，两个整数 k 和 x，从数组中找到最靠近 x（两数之差最小）的 k 个数。返回的结果必须要是按升序排好的。如果有两个数与 x 的差值一样，优先选择数值较小的那个数。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在本问题中，有根树指满足以下条件的有向图。该树只有一个根节点，所有其他节点都是该根节点的后继。每一个节点只有一个父节点，除了根节点没有父节点。</p>
+<p>输入一个有向图，该图由一个有着 $N$ 个节点（节点值不重复 $1, 2, …, N$）的树及一条附加的边构成。附加的边的两个顶点包含在1到N中间，这条附加的边不属于树中已存在的边。</p>
+<p>结果图是一个以边组成的二维数组。 每一个边 的元素是一对 $[u, v]$，用以表示有向图中连接顶点 $u$ 和 $v$ 和顶点的边，其中父节点 $u$ 是子节点 $v$ 的一个父节点。</p>
+<p>返回一条能删除的边，使得剩下的图是有 $N$ 个节点的有根树。若有多个答案，返回最后出现在给定二维数组的答案。</p>
 <p><strong>示例1</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-[1,2,3,4,5], k=4, x=3
+[[1,2], [1,3], [2,3]]
 输出：
-[1,2,3,4]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+[2,3]
+解释：
+  1
+ / \
+v   v
+2-->3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>示例2</strong></p>
 <pre class="line-numbers language-text"><code class="language-text">输入：
-[1,2,3,4,5], k=4, x=-1
+[[1,2], [2,3], [3,4], [4,1], [1,5]]
 输出：
-[1,2,3,4]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+[4,1]
+解释：
+5 <- 1 -> 2
+     ^    |
+     |    v
+     4 <- 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>提示</strong></p>
 <ul>
-<li>k 的值为正数，且总是小于给定排序数组的长度</li>
-<li>数组不为空，且长度不超过 10^4</li>
-<li>数组里的每个元素与 x 的绝对值不超过 10^4</li>
+<li>输入的二维数组大小在 $3$ 到 $1000$。</li>
+<li>二维数组中的整数在 $1$ 到 $N$ 之间，其中 $N$ 是输入数组的大小。</li>
 </ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h3><p>这题要找离 $x$ 最近的 $k$ 个元素，又因为数组是排好序的，所以离 $x$ 最远的元素一定在数组两端。</p>
-<p>那么我们只需要用两个指针，一个指针 $l$ 指着第一个元素，一个指针 $r$ 指着最后一个元素。如果 $r - l \ge k$ ，那就说明窗口中元素个数大于 $k$ ，那么就要删除一个元素。删除哪个呢？就看 $arr[l]$ 和 $arr[r]$ 谁离 $x$ 更远，就删除谁。如果一样远，就删除大的元素 $arr[r]$ 。就这样删到窗口中只剩 $k$ 个元素为止。</p>
-<p>这个方法时间复杂度是 $O(n)$ 。</p>
-<h3 id="二分-滑动窗口"><a href="#二分-滑动窗口" class="headerlink" title="二分+滑动窗口"></a>二分+滑动窗口</h3><p>如果 $n$ 太大，那么仅仅靠滑动窗口显然不行。注意观察答案所在的窗口可以发现，这个长度为 $k$ 的窗口一定是靠近 $x$ 的，也就是 $x$ 要么在窗口前一个位置，要么在窗口后一个位置，要么在窗口中间某个位置。 $x$ 和窗口中间绝对不可能有其他的数组元素。</p>
-<p>那么我们可以二分找到第一个比 $x$ 大的元素（找第一个比它小的元素也行），然后左右各伸展出 $k$ 的长度，最终答案窗口一定就在这个范围之内。然后继续使用上面的滑动窗口来求解。</p>
-<p>这个方法时间复杂度缩减到了 $O(\log n + k)$ 。</p>
-<h3 id="二分"><a href="#二分" class="headerlink" title="二分"></a>二分</h3><p>如果 $k$ 太大，那么上面的方法又没有意义了，还是会退化到 $O(n)$ 。</p>
-<p>上面两个方法都是先把窗口范围定到某一个区间里，然后一点一点的缩小窗口大小，最终得到答案的。那么能否直接判断出长度为 $k$ 的答案窗口位置在哪里呢？</p>
-<p>按照上面的思路，长度为 $k$ 的窗口一定是通过长度为 $k+1$ 的窗口删除首尾之一元素得到的。那么我们观察某一个特定的长度为 $k+1$ 的窗口 $[l, l+k]$ ，如果 $arr[l]$ 离 $x$ 距离比 $arr[l+k]$ 离 $x$ 更远的话，那就要删除 $arr[l]$ ，同时说明 $l$ 以及它左边的所有元素都不可能是答案窗口的左边界。反之如果 $arr[l]$ 离 $x$ 距离小于等于 $arr[l+k]$ 离 $x$ 的距离，那么就要删除 $arr[l+k]$ 了，同时说明 $l$ 右边的元素都不可能是答案窗口的左边界。</p>
-<p>综上，我们可以用二分直接寻找答案窗口的左边界。这样时间复杂度就降到了 $O(\log n)$ 。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="滑动窗口（c-）"><a href="#滑动窗口（c-）" class="headerlink" title="滑动窗口（c++）"></a>滑动窗口（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这题是上一道题<a href="https://zhuanlan.zhihu.com/p/108220276" target="_blank" rel="noopener">LeetCode 685. 冗余连接</a>的进阶版，区别就是无向图变成了有向图。</p>
+<p>上一道题解说过，无向图能构成一棵树的条件是没有环，那么有向图的条件是什么呢？</p>
+<p>首先还是得没有环，其次因为是边是有向的，所以一个结点只能有一个父结点（也就是入度为 $1$）。那么这题解法就有了。</p>
+<ul>
+<li>首先判断有没有入度为 $2$ 的结点，如果有的话，那两条边一定有一条得删掉。</li>
+<li>按照出现时间从后到前看那两条边，删掉其中一条之后是否能构成一棵树（也就是无环）。如果删掉了无环，那就直接返回这条边作为答案。</li>
+<li>如果入度全是 $1$ ，那就直接按照出现时间从前到后看添加了哪一条边之后开始出现了环，那么那条边就是答案。</li>
+</ul>
+<p>判断能否构成一棵树的话还是用并查集，唯一区别就是不需要用<strong>按秩合并</strong>的优化了，而且给定有向边 $[u, v]$，只能把 $v$ 接在 $u$ 下面。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">findClosestElements</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> arr<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n<span class="token number">-1</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>r<span class="token operator">-</span>l <span class="token operator">>=</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token operator">-</span>arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token operator">-</span>x<span class="token punctuation">)</span> r<span class="token operator">--</span><span class="token punctuation">;</span>
-            <span class="token keyword">else</span> l<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> degree<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">findRedundantDirectedConnection</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> edges<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        n <span class="token operator">=</span> edges<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>degree<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> degree<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> e <span class="token operator">:</span> edges<span class="token punctuation">)</span> <span class="token operator">++</span>degree<span class="token punctuation">[</span>e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n<span class="token number">-1</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>degree<span class="token punctuation">[</span>edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">wrongEdge</span><span class="token punctuation">(</span>edges<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
-        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">res</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">copy</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>l<span class="token punctuation">,</span> arr<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>l<span class="token operator">+</span>k<span class="token punctuation">,</span> res<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">wrongEdge</span><span class="token punctuation">(</span>edges<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="二分-滑动窗口（c-）"><a href="#二分-滑动窗口（c-）" class="headerlink" title="二分+滑动窗口（c++）"></a>二分+滑动窗口（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">findClosestElements</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> arr<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n<span class="token number">-1</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;</span> x<span class="token punctuation">)</span> l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-            <span class="token keyword">else</span> r <span class="token operator">=</span> m<span class="token punctuation">;</span>
+
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">wrongEdge</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> edges<span class="token punctuation">,</span> <span class="token keyword">int</span> except<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> except<span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> u <span class="token operator">=</span> edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> v <span class="token operator">=</span> edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">same</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token function">join</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-        r <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>n<span class="token number">-1</span><span class="token punctuation">,</span> l<span class="token operator">+</span>k<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        l <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> l<span class="token operator">-</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>r<span class="token operator">-</span>l <span class="token operator">>=</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token operator">-</span>arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token operator">-</span>x<span class="token punctuation">)</span> r<span class="token operator">--</span><span class="token punctuation">;</span>
-            <span class="token keyword">else</span> l<span class="token operator">++</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">res</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">copy</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>l<span class="token punctuation">,</span> arr<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>l<span class="token operator">+</span>k<span class="token punctuation">,</span> res<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="二分（c-）"><a href="#二分（c-）" class="headerlink" title="二分（c++）"></a>二分（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">findClosestElements</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> arr<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n<span class="token operator">-</span>k<span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token operator">-</span>arr<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">></span> arr<span class="token punctuation">[</span>m<span class="token operator">+</span>k<span class="token punctuation">]</span><span class="token operator">-</span>x<span class="token punctuation">)</span> l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-            <span class="token keyword">else</span> r <span class="token operator">=</span> m<span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            f<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">res</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">copy</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>l<span class="token punctuation">,</span> arr<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>l<span class="token operator">+</span>k<span class="token punctuation">,</span> res<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="滑动窗口（python）"><a href="#滑动窗口（python）" class="headerlink" title="滑动窗口（python）"></a>滑动窗口（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">findClosestElements</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> arr<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> k<span class="token punctuation">:</span> int<span class="token punctuation">,</span> x<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
-        l<span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> n<span class="token number">-1</span>
-        <span class="token keyword">while</span> r<span class="token operator">-</span>l <span class="token operator">>=</span> k<span class="token punctuation">:</span>
-            <span class="token keyword">if</span> x<span class="token operator">-</span>arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token operator">-</span>x<span class="token punctuation">:</span>
-                r <span class="token operator">-=</span> <span class="token number">1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                l <span class="token operator">+=</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> arr<span class="token punctuation">[</span>l<span class="token punctuation">:</span>l<span class="token operator">+</span>k<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="二分-滑动窗口（python）"><a href="#二分-滑动窗口（python）" class="headerlink" title="二分+滑动窗口（python）"></a>二分+滑动窗口（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">findClosestElements</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> arr<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> k<span class="token punctuation">:</span> int<span class="token punctuation">,</span> x<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
-        l<span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> n<span class="token number">-1</span>
-        <span class="token keyword">while</span> l <span class="token operator">&lt;</span> r<span class="token punctuation">:</span>
-            m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
-            <span class="token keyword">if</span> arr<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;</span> x<span class="token punctuation">:</span>
-                l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                r <span class="token operator">=</span> m
-        r <span class="token operator">=</span> min<span class="token punctuation">(</span>n<span class="token number">-1</span><span class="token punctuation">,</span> l<span class="token operator">+</span>k<span class="token number">-1</span><span class="token punctuation">)</span>
-        l <span class="token operator">=</span> max<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> l<span class="token operator">-</span>k<span class="token punctuation">)</span>
-        <span class="token keyword">while</span> r<span class="token operator">-</span>l <span class="token operator">>=</span> k<span class="token punctuation">:</span>
-            <span class="token keyword">if</span> x<span class="token operator">-</span>arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token operator">-</span>x<span class="token punctuation">:</span>
-                r <span class="token operator">-=</span> <span class="token number">1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                l <span class="token operator">+=</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> arr<span class="token punctuation">[</span>l<span class="token punctuation">:</span>l<span class="token operator">+</span>k<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="二分（python）"><a href="#二分（python）" class="headerlink" title="二分（python）"></a>二分（python）</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">findClosestElements</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> arr<span class="token punctuation">:</span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">,</span> k<span class="token punctuation">:</span> int<span class="token punctuation">,</span> x<span class="token punctuation">:</span> int<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
-        l<span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> n<span class="token operator">-</span>k
-        <span class="token keyword">while</span> l <span class="token operator">&lt;</span> r<span class="token punctuation">:</span>
-            m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
-            <span class="token keyword">if</span> x<span class="token operator">-</span>arr<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">></span> arr<span class="token punctuation">[</span>m<span class="token operator">+</span>k<span class="token punctuation">]</span><span class="token operator">-</span>x<span class="token punctuation">:</span>
-                l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                r <span class="token operator">=</span> m
-        <span class="token keyword">return</span> arr<span class="token punctuation">[</span>l<span class="token punctuation">:</span>l<span class="token operator">+</span>k<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> u<span class="token operator">==</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">?</span> u <span class="token operator">:</span> f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">join</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        u <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        v <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>u <span class="token operator">==</span> v<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+        f<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> u<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">bool</span> <span class="token function">same</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        u <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        v <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> u <span class="token operator">==</span> v<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">findRedundantDirectedConnection</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> edges<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>int<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>n <span class="token operator">=</span> len<span class="token punctuation">(</span>edges<span class="token punctuation">)</span>
+        degree <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> u<span class="token punctuation">,</span> v <span class="token keyword">in</span> edges<span class="token punctuation">:</span>
+            degree<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token keyword">for</span> u<span class="token punctuation">,</span> v <span class="token keyword">in</span> edges<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> degree<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span> <span class="token operator">and</span> len<span class="token punctuation">(</span>self<span class="token punctuation">.</span>wrongEdge<span class="token punctuation">(</span>edges<span class="token punctuation">,</span> <span class="token punctuation">[</span>u<span class="token punctuation">,</span> v<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token punctuation">[</span>u<span class="token punctuation">,</span> v<span class="token punctuation">]</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>wrongEdge<span class="token punctuation">(</span>edges<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+
+    <span class="token keyword">def</span> <span class="token function">wrongEdge</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> edges<span class="token punctuation">,</span> ex<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>f <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>self<span class="token punctuation">.</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> u<span class="token punctuation">,</span> v <span class="token keyword">in</span> edges<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token punctuation">[</span>u<span class="token punctuation">,</span> v<span class="token punctuation">]</span> <span class="token operator">==</span> ex<span class="token punctuation">:</span>
+                <span class="token keyword">continue</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>same<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token punctuation">[</span>u<span class="token punctuation">,</span> v<span class="token punctuation">]</span>
+            self<span class="token punctuation">.</span>join<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">find</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> u <span class="token operator">==</span> self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> u
+        self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>u<span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">join</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        u<span class="token punctuation">,</span> v <span class="token operator">=</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> u <span class="token operator">==</span> v<span class="token punctuation">:</span>
+            <span class="token keyword">return</span>
+        self<span class="token punctuation">.</span>f<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> u
+
+    <span class="token keyword">def</span> <span class="token function">same</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        u<span class="token punctuation">,</span> v <span class="token operator">=</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>find<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> u <span class="token operator">==</span> v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -754,9 +766,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日算法系列【LeetCode 658】找到 K 个最接近的元素》
+                    《每日算法系列【LeetCode 685】冗余连接 II》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/15/leetcode-658/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/22/leetcode-685/" property="cc:attributionName"
                rel="cc:attributionURL">
                 韦阳
             </a> 采用
@@ -797,7 +809,7 @@
         repo: 'godweiyang.github.io',
         owner: 'godweiyang',
         admin: "godweiyang",
-        id: '2020/02/15/leetcode-658/',
+        id: '2020/02/22/leetcode-685/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1080,17 +1092,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/16/sort-algorithms/">
+                <a href="/2020/02/22/leetcode-685/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="十大经典排序算法整理汇总（附代码）">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="每日算法系列【LeetCode 685】冗余连接 II">
                         
-                        <span class="card-title">十大经典排序算法整理汇总（附代码）</span>
+                        <span class="card-title">每日算法系列【LeetCode 685】冗余连接 II</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1100,14 +1113,14 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-前言本文整理并总结了十大经典的排序算法（冒泡排序、选择排序、插入排序、快速排序、归并排序、希尔排序、计数排序、基数排序、桶排序、堆排序）的时间复杂度、空间复杂度等性质。
-本文并不会详细
+题目描述在本问题中，有根树指满足以下条件的有向图。该树只有一个根节点，所有其他节点都是该根节点的后继。每一个节点只有一个父节点，除了根节点没有父节点。
+输入一个有向图，该图由一个有着 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1120,6 +1133,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1142,13 +1156,13 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/14/leetcode-328/">
+                <a href="/2020/02/21/leetcode-684/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="每日算法系列【LeetCode 328】奇偶链表">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="每日算法系列【LeetCode 684】冗余连接">
                         
-                        <span class="card-title">每日算法系列【LeetCode 328】奇偶链表</span>
+                        <span class="card-title">每日算法系列【LeetCode 684】冗余连接</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1158,13 +1172,13 @@
 关注公众号【算法码上来】，每日算法干货马上就来！
 
 
-题目描述给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。
-请尝试使用原地算法完成。你的算法的空间
+题目描述在本问题中, 树指的是一个连通且无环的无向图。
+输入一个图，该图由一个有着 $N$ 个节点（节点值不重复 $1, 2, …, N$）的树及一条附加的边构成。附加的边的两个顶点包
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-21
                             </span>
                         <span class="publish-author">
                             
