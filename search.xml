@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>GitHub 给大家送钱啦！快来看看你有没有资格</title>
+      <link href="/2020/02/22/hs-airdrop/"/>
+      <url>/2020/02/22/hs-airdrop/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>看了标题，你可能会觉得这又是个诈骗或者广告，但是这次确实是在送钱。白嫖一时爽，一直白嫖一直爽。</p><p>怎么回事呢，官网在这：<a href="https://www.namebase.io/airdrop" target="_blank" rel="noopener">https://www.namebase.io/airdrop</a>，原话是这么说的：</p><blockquote><p>The Handshake Organization raised money from top Silicon Valley investors including A16Z and Sequoia. They donated $10.2mm to GNU, Mozilla, and other internet foundations. Now they’re giving away ~4662 Handshake coins to qualifying developers on GitHub.</p></blockquote><p>翻译成中文，大致意思就是握手（handshake）组织筹集到了一笔资金，分给了好几个组织，还给 github 每个符合要求的用户捐了 4662 个握手币。握手币可以兑换成比特币，再换成人民币。具体多少呢？<strong>大概也就 0.05 个左右比特币，人民币三五千左右吧</strong>。</p><p>那么重点来了，要符合什么要求呢？要求如下，主要有两点：</p><ul><li>你的 github 账号在 2019 年 2 月 4 号那一周之前拥有 <strong>15 个及以上的粉丝</strong>。</li><li>你的 github 账号在 2019 年 2 月 4 号那一周之前创建过 <strong>SSH key</strong>，并且现在还保留着。</li></ul><p>如果你不知道是否符合要求，也不要紧，按照下面步骤做就是了，不符合会弹出提示的。</p><h2 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h2><blockquote><p>本人电脑系统 Windows 10 专业版 1909，Node.js 版本 10.16.0，npm 版本 6.13.7，其他环境操作大致相同，可能会有小问题，欢迎评论区留言。</p></blockquote><p>首先你电脑里需要 Node.js 和 python 2 的运行环境，安装地址在下面：</p><p><strong>Node.js：</strong><br><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a></p><p><strong>python2：</strong><br><a href="https://www.anaconda.com/distribution/#download-section" target="_blank" rel="noopener">https://www.anaconda.com/distribution/#download-section</a></p><h2 id="下载-hs-airdrop"><a href="#下载-hs-airdrop" class="headerlink" title="下载 hs-airdrop"></a>下载 hs-airdrop</h2><p>运行下面命令：</p><pre><code>git clone https://github.com/handshake-org/hs-airdrop.git</code></pre><h2 id="安装-hs-airdrop-需要的依赖"><a href="#安装-hs-airdrop-需要的依赖" class="headerlink" title="安装 hs-airdrop 需要的依赖"></a>安装 hs-airdrop 需要的依赖</h2><pre><code>cd hs-airdrop &amp;&amp; npm install</code></pre><h2 id="找到你的-SSH-key-存放目录"><a href="#找到你的-SSH-key-存放目录" class="headerlink" title="找到你的 SSH key 存放目录"></a>找到你的 SSH key 存放目录</h2><p>如果你是 Linix ，存放目录一般是 <code>~/.ssh</code> 。如果你跟我一样是 Windows 10，存放目录一般是 <code>C:\Users\你的用户名\.ssh</code> 。</p><p>然后在目录下找到你的 SSH key 文件，注意一定要是符合要求（2019 年 2 月 4 号之前）的那个。例如我的文件路径是 <code>C:\Users\godweiyang\.ssh\id_rsa</code> 。</p><h2 id="生成你的握手币钱包地址"><a href="#生成你的握手币钱包地址" class="headerlink" title="生成你的握手币钱包地址"></a>生成你的握手币钱包地址</h2><p>打开 <a href="https://www.namebase.io/airdrop" target="_blank" rel="noopener">https://www.namebase.io/airdrop</a>，跳转到第 4 步，点击 <code>Click To Show Your Handshake Wallet Address</code> ，然后就会生成出一串如下字符，就是你的钱包地址：</p><p><img src="1.jpg" alt></p><h2 id="生成加密证明"><a href="#生成加密证明" class="headerlink" title="生成加密证明"></a>生成加密证明</h2><p>直接运行如下命令：</p><pre><code>./bin/hs-airdrop &lt;path to key&gt; &lt;address&gt; &lt;fee&gt;</code></pre><p>其中 <code>&lt;path to key&gt;</code> 是刚刚 SSH key 文件路径，<code>&lt;address&gt;</code> 是上一步生成的钱包地址，<code>&lt;fee&gt;</code> 是手续费（单位是握手币），设为默认 0.01 就行了。</p><p>例如我的命令是：</p><pre><code>./bin/hs-airdrop C:\Users\godweiyang\.ssh\id_rsa hs1qxxxxxxxxxxx 0.01</code></pre><p>然后会让你输入 <code>Passphrase</code> ，一般都是空，直接回车就行了。</p><p>运行成功了之后界面是这样的：<br><img src="2.jpg" alt></p><p><strong>报错解决 1 ：</strong><br>如果你是 Windows，你可能会遇到 <code>TypeError: stdin.setRawMode is not a function</code> 错误，不用担心，只需要将命令修改为下面这样：</p><pre><code>node bin/hs-airdrop &lt;path to key&gt; &lt;address&gt; &lt;fee&gt;</code></pre><p>也就是前面加一个 <code>node</code> ，并且运行程序路径最前面去掉 <code>./</code> 就行了。</p><p><strong>报错解决 2 ：</strong><br>可能运行了三四分钟之后，会弹出 <code>Error: read ECONNRESET</code> 错误，这是因为要下载一个 github 仓库，太大了下不下来。</p><p>解决方法就是先下载 <a href="https://gitee.com/shidenggui/hs-tree-data" target="_blank" rel="noopener">https://gitee.com/shidenggui/hs-tree-data</a> 这个仓库内容，然后将仓库内容复制到 <code>C:\Users\你的用户名\.hs-tree-data</code> 目录下。这样运行的时候就不需要下载了，直接就能运行。</p><h2 id="复制-base64-代码"><a href="#复制-base64-代码" class="headerlink" title="复制 base64 代码"></a>复制 base64 代码</h2><p>等待三五分钟，如果成功了，你有资格，那么就会生成一串下面这样的 base64 代码：<br><img src="4.png" alt></p><p>将它复制到 <a href="https://www.namebase.io/airdrop" target="_blank" rel="noopener">https://www.namebase.io/airdrop</a> 最后一步如下框框里（<strong>注意一定要去除 base64 代码中的换行符，让它只有一行！</strong>）：<br><img src="3.jpg" alt></p><h2 id="到账后提现"><a href="#到账后提现" class="headerlink" title="到账后提现"></a>到账后提现</h2><p>到账时间不好说，至少需要 16 个小时，至多你就等着吧，到账的是 HNS 币，也就是握手币。</p><p>然后打开 <a href="https://www.namebase.io/kyc/basic" target="_blank" rel="noopener">https://www.namebase.io/kyc/basic</a> 进行实名认证（不然没法转成比特币），提供身份证、驾照或者护照都可以。</p><p>打开 <a href="https://www.namebase.io/sell" target="_blank" rel="noopener">https://www.namebase.io/sell</a> 将握手币兑换成比特币。</p><p>具体比特币钱包地址如何获取、比特币怎么转换成人民币等操作就不介绍了，网上教程很多。</p><blockquote><p>笔者写这篇文章的时候还没到账，就不截图了，我先去等着了。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机知识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>每日算法系列【LeetCode 685】冗余连接 II</title>
       <link href="/2020/02/22/leetcode-685/"/>
       <url>/2020/02/22/leetcode-685/</url>
