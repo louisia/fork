@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-02-24T12:49:55.149Z</updated>
+  <updated>2020-02-24T18:02:05.904Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,198 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个函数解决【LeetCode 买卖股票的最佳时机】系列所有题目！</title>
+    <link href="https://godweiyang.com/2020/03/01/leetcode-btbss/"/>
+    <id>https://godweiyang.com/2020/03/01/leetcode-btbss/</id>
+    <published>2020-03-01T12:26:13.000Z</published>
+    <updated>2020-02-24T18:02:05.904Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目和题解汇总&quot;&gt;&lt;a href=&quot;#题目和题解汇总&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 309】最佳买卖股票时机含冷冻期</title>
+    <link href="https://godweiyang.com/2020/02/29/leetcode-309/"/>
+    <id>https://godweiyang.com/2020/02/29/leetcode-309/</id>
+    <published>2020-02-29T12:26:13.000Z</published>
+    <updated>2020-02-24T16:07:32.618Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 714】买卖股票的最佳时机含手续费</title>
+    <link href="https://godweiyang.com/2020/02/28/leetcode-714/"/>
+    <id>https://godweiyang.com/2020/02/28/leetcode-714/</id>
+    <published>2020-02-28T12:26:13.000Z</published>
+    <updated>2020-02-24T15:53:31.585Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 188】买卖股票的最佳时机 IV</title>
+    <link href="https://godweiyang.com/2020/02/27/leetcode-188/"/>
+    <id>https://godweiyang.com/2020/02/27/leetcode-188/</id>
+    <published>2020-02-27T12:26:13.000Z</published>
+    <updated>2020-02-24T15:23:08.549Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 123】买卖股票的最佳时机 III</title>
+    <link href="https://godweiyang.com/2020/02/26/leetcode-123/"/>
+    <id>https://godweiyang.com/2020/02/26/leetcode-123/</id>
+    <published>2020-02-26T13:07:29.000Z</published>
+    <updated>2020-02-24T13:54:40.359Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 122】买卖股票的最佳时机 II</title>
+    <link href="https://godweiyang.com/2020/02/25/leetcode-122/"/>
+    <id>https://godweiyang.com/2020/02/25/leetcode-122/</id>
+    <published>2020-02-25T13:07:29.000Z</published>
+    <updated>2020-02-24T16:16:57.996Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>每日算法系列【LeetCode 121】买卖股票的最佳时机</title>
@@ -433,198 +625,6 @@
     <id>https://godweiyang.com/2020/02/11/leetcode-927/</id>
     <published>2020-02-11T01:34:21.000Z</published>
     <updated>2020-02-11T02:30:54.944Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 503】下一个更大元素 II</title>
-    <link href="https://godweiyang.com/2020/02/10/leetcode-503/"/>
-    <id>https://godweiyang.com/2020/02/10/leetcode-503/</id>
-    <published>2020-02-10T01:37:09.000Z</published>
-    <updated>2020-02-10T02:38:23.745Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 16】最接近的三数之和</title>
-    <link href="https://godweiyang.com/2020/02/09/leetcode-16/"/>
-    <id>https://godweiyang.com/2020/02/09/leetcode-16/</id>
-    <published>2020-02-09T02:52:54.000Z</published>
-    <updated>2020-02-09T04:43:02.886Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 719】找出第 k 小的距离对</title>
-    <link href="https://godweiyang.com/2020/02/08/leetcode-719/"/>
-    <id>https://godweiyang.com/2020/02/08/leetcode-719/</id>
-    <published>2020-02-08T01:48:26.000Z</published>
-    <updated>2020-02-08T03:43:38.493Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 289】生命游戏</title>
-    <link href="https://godweiyang.com/2020/02/07/leetcode-289/"/>
-    <id>https://godweiyang.com/2020/02/07/leetcode-289/</id>
-    <published>2020-02-07T03:20:01.000Z</published>
-    <updated>2020-02-07T05:41:36.815Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 556】下一个更大元素 III</title>
-    <link href="https://godweiyang.com/2020/02/06/leetcode-556/"/>
-    <id>https://godweiyang.com/2020/02/06/leetcode-556/</id>
-    <published>2020-02-06T00:23:38.000Z</published>
-    <updated>2020-02-08T03:52:20.874Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 1039】多边形三角剖分的最低得分</title>
-    <link href="https://godweiyang.com/2020/02/05/leetcode-1039/"/>
-    <id>https://godweiyang.com/2020/02/05/leetcode-1039/</id>
-    <published>2020-02-05T00:34:18.000Z</published>
-    <updated>2020-02-05T02:41:01.266Z</updated>
     
     <summary type="html">
     
