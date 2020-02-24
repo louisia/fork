@@ -500,7 +500,7 @@
 0
 解释：
 在这种情况下, 没有交易完成, 所以最大利润为 0。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这是<strong>【买卖股票的最佳时机】</strong>系列题目的第一题。</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>这是 <strong>【买卖股票的最佳时机】</strong> 系列题目的第一题。</p>
 <p>这道题目要求只能买卖一次股票。所以最佳策略一定是挑一个最低的价格买入，再挑一个最高的价格卖出。但是还有另一个限制条件，那就是你得先买，然后才能卖出去。</p>
 <p>所以我们只需要枚举每个股票，把它当作卖出的那一只股票，然后只需要求出它之前价格最低的那一只股票就行了。价格最低的股票可以用一个变量来进行维护，然后枚举所有卖出的股票，减去它之前价格最低的那一只股票，然后和最优答案进行比较，最终就能得到最多能赚多少钱了。</p>
 <p>最终答案就是：<br>$$<br>\max_{0 \le i &lt; n}{\left\{price[i] - \min_{0 \le j &lt; i}{\left\{price[j]\right\}}\right\}}<br>$$</p>
