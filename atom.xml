@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-02T04:27:32.801Z</updated>
+  <updated>2020-03-02T12:06:12.093Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文赏析【EMNLP19】想提升机器翻译效果？可以试一下多粒度的自注意力机制</title>
+    <link href="https://godweiyang.com/2020/03/02/emnlp19-mgsa/"/>
+    <id>https://godweiyang.com/2020/03/02/emnlp19-mgsa/</id>
+    <published>2020-03-02T11:17:20.000Z</published>
+    <updated>2020-03-02T12:06:12.093Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;论文地址&quot;&gt;&lt;a href=&quot;#论文地址&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="深度学习" scheme="https://godweiyang.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="EMNLP" scheme="https://godweiyang.com/tags/EMNLP/"/>
+    
+      <category term="Transformer" scheme="https://godweiyang.com/tags/Transformer/"/>
+    
+  </entry>
   
   <entry>
     <title>每日算法系列【LeetCode 329】矩阵中的最长递增路径</title>
@@ -593,38 +631,6 @@
     <id>https://godweiyang.com/2020/02/14/leetcode-328/</id>
     <published>2020-02-14T03:49:30.000Z</published>
     <updated>2020-02-14T04:39:01.439Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 926】将字符串翻转到单调递增</title>
-    <link href="https://godweiyang.com/2020/02/13/leetcode-926/"/>
-    <id>https://godweiyang.com/2020/02/13/leetcode-926/</id>
-    <published>2020-02-13T04:08:25.000Z</published>
-    <updated>2020-02-13T04:51:26.330Z</updated>
     
     <summary type="html">
     

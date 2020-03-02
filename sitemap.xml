@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://godweiyang.com/friends/index.html</loc>
+    <loc>https://godweiyang.com/2020/03/02/emnlp19-mgsa/</loc>
     
-    <lastmod>2020-03-02T04:58:43.788Z</lastmod>
+    <lastmod>2020-03-02T12:06:12.093Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
     
-    <lastmod>2020-03-02T04:56:06.394Z</lastmod>
+    <lastmod>2020-03-02T11:19:34.301Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2020/01/09/emnlp19-palm/</loc>
+    
+    <lastmod>2020-03-02T11:19:28.276Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/friends/index.html</loc>
+    
+    <lastmod>2020-03-02T04:58:43.788Z</lastmod>
     
   </url>
   
@@ -593,13 +607,6 @@
     <loc>https://godweiyang.com/2018/11/07/emnlp18-dynamic-oracle/</loc>
     
     <lastmod>2020-02-01T11:03:50.613Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/2020/01/09/emnlp19-palm/</loc>
-    
-    <lastmod>2020-02-01T11:03:47.399Z</lastmod>
     
   </url>
   
