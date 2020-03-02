@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
+    <lastmod>2020-03-02</lastmod>
+  </url>  <url>
+    <loc>https://godweiyang.com/2020/02/16/sort-algorithms/</loc>
+    <lastmod>2020-03-02</lastmod>
+  </url>  <url>
     <loc>https://godweiyang.com/2020/03/02/leetcode-329/</loc>
     <lastmod>2020-03-02</lastmod>
   </url>  <url>
@@ -55,14 +61,8 @@
     <loc>https://godweiyang.com/2018/03/18/graduate-technique/</loc>
     <lastmod>2020-02-19</lastmod>
   </url>  <url>
-    <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
-    <lastmod>2020-02-18</lastmod>
-  </url>  <url>
     <loc>https://godweiyang.com/2020/02/18/eoj-3031/</loc>
     <lastmod>2020-02-18</lastmod>
-  </url>  <url>
-    <loc>https://godweiyang.com/2020/02/16/sort-algorithms/</loc>
-    <lastmod>2020-02-17</lastmod>
   </url>  <url>
     <loc>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</loc>
     <lastmod>2020-02-17</lastmod>
