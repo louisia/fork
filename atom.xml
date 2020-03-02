@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-02T12:06:12.093Z</updated>
+  <updated>2020-03-02T17:05:47.955Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>论文赏析【EMNLP19】想提升机器翻译效果？可以试一下多粒度的自注意力机制</title>
+    <title>论文赏析【EMNLP19】多粒度自注意力机制（MG-SA）</title>
     <link href="https://godweiyang.com/2020/03/02/emnlp19-mgsa/"/>
     <id>https://godweiyang.com/2020/03/02/emnlp19-mgsa/</id>
     <published>2020-03-02T11:17:20.000Z</published>
-    <updated>2020-03-02T12:06:12.093Z</updated>
+    <updated>2020-03-02T17:05:47.955Z</updated>
     
     <summary type="html">
     
