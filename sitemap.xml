@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://godweiyang.com/friends/index.html</loc>
+    
+    <lastmod>2020-03-02T04:58:43.788Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godweiyang.com/2020/02/03/encoder-syntactic/</loc>
     
     <lastmod>2020-03-02T04:56:06.394Z</lastmod>
@@ -992,13 +999,6 @@
     <loc>https://godweiyang.com/2020/01/28/leetcode-42/</loc>
     
     <lastmod>2020-02-01T10:58:19.871Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/friends/index.html</loc>
-    
-    <lastmod>2020-01-30T14:29:20.230Z</lastmod>
     
   </url>
   
