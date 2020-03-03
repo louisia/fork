@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-02T17:05:47.955Z</updated>
+  <updated>2020-03-03T04:20:54.124Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日算法系列【LeetCode 128】最长连续序列</title>
+    <link href="https://godweiyang.com/2020/03/03/leetcode-128/"/>
+    <id>https://godweiyang.com/2020/03/03/leetcode-128/</id>
+    <published>2020-03-03T03:30:51.000Z</published>
+    <updated>2020-03-03T04:20:54.124Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>论文赏析【EMNLP19】多粒度自注意力机制（MG-SA）</title>
@@ -599,38 +631,6 @@
     <id>https://godweiyang.com/2020/02/15/leetcode-658/</id>
     <published>2020-02-15T10:13:29.000Z</published>
     <updated>2020-02-15T11:09:51.989Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 328】奇偶链表</title>
-    <link href="https://godweiyang.com/2020/02/14/leetcode-328/"/>
-    <id>https://godweiyang.com/2020/02/14/leetcode-328/</id>
-    <published>2020-02-14T03:49:30.000Z</published>
-    <updated>2020-02-14T04:39:01.439Z</updated>
     
     <summary type="html">
     
