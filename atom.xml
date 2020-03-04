@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-04T04:30:54.655Z</updated>
+  <updated>2020-03-04T12:02:23.572Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://godweiyang.com/2020/03/04/leetcode-1363/"/>
     <id>https://godweiyang.com/2020/03/04/leetcode-1363/</id>
     <published>2020-03-04T04:17:07.000Z</published>
-    <updated>2020-03-04T04:30:54.655Z</updated>
+    <updated>2020-03-04T12:02:23.572Z</updated>
     
     <summary type="html">
     
@@ -39,7 +39,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -53,7 +53,7 @@
     <link href="https://godweiyang.com/2020/03/03/leetcode-128/"/>
     <id>https://godweiyang.com/2020/03/03/leetcode-128/</id>
     <published>2020-03-03T03:30:51.000Z</published>
-    <updated>2020-03-03T04:20:54.124Z</updated>
+    <updated>2020-03-04T12:02:23.573Z</updated>
     
     <summary type="html">
     
@@ -71,7 +71,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -85,7 +85,7 @@
     <link href="https://godweiyang.com/2020/03/02/emnlp19-mgsa/"/>
     <id>https://godweiyang.com/2020/03/02/emnlp19-mgsa/</id>
     <published>2020-03-02T11:17:20.000Z</published>
-    <updated>2020-03-02T17:05:47.955Z</updated>
+    <updated>2020-03-04T12:06:01.003Z</updated>
     
     <summary type="html">
     
@@ -106,11 +106,7 @@
       <category term="深度学习" scheme="https://godweiyang.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="自然语言处理" scheme="https://godweiyang.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
-      <category term="神经网络" scheme="https://godweiyang.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="深度学习" scheme="https://godweiyang.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="NLP" scheme="https://godweiyang.com/tags/NLP/"/>
     
       <category term="EMNLP" scheme="https://godweiyang.com/tags/EMNLP/"/>
     
@@ -123,7 +119,7 @@
     <link href="https://godweiyang.com/2020/03/02/leetcode-329/"/>
     <id>https://godweiyang.com/2020/03/02/leetcode-329/</id>
     <published>2020-03-02T04:15:18.000Z</published>
-    <updated>2020-03-02T04:27:32.801Z</updated>
+    <updated>2020-03-04T12:02:23.573Z</updated>
     
     <summary type="html">
     
@@ -141,7 +137,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -155,7 +151,7 @@
     <link href="https://godweiyang.com/2020/03/01/kentln-0/"/>
     <id>https://godweiyang.com/2020/03/01/kentln-0/</id>
     <published>2020-03-01T15:15:18.000Z</published>
-    <updated>2020-03-01T06:37:26.795Z</updated>
+    <updated>2020-03-04T12:02:23.572Z</updated>
     
     <summary type="html">
     
@@ -173,7 +169,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -187,7 +183,7 @@
     <link href="https://godweiyang.com/2020/03/01/leetcode-btbss/"/>
     <id>https://godweiyang.com/2020/03/01/leetcode-btbss/</id>
     <published>2020-03-01T12:26:13.000Z</published>
-    <updated>2020-02-24T18:02:05.904Z</updated>
+    <updated>2020-03-04T12:02:23.580Z</updated>
     
     <summary type="html">
     
@@ -205,7 +201,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -219,7 +215,7 @@
     <link href="https://godweiyang.com/2020/02/29/leetcode-309/"/>
     <id>https://godweiyang.com/2020/02/29/leetcode-309/</id>
     <published>2020-02-29T12:26:13.000Z</published>
-    <updated>2020-02-24T16:07:32.618Z</updated>
+    <updated>2020-03-04T12:02:23.573Z</updated>
     
     <summary type="html">
     
@@ -237,7 +233,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -251,7 +247,7 @@
     <link href="https://godweiyang.com/2020/02/28/leetcode-714/"/>
     <id>https://godweiyang.com/2020/02/28/leetcode-714/</id>
     <published>2020-02-28T12:26:13.000Z</published>
-    <updated>2020-02-24T15:53:31.585Z</updated>
+    <updated>2020-03-04T12:02:23.577Z</updated>
     
     <summary type="html">
     
@@ -269,7 +265,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -283,7 +279,7 @@
     <link href="https://godweiyang.com/2020/02/27/leetcode-188/"/>
     <id>https://godweiyang.com/2020/02/27/leetcode-188/</id>
     <published>2020-02-27T12:26:13.000Z</published>
-    <updated>2020-02-24T15:23:08.549Z</updated>
+    <updated>2020-03-04T12:02:23.573Z</updated>
     
     <summary type="html">
     
@@ -301,7 +297,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -315,7 +311,7 @@
     <link href="https://godweiyang.com/2020/02/26/leetcode-123/"/>
     <id>https://godweiyang.com/2020/02/26/leetcode-123/</id>
     <published>2020-02-26T13:07:29.000Z</published>
-    <updated>2020-02-24T13:54:40.359Z</updated>
+    <updated>2020-03-04T12:02:23.573Z</updated>
     
     <summary type="html">
     
@@ -333,7 +329,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -347,7 +343,7 @@
     <link href="https://godweiyang.com/2020/02/25/leetcode-122/"/>
     <id>https://godweiyang.com/2020/02/25/leetcode-122/</id>
     <published>2020-02-25T13:07:29.000Z</published>
-    <updated>2020-02-24T16:16:57.996Z</updated>
+    <updated>2020-03-04T12:02:23.572Z</updated>
     
     <summary type="html">
     
@@ -365,7 +361,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -379,7 +375,7 @@
     <link href="https://godweiyang.com/2020/02/24/leetcode-121/"/>
     <id>https://godweiyang.com/2020/02/24/leetcode-121/</id>
     <published>2020-02-24T12:26:13.000Z</published>
-    <updated>2020-02-24T12:49:55.149Z</updated>
+    <updated>2020-03-04T12:02:23.572Z</updated>
     
     <summary type="html">
     
@@ -397,7 +393,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -411,7 +407,7 @@
     <link href="https://godweiyang.com/2020/02/22/leetcode-interview-17-05/"/>
     <id>https://godweiyang.com/2020/02/22/leetcode-interview-17-05/</id>
     <published>2020-02-22T15:07:21.000Z</published>
-    <updated>2020-02-22T15:36:56.313Z</updated>
+    <updated>2020-03-04T12:02:23.580Z</updated>
     
     <summary type="html">
     
@@ -429,7 +425,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -443,7 +439,7 @@
     <link href="https://godweiyang.com/2020/02/22/hs-airdrop/"/>
     <id>https://godweiyang.com/2020/02/22/hs-airdrop/</id>
     <published>2020-02-22T11:35:18.000Z</published>
-    <updated>2020-02-22T15:44:42.772Z</updated>
+    <updated>2020-03-04T12:08:46.813Z</updated>
     
     <summary type="html">
     
@@ -470,7 +466,7 @@
     <link href="https://godweiyang.com/2020/02/22/leetcode-685/"/>
     <id>https://godweiyang.com/2020/02/22/leetcode-685/</id>
     <published>2020-02-22T08:47:17.000Z</published>
-    <updated>2020-02-21T11:31:03.301Z</updated>
+    <updated>2020-03-04T12:02:23.577Z</updated>
     
     <summary type="html">
     
@@ -488,7 +484,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -502,7 +498,7 @@
     <link href="https://godweiyang.com/2020/02/21/leetcode-684/"/>
     <id>https://godweiyang.com/2020/02/21/leetcode-684/</id>
     <published>2020-02-21T04:26:26.000Z</published>
-    <updated>2020-02-21T06:20:14.849Z</updated>
+    <updated>2020-03-04T12:02:23.580Z</updated>
     
     <summary type="html">
     
@@ -520,7 +516,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -534,7 +530,7 @@
     <link href="https://godweiyang.com/2020/02/20/leetcode-1006/"/>
     <id>https://godweiyang.com/2020/02/20/leetcode-1006/</id>
     <published>2020-02-20T02:27:55.000Z</published>
-    <updated>2020-02-20T03:57:46.773Z</updated>
+    <updated>2020-03-04T12:02:23.572Z</updated>
     
     <summary type="html">
     
@@ -552,7 +548,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -566,7 +562,7 @@
     <link href="https://godweiyang.com/2020/02/19/leetcode-287/"/>
     <id>https://godweiyang.com/2020/02/19/leetcode-287/</id>
     <published>2020-02-19T04:48:13.000Z</published>
-    <updated>2020-02-19T06:57:06.046Z</updated>
+    <updated>2020-03-04T12:02:23.573Z</updated>
     
     <summary type="html">
     
@@ -584,7 +580,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
@@ -598,7 +594,7 @@
     <link href="https://godweiyang.com/2020/02/18/eoj-3031/"/>
     <id>https://godweiyang.com/2020/02/18/eoj-3031/</id>
     <published>2020-02-18T01:02:01.000Z</published>
-    <updated>2020-02-18T01:34:37.299Z</updated>
+    <updated>2020-03-04T12:07:54.850Z</updated>
     
     <summary type="html">
     
@@ -616,12 +612,12 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="eoj" scheme="https://godweiyang.com/tags/eoj/"/>
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -630,7 +626,7 @@
     <link href="https://godweiyang.com/2020/02/16/sort-algorithms/"/>
     <id>https://godweiyang.com/2020/02/16/sort-algorithms/</id>
     <published>2020-02-16T07:09:23.000Z</published>
-    <updated>2020-03-02T04:55:19.349Z</updated>
+    <updated>2020-03-04T13:14:02.576Z</updated>
     
     <summary type="html">
     
@@ -648,7 +644,7 @@
     
     </summary>
     
-      <category term="编程技巧" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/"/>
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>

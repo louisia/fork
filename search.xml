@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -40,7 +40,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -74,11 +74,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> EMNLP </tag>
             
@@ -100,7 +96,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -127,7 +123,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -154,7 +150,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -181,7 +177,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -208,7 +204,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -235,7 +231,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -262,7 +258,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -289,7 +285,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -316,7 +312,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -343,7 +339,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -395,7 +391,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -422,7 +418,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -449,7 +445,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -476,7 +472,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -503,16 +499,16 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> eoj </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -530,7 +526,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -557,7 +553,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -584,7 +580,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -611,7 +607,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -638,7 +634,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -665,7 +661,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -692,7 +688,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -719,7 +715,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -746,7 +742,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -773,7 +769,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -800,7 +796,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -827,7 +823,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -854,7 +850,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -888,11 +884,9 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
+            <tag> NLP </tag>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> encoder </tag>
             
         </tags>
       
@@ -910,7 +904,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -937,7 +931,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -964,7 +958,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -991,7 +985,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1018,7 +1012,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1045,7 +1039,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1072,7 +1066,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1099,7 +1093,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1126,7 +1120,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1153,7 +1147,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1180,7 +1174,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1214,7 +1208,7 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> 新年 </tag>
             
         </tags>
       
@@ -1232,7 +1226,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1259,7 +1253,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1286,7 +1280,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1313,7 +1307,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1340,7 +1334,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1367,7 +1361,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1394,7 +1388,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1421,7 +1415,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1448,7 +1442,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1475,7 +1469,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1502,7 +1496,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1536,7 +1530,7 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> 博客 </tag>
             
         </tags>
       
@@ -1554,7 +1548,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1581,7 +1575,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1608,7 +1602,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1635,7 +1629,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1662,7 +1656,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1696,11 +1690,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> EMNLP </tag>
             
@@ -1722,7 +1712,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1749,7 +1739,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1801,7 +1791,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -1835,11 +1825,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> EMNLP </tag>
             
@@ -1868,11 +1854,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> TACL </tag>
             
@@ -1901,7 +1883,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
+            <tag> NLP </tag>
             
             <tag> 微信 </tag>
             
@@ -1930,11 +1912,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 可解释性 </tag>
             
@@ -1961,11 +1939,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> EMNLP </tag>
             
@@ -1994,7 +1968,7 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> 年终总结 </tag>
             
         </tags>
       
@@ -2019,13 +1993,9 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
-            
-            <tag> NLP </tag>
             
         </tags>
       
@@ -2050,7 +2020,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
+            <tag> NLP </tag>
             
             <tag> 微信 </tag>
             
@@ -2077,11 +2047,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2110,7 +2076,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
+            <tag> NLP </tag>
             
             <tag> 词云 </tag>
             
@@ -2137,11 +2103,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2163,14 +2125,12 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
       
         <tags>
-            
-            <tag> 算法 </tag>
             
             <tag> 机试 </tag>
             
@@ -2197,11 +2157,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2230,11 +2186,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2263,11 +2215,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2296,11 +2244,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2329,7 +2273,7 @@
       
         <tags>
             
-            <tag> LaTeX </tag>
+            <tag> latex </tag>
             
         </tags>
       
@@ -2354,7 +2298,7 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> 年终总结 </tag>
             
         </tags>
       
@@ -2379,11 +2323,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2412,11 +2352,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2443,11 +2379,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 迁移学习 </tag>
             
@@ -2476,11 +2408,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2511,11 +2439,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2535,7 +2459,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -2544,7 +2468,7 @@
             
             <tag> 算法 </tag>
             
-            <tag> Python </tag>
+            <tag> python </tag>
             
         </tags>
       
@@ -2569,13 +2493,9 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
-            
-            <tag> NLP </tag>
             
         </tags>
       
@@ -2600,11 +2520,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2633,11 +2549,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2666,10 +2578,6 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
-            
             <tag> 强化学习 </tag>
             
         </tags>
@@ -2695,11 +2603,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2728,11 +2632,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2761,11 +2661,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2792,11 +2688,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2827,11 +2719,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -2851,16 +2739,16 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 算法 </tag>
+            <tag> eoj </tag>
             
-            <tag> EOJ </tag>
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -2878,16 +2766,16 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 算法 </tag>
+            <tag> eoj </tag>
             
-            <tag> EOJ </tag>
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -3062,11 +2950,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -3145,7 +3029,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -3197,11 +3081,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
-            <tag> Github </tag>
-            
             <tag> 博客 </tag>
+            
+            <tag> github </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -3351,11 +3235,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -3407,11 +3287,11 @@
       
         <tags>
             
-            <tag> Dynet </tag>
+            <tag> dynet </tag>
             
-            <tag> Cuda </tag>
+            <tag> cuda </tag>
             
-            <tag> Ubuntu </tag>
+            <tag> ubuntu </tag>
             
         </tags>
       
@@ -3511,11 +3391,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -3542,7 +3418,7 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> 年终总结 </tag>
             
         </tags>
       
@@ -3567,11 +3443,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> NAACL </tag>
             
@@ -3598,11 +3470,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> TACL </tag>
             
@@ -3631,11 +3499,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 句法分析 </tag>
             
@@ -3662,11 +3526,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
@@ -3699,13 +3559,9 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
+            <tag> NLP </tag>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
-            
-            <tag> Dynet </tag>
+            <tag> dynet </tag>
             
         </tags>
       
@@ -3730,17 +3586,11 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
             <tag> 迁移学习 </tag>
-            
-            <tag> 半监督学习 </tag>
             
         </tags>
       
@@ -3765,9 +3615,7 @@
       
         <tags>
             
-            <tag> LaTeX </tag>
-            
-            <tag> Beamer </tag>
+            <tag> latex </tag>
             
             <tag> ppt </tag>
             
@@ -3794,11 +3642,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
@@ -3827,11 +3671,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
@@ -3862,17 +3702,11 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
             <tag> 迁移学习 </tag>
-            
-            <tag> 半监督学习 </tag>
             
         </tags>
       
@@ -3890,7 +3724,7 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
@@ -3900,10 +3734,6 @@
             <tag> 编译原理 </tag>
             
             <tag> 编译器 </tag>
-            
-            <tag> C# </tag>
-            
-            <tag> C++ </tag>
             
         </tags>
       
@@ -3928,11 +3758,7 @@
       
         <tags>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
@@ -3963,11 +3789,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
@@ -3996,11 +3818,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 序列标注 </tag>
             
@@ -4027,7 +3845,7 @@
       
         <tags>
             
-            <tag> Sublime </tag>
+            <tag> sublime </tag>
             
         </tags>
       
@@ -4052,9 +3870,7 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> 吴恩达 </tag>
             
         </tags>
       
@@ -4079,9 +3895,7 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> 吴恩达 </tag>
             
         </tags>
       
@@ -4106,9 +3920,7 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> 吴恩达 </tag>
             
         </tags>
       
@@ -4133,9 +3945,7 @@
       
         <tags>
             
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> 吴恩达 </tag>
             
         </tags>
       
@@ -4162,11 +3972,7 @@
             
             <tag> ACL </tag>
             
-            <tag> 自然语言处理 </tag>
-            
-            <tag> 神经网络 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> NLP </tag>
             
             <tag> 问答系统 </tag>
             
@@ -4236,16 +4042,16 @@
       
       <categories>
           
-          <category> 编程技巧 </category>
+          <category> 编程算法 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 算法 </tag>
+            <tag> eoj </tag>
             
-            <tag> EOJ </tag>
+            <tag> 算法 </tag>
             
         </tags>
       
