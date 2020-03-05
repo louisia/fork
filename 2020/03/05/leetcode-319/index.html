@@ -4,11 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="leetcode-319, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
+    <meta name="keywords" content="每日算法系列【LeetCode 319】灯泡开关, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习 算法码上来">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="leetcode-319 | 韦阳的博客">
+    <meta name="description" content="
+关注公众号【算法码上来】，每日算法干货马上就来！
+
+
+题目描述初始时有 n 个灯泡关闭。 第 1 轮，你打开所有的灯泡。 第 2 轮，每两个灯泡你关闭一次。 第 3 轮，每三个灯泡切换一次开关（如果关闭则开启，如果开启则关闭）。第 i 轮">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>leetcode-319 | 韦阳的博客</title>
+    <title>每日算法系列【LeetCode 319】灯泡开关 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -322,13 +326,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        leetcode-319
+                        每日算法系列【LeetCode 319】灯泡开关
                     </div>
                 </div>
             </div>
@@ -438,11 +442,28 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/leetcode/" target="_blank">
+                            <span class="chip bg-color">leetcode</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/编程算法/" class="post-category" target="_blank">
+                            编程算法
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -464,7 +485,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    220
                 </div>
                 
 
@@ -487,7 +508,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <blockquote>
+<p>关注公众号【算法码上来】，每日算法干货马上就来！</p>
+</blockquote>
+<p><img src="/medias/contact.jpg" alt></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>初始时有 n 个灯泡关闭。 第 1 轮，你打开所有的灯泡。 第 2 轮，每两个灯泡你关闭一次。 第 3 轮，每三个灯泡切换一次开关（如果关闭则开启，如果开启则关闭）。第 i 轮，每 i 个灯泡切换一次开关。 对于第 n 轮，你只切换最后一个灯泡的开关。 找出 n 轮后有多少个亮着的灯泡。</p>
+<p><strong>示例1</strong></p>
+<pre class="line-numbers language-text"><code class="language-text">输入：
+3
+输出：
+1
+解释：
+初始时, 灯泡状态 [关闭, 关闭, 关闭].
+第一轮后, 灯泡状态 [开启, 开启, 开启].
+第二轮后, 灯泡状态 [开启, 关闭, 开启].
+第三轮后, 灯泡状态 [开启, 关闭, 关闭]. 
+
+你应该返回 1，因为只有一个灯泡还亮着。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
             </div>
             <hr />
 
@@ -645,7 +684,7 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《leetcode-319》
+                    《每日算法系列【LeetCode 319】灯泡开关》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/03/05/leetcode-319/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -980,15 +1019,19 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="leetcode-319">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="每日算法系列【LeetCode 319】灯泡开关">
                         
-                        <span class="card-title">leetcode-319</span>
+                        <span class="card-title">每日算法系列【LeetCode 319】灯泡开关</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+关注公众号【算法码上来】，每日算法干货马上就来！
+
+
+题目描述初始时有 n 个灯泡关闭。 第 1 轮，你打开所有的灯泡。 第 2 轮，每两个灯泡你关闭一次。 第 3 轮，每三个灯泡切换一次开关（如果关闭则开启，如果开启则关闭）。第 i 轮
                         
                     </div>
                     <div class="publish-info">
@@ -997,10 +1040,29 @@
                             </span>
                         <span class="publish-author">
                             
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/编程算法/" class="post-category" target="_blank">
+                                    编程算法
+                                </a>
+                            
+                            
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/leetcode/" target="_blank">
+                        <span class="chip bg-color">leetcode</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1217,7 +1279,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">212.8k</span>
+            <span class="white-color">213k</span>
             
 
             <br>
