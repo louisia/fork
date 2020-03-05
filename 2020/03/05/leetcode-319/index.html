@@ -531,7 +531,7 @@
 <p>最浅显的证明就是，一个数 $i$ 的因数按照从小到大排个序，首尾两两一对之积一定等于 $i$ 。而如果因数只有奇数个，最中间一个因数 $x$ 只会出现一次，那么 $i = x^2$ 。</p>
 <p>严格证明也不难，首先将 $i$ 质因数分解为：<br>$$<br>i = p_1^{c_1}p_2^{c_2}\cdots p_k^{c_k}<br>$$<br>那么 $i$ 的因数个数就是：<br>$$<br>(c_1+1)(c_2+1)\cdots (c_k+1)<br>$$<br>因为 $i$ 的因数个数是奇数，所以任意 $c_j + 1$ 必定是奇数，即任意 $c_j$ 必定是偶数。</p>
 <p>那么 $i$ 就可以写作：<br>$$<br>i = (p_1^{c_1/2}p_2^{c_2/2}\cdots p_k^{c_k/2})^2<br>$$<br>这就证明了 $i$ 一定是一个完全平方数。</p>
-<p>所以问题就转化为了<strong>求 $1$ 到 $n$ 之间有多少个完全平方数？</strong>答案就是 $\left\lfloor\sqrt{n}\right\rfloor$ 。</p>
+<p>所以问题就转化为了<strong>求 $1$ 到 $n$ 之间有多少个完全平方数</strong>。答案就是 $\left\lfloor\sqrt{n}\right\rfloor$ 。</p>
 <p>在具体实现的时候，为了防止出现浮点数误差（比如 $\sqrt{9}$ 算出来是 $2.9999$ ，取整得到 $2$），我们可以计算 $\left\lfloor\sqrt{n+0.5}\right\rfloor$ 的结果。</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="c"><a href="#c" class="headerlink" title="c++"></a>c++</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
