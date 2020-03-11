@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-10T06:50:29.814Z</updated>
+  <updated>2020-03-11T05:11:55.897Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【每日算法Day 66】经典面试题：不用四则运算如何做加法？</title>
+    <link href="https://godweiyang.com/2020/03/11/leetcode-interview-65/"/>
+    <id>https://godweiyang.com/2020/03/11/leetcode-interview-65/</id>
+    <published>2020-03-11T15:07:21.000Z</published>
+    <updated>2020-03-11T05:11:55.897Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>【每日算法Day 65】你能顺利救出地下城里的公主吗？</title>
@@ -624,33 +656,6 @@
       <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019.2.4时GitHub超过15个粉丝就可以领取3000元啦！</title>
-    <link href="https://godweiyang.com/2020/02/22/hs-airdrop/"/>
-    <id>https://godweiyang.com/2020/02/22/hs-airdrop/</id>
-    <published>2020-02-22T11:35:18.000Z</published>
-    <updated>2020-03-04T12:08:46.813Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;看了标题，你可能会觉得这又是个诈骗或者广告，但是这次确实是在送钱。白嫖一时爽，一直白嫖一直爽。&lt;/p&gt;
-&lt;p&gt;怎么回事呢，官网在这：&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="计算机知识" scheme="https://godweiyang.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="github" scheme="https://godweiyang.com/tags/github/"/>
     
   </entry>
   
