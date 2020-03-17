@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-03-16T05:11:13.576Z</updated>
+  <updated>2020-03-17T06:35:26.450Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【每日算法Day 72】谷歌面试题：又双叒叕是位运算，最详细的自动机推导过程</title>
+    <link href="https://godweiyang.com/2020/03/17/leetcode-137/"/>
+    <id>https://godweiyang.com/2020/03/17/leetcode-137/</id>
+    <published>2020-03-17T03:58:40.000Z</published>
+    <updated>2020-03-17T06:35:26.450Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【每日算法Day 71】面试官想考我这道位运算题，结果我给出了三种解法</title>
     <link href="https://godweiyang.com/2020/03/16/leetcode-interview-17-19/"/>
     <id>https://godweiyang.com/2020/03/16/leetcode-interview-17-19/</id>
     <published>2020-03-16T03:34:30.000Z</published>
-    <updated>2020-03-16T05:11:13.576Z</updated>
+    <updated>2020-03-17T04:00:19.518Z</updated>
     
     <summary type="html">
     
@@ -601,38 +633,6 @@
     <id>https://godweiyang.com/2020/02/29/leetcode-309/</id>
     <published>2020-02-29T12:26:13.000Z</published>
     <updated>2020-03-04T12:02:23.573Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程算法" scheme="https://godweiyang.com/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://godweiyang.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="leetcode" scheme="https://godweiyang.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日算法系列【LeetCode 714】买卖股票的最佳时机含手续费</title>
-    <link href="https://godweiyang.com/2020/02/28/leetcode-714/"/>
-    <id>https://godweiyang.com/2020/02/28/leetcode-714/</id>
-    <published>2020-02-28T12:26:13.000Z</published>
-    <updated>2020-03-04T12:02:23.577Z</updated>
     
     <summary type="html">
     
